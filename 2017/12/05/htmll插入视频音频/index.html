@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王文志在 Github 上的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="//github.com/wangwenzhiwwz/one/blob/master/%E9%AB%98%E5%99%AA%E5%A3%B0.png">
+    <link rel="alternate" type="application/atom+xml" title="Wangwenzhi" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        htmll插入视频音频｜Wangwenzhi blog
+        
+    </title>
+
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2017/12/05/htmll插入视频音频/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://p02yg9ptw.bkt.clouddn.com/timg%20%288%29.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Wangwenzhi
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/works">works</a>
+                    </li>
+					
+                    
+                        
+                    
+                        
+                    
+					
+					
+						<li>
+							<a href="/about">About</a>
+						</li>
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src=" http://p02yg9ptw.bkt.clouddn.com/139-1412160Z000-50.jpg ">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url(' http://p02yg9ptw.bkt.clouddn.com/139-1412160Z000-50.jpg ');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>htmll插入视频音频</h1>
+                    
+                    <h2 class="subheading">使用HTML5在网页中嵌入音频和视频播放的基本方法</h2>
+                    
+                    <span class="meta">
+                         作者 王文志
+                        <span>
+                          日期 2017-12-05
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#视频"
+                           title="视频">视频</a>
+                        
+                        <a class="tag" href="/tags/#html"
+                           title="html">html</a>
+                        
+                        <a class="tag" href="/tags/#video"
+                           title="video">video</a>
+                        
+                        <a class="tag" href="/tags/#音频"
+                           title="音频">音频</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            htmll插入视频音频
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h1 id="使用HTML5在网页中嵌入音频和视频播放的基本方法"><a href="#使用HTML5在网页中嵌入音频和视频播放的基本方法" class="headerlink" title="使用HTML5在网页中嵌入音频和视频播放的基本方法"></a>使用HTML5在网页中嵌入音频和视频播放的基本方法</h1><p>HTML5 特性，包括原生音频和视频支持而无需 Flash。<br>HTML5 audio 和 video 标签让我们给站点添加媒体变得简单。我们只需要设置 src 属性来识别媒体资源，包含 controls 属性让用户可以播放和暂停媒体。</p>
+<h2 id="嵌入视频"><a href="#嵌入视频" class="headerlink" title="嵌入视频"></a>嵌入视频</h2><p>###下面是在 Web 页面中嵌入视频文件最简单的形式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;video src=<span class="string">"foo.mp4"</span>  width=<span class="string">"300"</span> height=<span class="string">"200"</span> controls&gt;  </span><br><span class="line">    Your browser does not support the &lt;video&gt; element.      </span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p>目前的 HTML5 规范草案还没有指定浏览器应该在 video 标签中支持哪种视频格式。但是最常用的视频格式是：<br>Ogg：带有 Thedora 视频编码器和 Vorbis 音频编码器的 Ogg 文件。<br>mpeg4：带有 H.264 视频编码器和 AAC 音频编码器的 MPEG4 文件。<br>我们可以使用带有媒体类型和其他属性的 <source> 标签指定媒体文件。video 元素允许使用多个 source 元素，浏览器会使用第一个认可的格式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;  </span><br><span class="line">&lt;html&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">   &lt;video  width=<span class="string">"300"</span> height=<span class="string">"200"</span> controls autoplay&gt;  </span><br><span class="line">       &lt;<span class="built_in">source</span> src=<span class="string">"/html5/foo.ogg"</span> <span class="built_in">type</span>=<span class="string">"video/ogg"</span> /&gt;  </span><br><span class="line">       &lt;<span class="built_in">source</span> src=<span class="string">"/html5/foo.mp4"</span> <span class="built_in">type</span>=<span class="string">"video/mp4"</span> /&gt;  </span><br><span class="line">       Your browser does not support the &lt;video&gt; element.   </span><br><span class="line">   &lt;/video&gt;  </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Video-属性规范"><a href="#Video-属性规范" class="headerlink" title="Video 属性规范"></a>Video 属性规范</h2><h3 id="HTML5-video-标签可以使用多个属性控制外观和感觉以及各种控制功能："><a href="#HTML5-video-标签可以使用多个属性控制外观和感觉以及各种控制功能：" class="headerlink" title="HTML5 video 标签可以使用多个属性控制外观和感觉以及各种控制功能："></a>HTML5 video 标签可以使用多个属性控制外观和感觉以及各种控制功能：</h3><p>属性    描述<br>autoplay    如果指定这个布尔值属性，只要没有停止加载数据，视频就会立刻开始自动播放。<br>autobuffer    如果指定这个布尔值属性，即使没有设置自动播放，视频也会自动开始缓冲。<br>controls    如果指定这个属性，就允许用户控制视频播放，包括音量控制，快进，暂停或者恢复播放。<br>height    这个属性以 CSS 像素的形式指定视频显示区域的高度。<br>loop    如果指定这个布尔值属性，表示允许播放结束后自动回放。<br>preload    指定这个属性，视频会在载入页面时加载并准备就绪。如果指定自动播放则忽略。<br>poster    这是一个图像 URL，显示到用户播放或快进。<br>src    要嵌入的视频 URL。可选，可以在 video 块中使用 <source> 元素替代来指定要嵌入的视频。<br>width    这个属性以 CSS 像素的形式指定视频显示区域的宽度。</p>
+<h2 id="嵌入音频"><a href="#嵌入音频" class="headerlink" title="嵌入音频"></a>嵌入音频</h2><h3 id="HTML5-支持的-标签用于在如下所示的-HTML-或-XHTML-文档中嵌入语音内容。"><a href="#HTML5-支持的-标签用于在如下所示的-HTML-或-XHTML-文档中嵌入语音内容。" class="headerlink" title="HTML5 支持的  标签用于在如下所示的 HTML 或 XHTML 文档中嵌入语音内容。"></a>HTML5 支持的 <audio> 标签用于在如下所示的 HTML 或 XHTML 文档中嵌入语音内容。</audio></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;audio src=<span class="string">"foo.wav"</span> controls autoplay&gt;  </span><br><span class="line">    Your browser does not support the &lt;audio&gt; element.      </span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+<p>当前的 HTML 草案规范还没有指定浏览器应该在 audio 标签中支持哪种音频格式。但是最常用的音频格式是 ogg，mp3 和 wav。<br>我们可以使用带媒体类型以及其他属性的的 <source> 标签指定媒体。Audio 元素允许使用多个 source 元素，并且浏览器会使用第一个认可的格式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;  </span><br><span class="line">&lt;html&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">   &lt;audio controls autoplay&gt;  </span><br><span class="line">       &lt;<span class="built_in">source</span> src=<span class="string">"/html5/audio.ogg"</span> <span class="built_in">type</span>=<span class="string">"audio/ogg"</span> /&gt;  </span><br><span class="line">       &lt;<span class="built_in">source</span> src=<span class="string">"/html5/audio.wav"</span> <span class="built_in">type</span>=<span class="string">"audio/wav"</span> /&gt;  </span><br><span class="line">       Your browser does not support the &lt;audio&gt; element.   </span><br><span class="line">   &lt;/audio&gt;  </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Audio-属性规范"><a href="#Audio-属性规范" class="headerlink" title="Audio 属性规范"></a>Audio 属性规范</h2><h3 id="HTML5-audio-标签可以使用多个属性来控制外观，感受以及各种控制功能："><a href="#HTML5-audio-标签可以使用多个属性来控制外观，感受以及各种控制功能：" class="headerlink" title="HTML5 audio 标签可以使用多个属性来控制外观，感受以及各种控制功能："></a>HTML5 audio 标签可以使用多个属性来控制外观，感受以及各种控制功能：</h3><p>属性    描述<br>autoplay    如果指定这个布尔值属性，只要没停止加载数据，音频就会立刻自动开始播放。<br>autobuffer    如果指定这个布尔值属性，即使没有设置自动播放，音频也会自动开始缓冲。<br>controls    如果指定这个属性，表示允许用户控制音频播放，包括音量控制，快进以及暂停/恢复播放。<br>loop    如果指定这个布尔值属性，表示允许音频播放结束后自动回放。<br>preload    这个属性指定加载页面时加载音频并准备就绪。如果指定自动播放则忽略。<br>src    要嵌入的音频 URL。可选，可以在音频块里面使用 <source> 元素指定要嵌入的音频来替代。</p>
+<h2 id="处理媒体事件"><a href="#处理媒体事件" class="headerlink" title="处理媒体事件"></a>处理媒体事件</h2><h3 id="HTML5-audio-和-video-标签可以用多个属性利用-JavaScript-控制各种控制功能："><a href="#HTML5-audio-和-video-标签可以用多个属性利用-JavaScript-控制各种控制功能：" class="headerlink" title="HTML5 audio 和 video 标签可以用多个属性利用 JavaScript 控制各种控制功能："></a>HTML5 audio 和 video 标签可以用多个属性利用 JavaScript 控制各种控制功能：</h3><p>事件    描述<br>abort    播放中止时生成这个事件。<br>canplay    足够的数据可用并且媒体可以播放时生成这个事件。<br>ended    播放完成时生成这个事件。<br>error    发生错误时生成这个事件。<br>loadeddata    媒体第一帧载入完成时生成这个事件。<br>loadstart    开始加载媒体时生成这个事件。<br>pause    播放暂停时生成这个事件。<br>play    播放开始或者恢复时生成这个事件。<br>progress    定期通知媒体下载进度时生成这个事件。<br>ratechange    播放速度改变时生成这个事件。<br>seeked    快进操作完成时生成这个事件。<br>seeking    快进操作开始时生成这个事件。<br>suspend    媒体加载被暂停时生成这个事件。<br>volumechange    音频音量变化时生成这个事件。<br>waiting    请求操作（比如播放）被延迟，等待另一个操作完成（比如快进）时生成这个事件。</p>
+<h3 id="下面是一个允许播放给定视频的示例："><a href="#下面是一个允许播放给定视频的示例：" class="headerlink" title="下面是一个允许播放给定视频的示例："></a>下面是一个允许播放给定视频的示例：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;  </span><br><span class="line">&lt;head&gt;  </span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;  </span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">PlayVideo</span></span>()&#123;   </span><br><span class="line">   var v = document.getElementsByTagName(<span class="string">"video"</span>)[0];     </span><br><span class="line">   v.play();    </span><br><span class="line">&#125;   </span><br><span class="line">&lt;/script&gt;  </span><br><span class="line">&lt;/head&gt;  </span><br><span class="line">&lt;html&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">   &lt;form&gt;  </span><br><span class="line">   &lt;video  width=<span class="string">"300"</span> height=<span class="string">"200"</span> src=<span class="string">"/html5/foo.mp4"</span>&gt;  </span><br><span class="line">       Your browser does not support the &lt;video&gt; element.   </span><br><span class="line">   &lt;/video&gt;  </span><br><span class="line">   &lt;input <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"PlayVideo();"</span>  value=<span class="string">"Play"</span>/&gt;  </span><br><span class="line">   &lt;/form&gt;  </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="配置服务器媒体类型"><a href="#配置服务器媒体类型" class="headerlink" title="配置服务器媒体类型"></a>配置服务器媒体类型</h2><h3 id="大多数服务器默认都没使用正确的-MIME-类型提供-Ogg-或-mp4-媒体，因此我们可能需要添加适当的配置。"><a href="#大多数服务器默认都没使用正确的-MIME-类型提供-Ogg-或-mp4-媒体，因此我们可能需要添加适当的配置。" class="headerlink" title="大多数服务器默认都没使用正确的 MIME 类型提供 Ogg 或 mp4 媒体，因此我们可能需要添加适当的配置。"></a>大多数服务器默认都没使用正确的 MIME 类型提供 Ogg 或 mp4 媒体，因此我们可能需要添加适当的配置。</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AddType audio/ogg .oga</span><br><span class="line">AddType audio/wav .wav</span><br><span class="line">AddType video/ogg .ogv .ogg</span><br><span class="line">AddType video/mp4 .mp4</span><br></pre></td></tr></table></figure>
+<h1 id="到这就结束了"><a href="#到这就结束了" class="headerlink" title="到这就结束了"></a>到这就结束了</h1>
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/12/05/html与css命名规范/" data-toggle="tooltip" data-placement="top"
+                           title="html与css命名规范">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+					<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjExMi84Njc2">
+					<script type="text/javascript">
+					   (function(d, s) {
+					       var j, e = d.getElementsByTagName(s)[0];
+
+					       if (typeof LivereTower === 'function') { return; }
+
+					       j = d.createElement(s);
+					       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+					       j.async = true;
+
+					       e.parentNode.insertBefore(j, e);
+					   })(document, 'script');
+					</script>
+					<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+					</div>
+					<!-- City版安装代码已完成 -->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#使用HTML5在网页中嵌入音频和视频播放的基本方法"><span class="toc-text">使用HTML5在网页中嵌入音频和视频播放的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌入视频"><span class="toc-text">嵌入视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Video-属性规范"><span class="toc-text">Video 属性规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5-video-标签可以使用多个属性控制外观和感觉以及各种控制功能："><span class="toc-text">HTML5 video 标签可以使用多个属性控制外观和感觉以及各种控制功能：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌入音频"><span class="toc-text">嵌入音频</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5-支持的-标签用于在如下所示的-HTML-或-XHTML-文档中嵌入语音内容。"><span class="toc-text">HTML5 支持的  标签用于在如下所示的 HTML 或 XHTML 文档中嵌入语音内容。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Audio-属性规范"><span class="toc-text">Audio 属性规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5-audio-标签可以使用多个属性来控制外观，感受以及各种控制功能："><span class="toc-text">HTML5 audio 标签可以使用多个属性来控制外观，感受以及各种控制功能：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#处理媒体事件"><span class="toc-text">处理媒体事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5-audio-和-video-标签可以用多个属性利用-JavaScript-控制各种控制功能："><span class="toc-text">HTML5 audio 和 video 标签可以用多个属性利用 JavaScript 控制各种控制功能：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下面是一个允许播放给定视频的示例："><span class="toc-text">下面是一个允许播放给定视频的示例：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置服务器媒体类型"><span class="toc-text">配置服务器媒体类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#大多数服务器默认都没使用正确的-MIME-类型提供-Ogg-或-mp4-媒体，因此我们可能需要添加适当的配置。"><span class="toc-text">大多数服务器默认都没使用正确的 MIME 类型提供 Ogg 或 mp4 媒体，因此我们可能需要添加适当的配置。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#到这就结束了"><span class="toc-text">到这就结束了</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#视频"
+                           title="视频">视频</a>
+                        
+                        <a class="tag" href="/tags/#html"
+                           title="html">html</a>
+                        
+                        <a class="tag" href="/tags/#video"
+                           title="video">video</a>
+                        
+                        <a class="tag" href="/tags/#音频"
+                           title="音频">音频</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="//wangwenzhi.top">wangwenzhi</a></li>
+                        
+                        <li><a href="//wangwenzhi.top/blog/">王文志官网</a></li>
+                        
+                        <li><a href="//my.oschina.net/wangwenzhi/">开源中国</a></li>
+                        
+                        <li><a href="//cnodejs.org/">CNode</a></li>
+                        
+                        <li><a href="//wangwenzhi.top/hello/">公司模版</a></li>
+                        
+                        <li><a href="//wangwenzhi.top/vancol/">vancol</a></li>
+                        
+                        <li><a href="//wangwenzhi.top/one/">亲手制作</a></li>
+                        
+                        <li><a href="//wangwenzhi.coding.me/vancol">vancol video</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "https-wangwenzhiwwz-github-io";
+    var disqus_identifier = "http://wangwenzhiwwz.github.io/2017/12/05/htmll插入视频音频/";
+    var disqus_url = "http://wangwenzhiwwz.github.io/2017/12/05/htmll插入视频音频/";
+
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Wangwenzhi 2017
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://wangwenzhiwwz.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-110405735-1';
+    var _gaDomain = 'auto';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://p02yg9ptw.bkt.clouddn.com/11967689_231156371000_2_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg">
+</body>
+
+</html>
