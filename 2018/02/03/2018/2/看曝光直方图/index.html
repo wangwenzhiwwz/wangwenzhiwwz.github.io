@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        github-添加ssh｜wangwenzhi
+        看懂曝光直方图｜wangwenzhi
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2017/12/11/17/12.11github-添加ssh/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2018/02/03/2018/2/看曝光直方图/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -141,13 +141,13 @@
 <!--only post-->
 
 
-<img class="wechat-title-img" src=" http://goss.veer.com/creative/vcg/veer/612/veer-145676048.jpg ">
+<img class="wechat-title-img" src=" https://s1.ax2x.com/2018/02/03/hyDMA.jpg ">
 
 
 <style>
     
     header.intro-header {
-        background-image: url(' http://goss.veer.com/creative/vcg/veer/612/veer-145676048.jpg ');
+        background-image: url(' https://s1.ax2x.com/2018/02/03/hyDMA.jpg ');
     }
 
     
@@ -158,23 +158,20 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>github-添加ssh</h1>
+                    <h1>看懂曝光直方图</h1>
                     
-                    <h2 class="subheading">github-添加ssh</h2>
+                    <h2 class="subheading">3分钟搞懂曝光直方图</h2>
                     
                     <span class="meta">
                          作者 王文志
                         <span>
-                          日期 2017-12-11
+                          日期 2018-02-03
                          </span>
                     </span>
                     <div class="tags text-center">
                         
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
-                        
-                        <a class="tag" href="/tags/#网络"
-                           title="网络">网络</a>
+                        <a class="tag" href="/tags/#摄影"
+                           title="摄影">摄影</a>
                         
                     </div>
                 </div>
@@ -183,7 +180,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            github-添加ssh
+            看懂曝光直方图
         </span>
     </div>
 </header>
@@ -194,35 +191,28 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="github设置添加SSH"><a href="#github设置添加SSH" class="headerlink" title="github设置添加SSH"></a>github设置添加SSH</h1><p>很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？</p>
-<p>这是因为，使用https url克隆对初学者来说会比较方便，复制https url 然后到 git Bash 里面直接用clone命令克隆到本地就好了。而使用 SSH url 克隆却需要在克隆之前先配置和添加好 SSH key 。</p>
-<p>因此，如果你想要使用 SSH url 克隆的话，你必须是这个项目的拥有者。否则你是无法添加 SSH key 的。</p>
-<h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><p>1、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</p>
-<p>2、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</p>
-<h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><p>1、首先需要检查你电脑是否已经有 SSH key<br>运行 git Bash 客户端，输入如下代码：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">$ ls</span><br></pre></td></tr></table></figure></p>
-<p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
-<p>2、创建一个 SSH key<br>$ ssh-keygen -t rsa -C “your_email@example.com”<br>代码参数含义：</p>
-<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
-<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
-<p>Generating public/private rsa key pair.<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span></span><br></pre></td></tr></table></figure></p>
-<p>当然，你也可以不输入文件名，使用默认文件名（推荐），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
-<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
-<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
-<p>Enter passphrase (empty for no passphrase):<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter same passphrase again:</span></span><br></pre></td></tr></table></figure></p>
-<p>接下来，就会显示如下代码提示，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.</span><br><span class="line"><span class="comment"># Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span></span><br><span class="line"><span class="comment"># The key fingerprint is:</span></span><br><span class="line"><span class="comment"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></span><br></pre></td></tr></table></figure></p>
-<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
-<p>3、添加你的 SSH key 到 github上面去<br>a、首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
-<p>b、登录你的github账号，从又上角的设置（ Account Settings ）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。</p>
-<p>c、点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。</p>
-<p>4、测试一下该SSH key<br>在git Bash 中输入以下代码<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<p>当你输入以上代码时，会有一段警告代码，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span></span><br><span class="line"><span class="string"># Are you sure you want to continue connecting (yes/no)?</span></span><br></pre></td></tr></table></figure></p>
-<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Enter passphrase <span class="keyword">for</span> key <span class="string">'/c/Users/Administrator/.ssh/id_rsa'</span>:</span><br></pre></td></tr></table></figure></p>
-<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
-<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
-<p>密码正确后你会看到下面这段话，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Hi username! You<span class="string">'ve successfully authenticated, but GitHub does not</span></span><br><span class="line"><span class="string"># provide shell access.</span></span><br></pre></td></tr></table></figure></p>
-<p>如果用户名是正确的,你已经成功设置SSH密钥。如果你看到 “access denied” ，者表示拒绝访问，那么你就需要使用 https 去访问，而不是 SSH 。</p>
-<p>如果你有什么疑问或指正，请留言。</p>
-<p>产考文档：<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="noopener">generating-ssh-keys</a></p>
+                <h2 id="3分钟搞懂曝光直方图"><a href="#3分钟搞懂曝光直方图" class="headerlink" title="3分钟搞懂曝光直方图"></a>3分钟搞懂曝光直方图</h2><p>新手上路时，总是会问某张照片要用怎样的曝光参数，不过拍摄环境和光线随时在变，与求人不如求己！除了学会光圈、快门、ISO，还要知道照片怎样才算是恰当曝光。新手不担心难以决定曝光量是否恰当，因为数码相机的直方图（Histogram），就是判断曝光的好帮手。</p>
+<p><a href="https://simimg.com/i/hyFRq" target="_blank" rel="noopener"><img src="https://s1.ax2x.com/2018/02/03/hyFRq.md.jpg" alt="hyFRq.md.jpg"></a></p>
+<p>这就是直方图，新手们刚看到这个都是懵的，这个起伏高低的是什么？</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvl4G.jpg" alt="hvl4G.jpg"><br>其实就是照片像素的明暗分布（Brightness Values），它们代表什么呢？</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvIS3.jpg" alt="hvIS3.jpg"><br>很简单，左代表暗（Dark），右代表亮（Light），中间代表中灰（Middle Gray）！</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvtY6.jpg" alt="hvtY6.jpg"></p>
+<p>什么是中灰（Middle Gray）？就是这个。</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hv1RB.jpg" alt="hv1RB.jpg"><br>如果一张照片只有这一种颜色，那么直方图就会是下方这样（这里的MIDDLE GRAY指中灰，但对彩色影像而言，这个位置指中间值，不一定是中灰）：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hv6Pp.jpg" alt="hv6Pp.jpg"></p>
+<p>同理，左边代表着全黑的像素分布：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvkHK.jpg" alt="hvkHK.jpg"><br>右边则是全白：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvf3E.jpg" alt="hvf3E.jpg"></p>
+<p>以这幅照片为例，亮度分配应该就是这样的：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvR0z.jpg" alt="hvR0z.jpg"><br>回到直方图，这些区域刚好就代表对应的像素点：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvxL2.jpg" alt="hvxL2.jpg"></p>
+<p>每张照片都有相应的明暗分布图，显示从极黑到极白之间各个亮度的像素，也就反应出照片的曝光情况。如下图，直方图分布很极端，多处于暗部以及亮部两端，而中灰区域很少，由此可以推测出照片的曝光应该是明暗对比很强，过渡不明显。</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hviMQ.jpg" alt="hviMQ.jpg"></p>
+<p>如果照片欠曝，应该大部分像素集中在左侧暗部区域：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvnSh.jpg" alt="hvnSh.jpg"><br>而过曝则会像右边溢出：<br><img src="https://s1.ax2x.com/2018/02/03/hv2Ra.jpg" alt="hv2Ra.jpg"><br>正确曝光应该是呈现正态分布的：</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hvgPS.jpg" alt="hvgPS.jpg"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当然，直方图只有指导作用，而非绝对意义的参考标准。因为曝光并没有标准答案，为了契合画面的表达，有时候还得故意过曝一点或欠曝一点，重点是你现在能够自己通过直方图去了解一张照片的曝光，并学会如何去调整了。</p>
+<p><img src="https://s1.ax2x.com/2018/02/03/hyBeO.jpg" alt="hyBeO.jpg"></p>
 
                 <hr>
                 
@@ -257,7 +247,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github设置添加SSH"><span class="toc-text">github设置添加SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#https-和-SSH-的区别："><span class="toc-text">https 和 SSH 的区别：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在-github-上添加-SSH-key-的步骤："><span class="toc-text">在 github 上添加 SSH key 的步骤：</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#3分钟搞懂曝光直方图"><span class="toc-text">3分钟搞懂曝光直方图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -279,11 +269,8 @@
                     </h5>
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
-                        
-                        <a class="tag" href="/tags/#网络"
-                           title="网络">网络</a>
+                        <a class="tag" href="/tags/#摄影"
+                           title="摄影">摄影</a>
                         
                     </div>
                 </section>
