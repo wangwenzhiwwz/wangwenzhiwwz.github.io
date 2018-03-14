@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        github-添加ssh｜wangwenzhi
+        Hexo之换电脑了怎么办｜wangwenzhi
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2017/12/11/17/12.11github-添加ssh/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2018/03/14/2018/3/Hexo使用指南/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -141,13 +141,13 @@
 <!--only post-->
 
 
-<img class="wechat-title-img" src=" http://goss.veer.com/creative/vcg/veer/612/veer-145676048.jpg ">
+<img class="wechat-title-img" src=" https://s1.ax2x.com/2018/03/14/Lcxah.png ">
 
 
 <style>
     
     header.intro-header {
-        background-image: url(' http://goss.veer.com/creative/vcg/veer/612/veer-145676048.jpg ');
+        background-image: url(' https://s1.ax2x.com/2018/03/14/Lcxah.png ');
     }
 
     
@@ -158,23 +158,20 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>github-添加ssh</h1>
+                    <h1>Hexo之换电脑了怎么办</h1>
                     
-                    <h2 class="subheading">github-添加ssh</h2>
+                    <h2 class="subheading">使用Hexo搭建的个人博客网站</h2>
                     
                     <span class="meta">
                          作者 王文志
                         <span>
-                          日期 2017-12-11
+                          日期 2018-03-14
                          </span>
                     </span>
                     <div class="tags text-center">
                         
                         <a class="tag" href="/tags/#github"
                            title="github">github</a>
-                        
-                        <a class="tag" href="/tags/#网络"
-                           title="网络">网络</a>
                         
                     </div>
                 </div>
@@ -183,7 +180,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            github-添加ssh
+            Hexo之换电脑了怎么办
         </span>
     </div>
 </header>
@@ -194,35 +191,11 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="github设置添加SSH"><a href="#github设置添加SSH" class="headerlink" title="github设置添加SSH"></a>github设置添加SSH</h1><p>很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？</p>
-<p>这是因为，使用https url克隆对初学者来说会比较方便，复制https url 然后到 git Bash 里面直接用clone命令克隆到本地就好了。而使用 SSH url 克隆却需要在克隆之前先配置和添加好 SSH key 。</p>
-<p>因此，如果你想要使用 SSH url 克隆的话，你必须是这个项目的拥有者。否则你是无法添加 SSH key 的。</p>
-<h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><p>1、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</p>
-<p>2、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</p>
-<h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><p>1、首先需要检查你电脑是否已经有 SSH key<br>运行 git Bash 客户端，输入如下代码：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">$ ls</span><br></pre></td></tr></table></figure></p>
-<p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
-<p>2、创建一个 SSH key<br>$ ssh-keygen -t rsa -C “your_email@example.com”<br>代码参数含义：</p>
-<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
-<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
-<p>Generating public/private rsa key pair.<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span></span><br></pre></td></tr></table></figure></p>
-<p>当然，你也可以不输入文件名，使用默认文件名（推荐），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
-<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
-<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
-<p>Enter passphrase (empty for no passphrase):<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enter same passphrase again:</span></span><br></pre></td></tr></table></figure></p>
-<p>接下来，就会显示如下代码提示，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.</span><br><span class="line"><span class="comment"># Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span></span><br><span class="line"><span class="comment"># The key fingerprint is:</span></span><br><span class="line"><span class="comment"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></span><br></pre></td></tr></table></figure></p>
-<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
-<p>3、添加你的 SSH key 到 github上面去<br>a、首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
-<p>b、登录你的github账号，从又上角的设置（ Account Settings ）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。</p>
-<p>c、点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。</p>
-<p>4、测试一下该SSH key<br>在git Bash 中输入以下代码<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<p>当你输入以上代码时，会有一段警告代码，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span></span><br><span class="line"><span class="string"># Are you sure you want to continue connecting (yes/no)?</span></span><br></pre></td></tr></table></figure></p>
-<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Enter passphrase <span class="keyword">for</span> key <span class="string">'/c/Users/Administrator/.ssh/id_rsa'</span>:</span><br></pre></td></tr></table></figure></p>
-<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
-<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
-<p>密码正确后你会看到下面这段话，如：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Hi username! You<span class="string">'ve successfully authenticated, but GitHub does not</span></span><br><span class="line"><span class="string"># provide shell access.</span></span><br></pre></td></tr></table></figure></p>
-<p>如果用户名是正确的,你已经成功设置SSH密钥。如果你看到 “access denied” ，者表示拒绝访问，那么你就需要使用 https 去访问，而不是 SSH 。</p>
-<p>如果你有什么疑问或指正，请留言。</p>
-<p>产考文档：<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="noopener">generating-ssh-keys</a></p>
+                <h2 id="1、从官网Git下载git，"><a href="#1、从官网Git下载git，" class="headerlink" title="1、从官网Git下载git，"></a>1、从官网Git下载git，</h2><p>在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：<br>（1）打开git bash，在用户主目录下运行：ssh-keygen -t rsa -C “youremail@example.com” 把其中的邮件地址换成自己的邮件地址，然后一路回车<br>（2）最后完成后，会在用户主目录下生成.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH key密钥对，id_rsa是私钥，千万不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>（3）登陆GitHub，打开「Settings」-&gt;「SSH and GPG keys」，然后点击「new SSH key」，填上任意Title，在Key文本框里粘贴公钥id_rsa.pub文件的内容（千万不要粘贴成私钥了！），最后点击「Add SSH Key」，你就应该看到已经添加的Key。<br>注意：不要在git版本库中运行ssh，然后又将它提交，这样就把密码泄露出去了。</p>
+<h2 id="2、下载Node-js，并安装"><a href="#2、下载Node-js，并安装" class="headerlink" title="2、下载Node.js，并安装"></a>2、下载Node.js，并安装</h2><h2 id="3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo"><a href="#3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo" class="headerlink" title="3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo"></a>3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo</h2><h2 id="4、下面就将原来的文件拷贝到新电脑中，"><a href="#4、下面就将原来的文件拷贝到新电脑中，" class="headerlink" title="4、下面就将原来的文件拷贝到新电脑中，"></a>4、下面就将原来的文件拷贝到新电脑中，</h2><p>但是要注意哪些文件是必须的，哪些文件是可以删除的。<br>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。<br>（2）再讨论下哪些文件是不必拷贝的，或者说可以删除的：首先是.git文件，无论是在站点根目录下，还是主题目录下的.git文件，都可以删掉。然后是文件夹node_modules（在用npm install会重新生成），public（这个在用hexo g时会重新生成），.deploy_git文件夹（在使用hexo d时也会重新生成），db.json文件。其实上面这些文件也就是.gitignore文件里面记载的可以忽略的内容。总结：.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。</p>
+<h2 id="5、在git-bash中切换目录到新拷贝的文件夹里"><a href="#5、在git-bash中切换目录到新拷贝的文件夹里" class="headerlink" title="5、在git bash中切换目录到新拷贝的文件夹里"></a>5、在git bash中切换目录到新拷贝的文件夹里</h2><p>，使用 npm install 命令，进行模块安装。很明显我们这里没用hexo init初始化，因为有的文件我们已经拷贝生成过来了，所以不必用hexo init去整体初始化，如果不慎在此时用了hexo init，则站点的配置文件_config.yml里面内容会被清空使用默认值，所以这一步一定要慎重，不要用hexo init。</p>
+<h2 id="6、安装其他的一些必要组件"><a href="#6、安装其他的一些必要组件" class="headerlink" title="6、安装其他的一些必要组件"></a>6、安装其他的一些必要组件</h2><p>，如果在node_modules里面有的，就不要重复安装了：<br>（1）为了使用hexo d来部署到git上，需要安装<br>npm install hexo-deployer-git –save<br>（2）为了建立RSS订阅，需要安装<br>npm install hexo-generator-feed –save<br>（3）为了建立站点地图，需要安装<br>npm install hexo-generator-sitemap –save<br>插件安装后，有的需要对配置文件_config.yml进行配置，具体怎么配置，可以参考上面插件在github主页上的具体说明</p>
+<h2 id="7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！"><a href="#7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！" class="headerlink" title="7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！"></a>7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！</h2><p>作者：skycrown<br>链接：<a href="https://www.zhihu.com/question/21193762/answer/103097754" target="_blank" rel="noopener">https://www.zhihu.com/question/21193762/answer/103097754</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
                 <hr>
                 
@@ -257,7 +230,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github设置添加SSH"><span class="toc-text">github设置添加SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#https-和-SSH-的区别："><span class="toc-text">https 和 SSH 的区别：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在-github-上添加-SSH-key-的步骤："><span class="toc-text">在 github 上添加 SSH key 的步骤：</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、从官网Git下载git，"><span class="toc-text">1、从官网Git下载git，</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、下载Node-js，并安装"><span class="toc-text">2、下载Node.js，并安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo"><span class="toc-text">3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、下面就将原来的文件拷贝到新电脑中，"><span class="toc-text">4、下面就将原来的文件拷贝到新电脑中，</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、在git-bash中切换目录到新拷贝的文件夹里"><span class="toc-text">5、在git bash中切换目录到新拷贝的文件夹里</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、安装其他的一些必要组件"><span class="toc-text">6、安装其他的一些必要组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！"><span class="toc-text">7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -281,9 +254,6 @@
                         
                         <a class="tag" href="/tags/#github"
                            title="github">github</a>
-                        
-                        <a class="tag" href="/tags/#网络"
-                           title="网络">网络</a>
                         
                     </div>
                 </section>
