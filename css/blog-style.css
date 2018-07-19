@@ -89,12 +89,12 @@ article .post-container h2{
     font-weight: 600;
 }
 a {
-    color: #ff6666;
+    color: #FFCA00;
 }
 
 a:hover,
 a:focus {
-    color: #0085a1;
+    color: #f7c603;
 }
 
 a img:hover,
@@ -1096,10 +1096,10 @@ img::-moz-selection {
 .navbar-custom.is-fixed::before {
     content: ' ';
     display: block;
-    height: 2px;
+    height: 1px;
     position: absolute;
     width: 100%;
-    background: red;
+    background: yellow;
 }
 
 .navbar-custom.is-fixed .brand-logo {
