@@ -1099,7 +1099,7 @@ img::-moz-selection {
     height: 0px;
     position: absolute;
     width: 100%;
-    background: yellow;
+    background: #111;
 }
 
 .navbar-custom.is-fixed .brand-logo {
