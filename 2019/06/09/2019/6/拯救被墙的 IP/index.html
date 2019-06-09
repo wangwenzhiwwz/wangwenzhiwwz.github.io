@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王文志的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="p:domain_verify" content="0850f57b90f84bf685f130c8d6e43877"/>
+    <meta name="p:domain_verify" content="7ae152f1d1834341bbebc2129928795d"/>
+    <meta name="360-site-verification" content="7fcf4d343b51b2d08e2fcc4a9d522f68" />
+    <meta name="sogou_site_verification" content="W6TKXkflr2"/>
+    <meta name="msvalidate.01" content="83AB792CC43FE1C37F258F83D75E9344" />
+    <link rel="shortcut icon" href="http://t1.aixinxi.net/o_1cj7ph037skd130c1ev4142t1k4ra.png-w.jpg">
+    <linkrel="Bookmark" href="http://t1.aixinxi.net/o_1cj7ph037skd130c1ev4142t1k4ra.png-w.jpg"> 
+    <link rel="alternate" type="application/atom+xml" title="WANGWENZHI" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        拯救被墙IP｜WANGWENZHI
+        
+    </title>
+
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2019/06/09/2019/6/拯救被墙的 IP/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://s1.ax2x.com/2019/05/02/5GJD3q.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+            	—
+                <span class="brand-logo">
+                    WANGWENZHI
+                </span>
+                —
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/tags">tags</a>
+                    </li>
+                    <li>
+                        <a href="/archives">archives</a>
+                    </li>
+                    <li>
+                        <a href="/works">works</a>
+                    </li>
+                    
+					
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+					
+					
+						<li>
+							<a href="/about">About</a>
+						</li>
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="https://s1.ax2x.com/2019/05/16/5G1ybS.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('https://s1.ax2x.com/2019/05/16/5G1ybS.jpg');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>拯救被墙IP</h1>
+                    
+                    <h2 class="subheading">使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 拯救被墙的 IP</h2>
+                    
+                    <span class="meta">
+                         作者 王文志
+                        <span>
+                          日期 2019-06-09
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                        <a class="tag" href="/tags/#VPN"
+                           title="VPN">VPN</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            拯救被墙IP
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="使用-V2Ray-的-WebSocket-传输协议-Cloudflare-拯救被墙的-IP"><a href="#使用-V2Ray-的-WebSocket-传输协议-Cloudflare-拯救被墙的-IP" class="headerlink" title="使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 拯救被墙的 IP"></a>使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 拯救被墙的 IP</h2><p>被墙了 IP ? 使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 即可拯救被墙的 IP。简单说就是使用 V2Ray 的 WebSocket + TLS 传输协议，由于使用了 Cloudflare 中转，所以墙根本不知道背后的 IP 是多少，被墙了的 IP 又能愉快的玩耍了~</p>
+<h1 id="提醒"><a href="#提醒" class="headerlink" title="提醒"></a>提醒</h1><p>使用 Cloudflare 中转的速度相对来说是比较慢的，这个是因为线路的问题，无解。<br>警告警告警告<br>该教程目前写得比较简陋，以后应该会增加详细图文教程<br>V2Ray 的 WS + TLS 不是神话，如果你没学会走路就不要急着跑<br>大佬。。。你如果是从来没接触过 V2Ray 的人一上来就开玩 WS + TLS<br>你真的不怕摔跤吗<br>你有解析过域名吗，知道什么是 A 记录吗，会修改 NS 吗。。<br>如果不懂，那就先补上这些知识再往下看<br>如果实在想玩 WS + TLS，请认认真真看教程<br>教程真的写得比较简陋，如果实在折腾不成功，那也很正常的，改天再来<br>或者直接放弃</p>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>一个域名，建议使用免费域名<br>确保域名已经可以在 Cloudflare 正常使用。<br>在 Cloudflare 的 Overview 选项卡可以查看域名状态，请确保为激活状态，即是： Status: Active<br>怎么 SSH 连接上被墙的 IP ? Xshell 在属性那里可以设置代理，或者你可以在一台没有被墙的境外 VPS 使用 iptables 转发数据到被墙的机器上，此处不细说了。</p>
+<h1 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h1><p>在 DNS 选项卡那边添加一个 A 记录的域名解析，假设你的域名是 233blog.com，并且想要使用 www.233blog.com 作为翻墙的域名<br>那么在 DNS 那里配置，Name 写 www，IPv4 address 写你的小鸡的 IP，务必把云朵点灰，然后选择 Add Record 来添加解析记录即可<br>(如果你已经添加域名解析，请务必把云朵点灰，即是 DNS only)</p>
+<h2 id="添加域名"><a href="#添加域名" class="headerlink" title="添加域名"></a>添加域名</h2><p>注册或登陆成功后，我们直接访问添加域名页面：<a href="https://www.cloudflare.com/a/add-site" target="_blank" rel="noopener">https://www.cloudflare.com/a/add-site</a></p>
+<p>输入你要在 Cloudflare CDN 添加的域名，例如：doub.cf ，填写后点击 Add Site 按钮继续。</p>
+<p><img src="https://doubibackup.com/y7nfkny-.png" alt=""></p>
+<p>点击 Next 按钮继续。</p>
+<p><img src="https://doubibackup.com/1qfd10i_.png" alt=""></p>
+<p>选择第一个 FREE 套餐，并点击 Confirm Plan 按钮继续。</p>
+<p><img src="https://doubibackup.com/4k_afbf9.png" alt=""></p>
+<p>这个步骤可以先不管，直接点击 Continue 按钮继续。</p>
+<p><img src="https://doubibackup.com/8fc9wobh.png" alt=""></p>
+<h2 id="修改域名DNS"><a href="#修改域名DNS" class="headerlink" title="修改域名DNS"></a>修改域名DNS</h2><p><img src="https://doubibackup.com/-z6h009g.png" alt=""></p>
+<p>到这一步，就会提醒你设置域名的DNS，我们复制这两个DNS（注意：可能你们看到的DNS和我图里的不一样，以你们看到的为准）。</p>
+<p>然后我们访问 Freenom 域名管理页面：<a href="https://my.freenom.com/clientarea.php?action=domains" target="_blank" rel="noopener">https://my.freenom.com/clientarea.php?action=domains</a></p>
+<p>找到你要配置的域名，点击 Manage Domain 按钮，进入管理界面。</p>
+<p><img src="https://doubibackup.com/vbj8gb1a.png" alt=""></p>
+<p>然后点击 Management Tools - Nameservers ，然后勾选第二条 Use custom nameservers (enter below) 选项，接着如下图所示填写刚才复制的 DNS 。</p>
+<p>填写正确后，点击 Change Nameservers 按钮保存DNS配置。</p>
+<p>最后返回 Cloudflare CDN 配置页面，点击 Continue 按钮继续。</p>
+<p><img src="https://doubibackup.com/ct_efb6f.png" alt=""></p>
+<p>最后就如下图所示一样，提示生效中。</p>
+<p>因为更换了DNS的原因，所以生效可能需要几小时到一整天，在这个等待生效的时间里我们先去设置一下其他东西。</p>
+<p><img src="https://doubibackup.com/go2bwo2e.png" alt=""></p>
+<p>取消自带 SSL<br>因为 Goflyway 是一个HTTP代理，所以我们需要关闭 Cloudflare CDN 自带SSL证书，避免报错。</p>
+<p>点击页面顶部 Crypto 按钮，然后找到 SSL 配置并改为 Off 选项（如下图所示）。修改后直接应用生效。</p>
+<p><img src="https://doubibackup.com/vbj8gb1a-2.png" alt=""></p>
+<p>设置域名解析<br>我们还需要配置一下域名解析。</p>
+<p>点击页面顶部的 DNS 按钮，然后如下图所示，在第一个红框圈中的地方填写域名解析信息，下图示例解释：</p>
+<p>A：代表A记录，也就是域名解析为IP。<br>go：指的是域名记录，也就是子域名：go.doub.cf，你可以填写为 @ ，这代表域名 doub.cf 。<br>45.62.xx.xx：指的是域名要解析的IP，这里写上你的被墙服务器的IP。<br>然后点击 Add Record 按钮添加域名解析记录。</p>
+<p>添加后就如下图第二个红框所示。</p>
+<p><img src="https://doubibackup.com/y7nfkny-3.png" alt=""></p>
+<p>生效示例<br>当你在首页[Overview]看到如下图所示时，则代表域名DNS修改已经生效。</p>
+<p><img src="https://doubibackup.com/j86-0ozc.png" alt=""></p>
+<p>OK，确保操作没有问题的话，继续</p>
+<h1 id="安装-V2Ray"><a href="#安装-V2Ray" class="headerlink" title="安装 V2Ray"></a>安装 V2Ray</h1><blockquote>
+<p>如果你已经使用本站提供的 V2Ray 一键安装脚本并安装了 V2Ray，那就直接输入 v2ray config 修改传输协议为 WebSocket + TLS</p>
+</blockquote>
+<p>如果你并没有使用本站提供的 V2Ray 一键安装脚本来安装 V2Ray<br>那么现在开始使用吧，最好用的 V2Ray 安装脚本，保证你满意<br>使用 root 用户输入下面命令安装或卸载</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://233v2.com/v2ray.sh)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果提示 curl: command not found ，那是因为你的小鸡没装 Curl<br>ubuntu/debian 系统安装 Curl 方法: apt-get update -y &amp;&amp; apt-get install curl -y<br>centos 系统安装 Curl 方法: yum update -y &amp;&amp; yum install curl -y<br>安装好 curl 之后就能安装脚本了</p>
+</blockquote>
+<p>之后选择安装，传输协议选择 WebSocket + TLS (即是选择 4 )，V2Ray 端口随便，不要是 80 和 443 即可，然后输入你的域名，域名解析 Y ，自动配置 TLS 也是 Y ，其他就默认吧，一路回车。等待安装完成<br>如果你的域名没有正确解析，安装会失败，解析相关看上面的 添加域名解析</p>
+<p>安装完成后会展示 V2Ray 的配置信息，并且会询问是否生成二维码等，不用管它，直接回车</p>
+<p>然后输入 v2ray status 查看一下运行状态，请确保 V2Ray 和 Caddy 都在运行</p>
+<p>如果没有问题的话，继续</p>
+<h1 id="设置-Crypto-和-开启中转"><a href="#设置-Crypto-和-开启中转" class="headerlink" title="设置 Crypto 和 开启中转"></a>设置 Crypto 和 开启中转</h1><p>确保 Cloudflare 的 Crypto 选项卡的 SSL 为 Full<br>并且请确保 SSL 选项卡有显示 Universal SSL Status Active Certificate 这样的字眼，如果你的 SSL 选项卡没有显示这个，不要急，只是在申请证书，24 小时内可以搞定。</p>
+<p>然后在 DNS 选项卡那里，把刚才点灰的那个云朵图标，点亮它，一定要点亮一定要点亮一定要点亮</p>
+<p>云朵图标务必为橙色状态，即是 DNS and HTTP proxy(CDN)</p>
+<h1 id="V2Ray-配置信息"><a href="#V2Ray-配置信息" class="headerlink" title="V2Ray 配置信息"></a>V2Ray 配置信息</h1><p>很好，现在接下来配置客户端使用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入 v2ray info 即可查看 V2Ray 的配置，</span><br></pre></td></tr></table></figure></p>
+<p>如果你有使用某些 V2Ray 客户端，可以根据给出的配置的信息来配置使用了。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入 v2ray url 即可查看 V2Ray 的配置</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入 v2ray qr 然后扫描生成的二维码</span><br></pre></td></tr></table></figure>
+<p>那么请查看：V2Ray 各平台客户端使用教程</p>
+<p><a href="https://233v2.com/post/4/" target="_blank" rel="noopener"> V2Ray 各平台客户端使用教程</a></p>
+<h1 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h1><blockquote>
+<p>Windows下载链接： <a href="https://github.com/2dust/v2rayN/releases/latest" target="_blank" rel="noopener">v2ray</a></p>
+<p>MAC下载链接： <a href="https://github.com/insisttech/v2rayX-copy/releases" target="_blank" rel="noopener">v2ray</a></p>
+<p>安卓下载 V2RayNG<br>在 Google Play 下载： <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank" rel="noopener">V2RayNG</a> 并安装<br>或者在 Github 下载 ： <a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener">V2RayNG</a> 并安装，备注，选择 app-universal-release.apk 下载</p>
+</blockquote>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/05/23/2019/5/Textify/" data-toggle="tooltip" data-placement="top"
+                           title="Textify">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjExMi84Njc2">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-V2Ray-的-WebSocket-传输协议-Cloudflare-拯救被墙的-IP"><span class="toc-text">使用 V2Ray 的 WebSocket 传输协议 + Cloudflare 拯救被墙的 IP</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#提醒"><span class="toc-text">提醒</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加域名解析"><span class="toc-text">添加域名解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加域名"><span class="toc-text">添加域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改域名DNS"><span class="toc-text">修改域名DNS</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-V2Ray"><span class="toc-text">安装 V2Ray</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置-Crypto-和-开启中转"><span class="toc-text">设置 Crypto 和 开启中转</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#V2Ray-配置信息"><span class="toc-text">V2Ray 配置信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下载链接"><span class="toc-text">下载链接</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                        <a class="tag" href="/tags/#VPN"
+                           title="VPN">VPN</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="https://bandwagonhost.com/">bandwagonhost</a></li>
+                        
+                        <li><a href="https://lai.yuweining.cn/">不死鸟</a></li>
+                        
+                        <li><a href="https://tool.lu/">在线工具</a></li>
+                        
+                        <li><a href="https://www.clipconverter.cc/">youtube下载</a></li>
+                        
+                        <li><a href="https://dalao.ru/">大佬导航</a></li>
+                        
+                        <li><a href="http://www.biewang.com/index">别忘双搜</a></li>
+                        
+                        <li><a href="https://gugeji.com/">咕咯鸡</a></li>
+                        
+                        <li><a href="https://4o4.click/">404解锁</a></li>
+                        
+                        <li><a href="https://ip.sb/">IP</a></li>
+                        
+                        <li><a href="https://mijisou.com/">中文不追踪</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://segmentfault.com/u/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-segmentfault fa-stack-1x fa-inverse">sf</i>
+                            </span>
+                            </a>
+                        </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; WANGWENZHI 2019
+                    <br>
+                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量9865946248794446<span id="busuanzi_value_site_pv"></span>次</span>
+        
+                    <br>
+                    Theme by <a href="http://王文志.com/">WANGWENZHI</a>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://wangwenzhiwwz.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-110405735-1';
+    var _gaDomain = 'auto';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 360 -->
+
+<script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5":"https://jspassport.ssl.qhimg.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://s1.ax2x.com/2019/05/02/5GJX0r.th.png">
+</body>
+
+</html>
