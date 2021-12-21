@@ -26,11 +26,11 @@
     
     <title>
         
-        新年快乐｜WANGWENZHI
+        Oracle（甲骨文）免费云服务器注册指南及故障解决！｜WANGWENZHI
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2020/01/21/2020/1/2020新年/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2021/12/21/2021/oracle/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -150,13 +150,13 @@
 <!--only post-->
 
 
-<img class="wechat-title-img" src="https://i.loli.net/2020/01/21/VW3t9wKUAz876Ij.jpg">
+<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img/rh03v4-cloud-free-tier.webp">
 
 
 <style>
     
     header.intro-header {
-        background-image: url('https://i.loli.net/2020/01/21/VW3t9wKUAz876Ij.jpg');
+        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img/rh03v4-cloud-free-tier.webp');
     }
 
     
@@ -167,14 +167,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>新年快乐</h1>
+                    <h1>Oracle（甲骨文）免费云服务器注册指南及故障解决！</h1>
                     
-                    <h2 class="subheading">2020新年快乐</h2>
+                    <h2 class="subheading">始终免费的VPS！油管8K视频秒开，颠覆你对免费资源的看法。</h2>
                     
                     <span class="meta">
                          作者 王文志
                         <span>
-                          日期 2020-01-21
+                          日期 2021-12-21
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -192,7 +192,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            新年快乐
+            Oracle（甲骨文）免费云服务器注册指南及故障解决！
         </span>
     </div>
 </header>
@@ -203,11 +203,26 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h2 id="2019年新年快乐"><a href="#2019年新年快乐" class="headerlink" title="2019年新年快乐"></a>2019年新年快乐</h2>
+                <h1 id="所有命令"><a href="#所有命令" class="headerlink" title="所有命令"></a>所有命令</h1><h2 id="切换到-root-用户"><a href="#切换到-root-用户" class="headerlink" title="切换到 root 用户"></a>切换到 root 用户</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure>
+<h2 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h2><p>CentOS系统执行以下命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum update -y &amp;&amp; yum update -y &amp;&amp; yum install -y socat</span><br></pre></td></tr></table></figure></p>
+<p>Debian/Ubuntu系统执行以下命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update -y &amp;&amp; apt install -y curl &amp;&amp; apt install -y socat</span><br></pre></td></tr></table></figure></p>
+<h2 id="防火墙相关命令"><a href="#防火墙相关命令" class="headerlink" title="防火墙相关命令"></a>防火墙相关命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">firewall-cmd --state                   # 查看防火墙状态</span><br><span class="line">systemctl stop firewalld.service       # 停止防火墙</span><br><span class="line">systemctl disable firewalld.service    # 禁止防火墙开机自启</span><br></pre></td></tr></table></figure>
+<h2 id="甲骨文-oracle-开启-root-密码-登录"><a href="#甲骨文-oracle-开启-root-密码-登录" class="headerlink" title="甲骨文 ( oracle ) 开启 root + 密码 登录"></a>甲骨文 ( oracle ) 开启 root + 密码 登录</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo -i</span><br><span class="line">echo root:V2rayssr |chpasswd root</span><br><span class="line">sed -i &apos;s/^#\?PermitRootLogin.*/PermitRootLogin yes/g&apos; /etc/ssh/sshd_config;</span><br><span class="line">sed -i &apos;s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g&apos; /etc/ssh/sshd_config;</span><br><span class="line">service sshd restart</span><br></pre></td></tr></table></figure>
+<h2 id="BBR2加速"><a href="#BBR2加速" class="headerlink" title="BBR2加速"></a>BBR2加速</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -q -O bbr2.sh &quot;https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh&quot; &amp;&amp; chmod +x bbr2.sh &amp;&amp; bash bbr2.sh auto</span><br></pre></td></tr></table></figure>
+<h2 id="安装-amp-升级x-ui面板一键脚本"><a href="#安装-amp-升级x-ui面板一键脚本" class="headerlink" title="安装&amp;升级x-ui面板一键脚本"></a>安装&amp;升级x-ui面板一键脚本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)</span><br></pre></td></tr></table></figure>
+<h2 id="运行Acme脚本"><a href="#运行Acme脚本" class="headerlink" title="运行Acme脚本"></a>运行Acme脚本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https://get.acme.sh | sh</span><br></pre></td></tr></table></figure>
+<h2 id="申请证书及密钥"><a href="#申请证书及密钥" class="headerlink" title="申请证书及密钥"></a>申请证书及密钥</h2><p>PS：修改代码中注释的域名，改为你自己的域名<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --register-account -m xxxx@gmail.com</span><br><span class="line">~/.acme.sh/acme.sh  --issue -d 你的域名   --standalone</span><br></pre></td></tr></table></figure></p>
+<p>下载证书及密钥<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --installcert -d 你的域名 --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure></p>
+
                 <hr>
                 
 
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/12/22/2021/chrome/" data-toggle="tooltip" data-placement="top"
+                           title="Google Chrome&Edge浏览器10款必备插件">&larr; Previous Post</a>
+                    </li>
                     
                     
                     <li class="next">
@@ -250,7 +265,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2019年新年快乐"><span class="toc-text">2019年新年快乐</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#所有命令"><span class="toc-text">所有命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#切换到-root-用户"><span class="toc-text">切换到 root 用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级系统"><span class="toc-text">升级系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#防火墙相关命令"><span class="toc-text">防火墙相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#甲骨文-oracle-开启-root-密码-登录"><span class="toc-text">甲骨文 ( oracle ) 开启 root + 密码 登录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BBR2加速"><span class="toc-text">BBR2加速</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-amp-升级x-ui面板一键脚本"><span class="toc-text">安装&升级x-ui面板一键脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行Acme脚本"><span class="toc-text">运行Acme脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请证书及密钥"><span class="toc-text">申请证书及密钥</span></a></li></ol></li></ol>
                 </div>
             </div>
         </div>
@@ -412,7 +427,7 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; WANGWENZHI 2020
+                    Copyright &copy; WANGWENZHI 2021
                     <br>
                      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv">本站总访问量9865946248794446<span id="busuanzi_value_site_pv"></span>次</span>
@@ -511,7 +526,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 </script>
 
 <!--wechat title img-->
-<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=296152066&amp;s=640">
+<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640">
 </body>
 
 </html>
