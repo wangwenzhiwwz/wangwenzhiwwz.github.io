@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王文志的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="p:domain_verify" content="0850f57b90f84bf685f130c8d6e43877"/>
+    <meta name="p:domain_verify" content="7ae152f1d1834341bbebc2129928795d"/>
+    <meta name="360-site-verification" content="7fcf4d343b51b2d08e2fcc4a9d522f68" />
+    <meta name="sogou_site_verification" content="W6TKXkflr2"/>
+    <meta name="msvalidate.01" content="83AB792CC43FE1C37F258F83D75E9344" />
+    <meta name="p:domain_verify" content="73bf0e730c9941c84de350f3e4711752"/>
+    <link rel="shortcut icon" href="https://i.imgur.com/pqOWzeR.png">
+    <linkrel="Bookmark" href="https://i.imgur.com/pqOWzeR.png"> 
+    <link rel="alternate" type="application/atom+xml" title="WANGWENZHI" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    
+    <title>
+        
+        共享Windows电脑文件｜WANGWENZHI
+        
+    </title>
+
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2018/07/23/2018/7/如何在局域网内共享文件夹/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://i.imgur.com/XQeUnyg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+            	—
+                <span class="brand-logo">
+                    WANGWENZHI
+                </span>
+                —
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/tags">tags</a>
+                    </li>
+                    <li>
+                        <a href="/archives">archives</a>
+                    </li>
+                    <li>
+                        <a href="/works">works</a>
+                    </li>
+                    
+					
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+					
+					
+						<li>
+							<a href="/about">About</a>
+						</li>
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="http://ww1.sinaimg.cn/large/e0d6afa2gy1ftjqvlvq9pj20h0097aau.jpg ">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://ww1.sinaimg.cn/large/e0d6afa2gy1ftjqvlvq9pj20h0097aau.jpg ');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>共享Windows电脑文件</h1>
+                    
+                    <h2 class="subheading">如何在局域网共享 Windows 电脑文件夹？</h2>
+                    
+                    <span class="meta">
+                         作者 王文志
+                        <span>
+                          日期 2018-07-23
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            共享Windows电脑文件
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>在一个家庭或者办公室中，有几台甚至几十台电脑，一般情况下，他们都是同时连接在一个局域网内，如果能为特定的文件夹或者磁盘设置文件夹共享，我们就可以像在自己电脑中拷贝文件一样方便，而不需要使用 U 盘或者硬盘导出拷贝或者使用 QQ 等软件传来传去了。</p>
+<h2 id="以这台-Windows-10-系统为例："><a href="#以这台-Windows-10-系统为例：" class="headerlink" title="以这台 Windows 10 系统为例："></a>以这台 Windows 10 系统为例：</h2><p>首先，在右下角的网络图标上单击右键，选择【打开“网络和Internet ”设置】然后点击这里的【网络和共享中心】，在弹出的窗口中，点击【更改高级共享设置】，在来宾或公用网络这里，勾选【启用网络发现】、勾选【启用文件和打印机共享】，在所有网络这里，勾选【启用共享】、勾选【启用128位加密保护】，最后勾选【关闭密码保护共享】，最后保存更改。Windows7 系统更简单些，在任务栏的网络图标单击右键，点击【打开网络和共享中心】即可继续操作，其他设置与 Windows 10 几乎一样。</p>
+<p>第二步，我们找到需要共享的文件夹或者盘符，以这台电脑为例，我们要共享的是整个 F 盘，它包含所有 Topbook 的文档，这样一来，其他后期大神可以直接在这里调取素材和包装进行制作，也可以把素材拷贝进来归档；运营小姐姐也可以从她的电脑上直接访问这里的成片然后在网络上分发上传。我们在盘符上单击右键，选择【属性】，或者像我们之前说过的，摁住 Alt 键的同时，双击盘符，直接调出属性。</p>
+<p>在这里，我们先点击【安全】选项卡，这里，是使用这台电脑的所有用户和组，我们点击【编辑】，然后点击【添加】，在下方空白框内，输入 everyone，我们需要让任何人都有使用这个文件夹的权限。点击右侧的检查名称，当单词下有下划线的时候，直接点击确定，我们看到上方列表多了这个 Everyone 的账户，选中它，并且，把下方的【修改】、【读取和执行】两个选项后方的允许复选框勾选。然后点击【确定】。</p>
+<p>之后，我们在这里点击【共享】选项卡，并且点击【高级共享】，勾选【共享此文件夹】，同时，点击下方的【权限】，勾选这里的【更改】和【读取】，点击【确定】，等待共享执行完成。依次点击【确定】。</p>
+<p>到这里，共享就完成了。</p>
+<h2 id="如何访问？"><a href="#如何访问？" class="headerlink" title="如何访问？"></a>如何访问？</h2><p>我们在右下角点击网络图标，在所连接的网络上点击属性，下方的 IPv4地址，就是这台电脑的 IP 地址，我们记住它。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用Windows+R键打开“运行”窗口，然后输入CMD进入命令提示窗口</span><br><span class="line"></span><br><span class="line">进入命令窗口之后，输入：ipconfig/all 回车即可看到整个电脑的详细的IP配置信息</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://ww1.sinaimg.cn/large/e0d6afa2gy1ftjqtun0xfj20dw0f0ta2.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在其他任何 Windows 系统上，使用 Windows+R 调出运行命令，输入 \\192.168.*.***</span><br></pre></td></tr></table></figure>
+<p>点击确定，如果让你输入凭据，这个凭据就是你正在使用的这台电脑的帐户名以及密码。最后即可找到我们刚刚共享的盘符。</p>
+<p>你可以把它拖放到桌面成为快捷键方式，以便经常访问，也可以直接拖动图标到左侧栏的计算机图标上，会自动弹出映射驱动器对话框。它会帮你自动定义一个驱动器盘符，你也可以自己自定义，最后点击【完成】，今后每次打开【此电脑】，它会自动出现在【网络位置】，双击打开即可，就像访问自己的电脑一样方便。</p>
+<h2 id="Mac-系统如何访问刚刚的局域网共享文件呢？"><a href="#Mac-系统如何访问刚刚的局域网共享文件呢？" class="headerlink" title="Mac 系统如何访问刚刚的局域网共享文件呢？"></a>Mac 系统如何访问刚刚的局域网共享文件呢？</h2><p>打开 Finder 窗口之后，在键盘上使用 Command+K，弹出【访问服务器】对话框，在 smb:// 后面直接输入需要访问的电脑 IP 地址。你可以点击右侧 + 号，添加到个人收藏服务器，我们选择连接。再输入这台 Mac 的用户名和密码，稍等片刻，这里显示的就是共享的文件夹或者盘符，比如我们点击 F，再点击【好】，便成功访问。</p>
+<p>时间有限，我们将在之后详细讲解 如何在局域网共享 Mac 电脑上的文件夹。</p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/07/23/2018/7/如何使用bat命令/" data-toggle="tooltip" data-placement="top"
+                           title="如何使用bat命令">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/07/19/2018/7/app爱思/" data-toggle="tooltip" data-placement="top"
+                           title="FusionApp">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjExMi84Njc2">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#以这台-Windows-10-系统为例："><span class="toc-text">以这台 Windows 10 系统为例：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何访问？"><span class="toc-text">如何访问？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mac-系统如何访问刚刚的局域网共享文件呢？"><span class="toc-text">Mac 系统如何访问刚刚的局域网共享文件呢？</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="https://bandwagonhost.com/">bandwagonhost</a></li>
+                        
+                        <li><a href="https://lai.yuweining.cn/">不死鸟</a></li>
+                        
+                        <li><a href="https://tool.lu/">在线工具</a></li>
+                        
+                        <li><a href="https://www.clipconverter.cc/">youtube下载</a></li>
+                        
+                        <li><a href="https://dalao.ru/">大佬导航</a></li>
+                        
+                        <li><a href="http://www.biewang.com/index">别忘双搜</a></li>
+                        
+                        <li><a href="https://gugeji.com/">咕咯鸡</a></li>
+                        
+                        <li><a href="https://4o4.click/">404解锁</a></li>
+                        
+                        <li><a href="https://ip.sb/">IP</a></li>
+                        
+                        <li><a href="https://mijisou.com/">中文不追踪</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://segmentfault.com/u/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-segmentfault fa-stack-1x fa-inverse">sf</i>
+                            </span>
+                            </a>
+                        </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; WANGWENZHI 2021
+                    <br>
+                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量9865946248794446<span id="busuanzi_value_site_pv"></span>次</span>
+        
+                    <br>
+                    Theme by <a href="http://王文志.com/">WANGWENZHI</a>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://wangwenzhiwwz.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-110405735-1';
+    var _gaDomain = 'auto';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 360 -->
+
+<script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5":"https://jspassport.ssl.qhimg.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640">
+</body>
+
+</html>

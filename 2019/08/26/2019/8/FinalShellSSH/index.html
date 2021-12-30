@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王文志的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="p:domain_verify" content="0850f57b90f84bf685f130c8d6e43877"/>
+    <meta name="p:domain_verify" content="7ae152f1d1834341bbebc2129928795d"/>
+    <meta name="360-site-verification" content="7fcf4d343b51b2d08e2fcc4a9d522f68" />
+    <meta name="sogou_site_verification" content="W6TKXkflr2"/>
+    <meta name="msvalidate.01" content="83AB792CC43FE1C37F258F83D75E9344" />
+    <meta name="p:domain_verify" content="73bf0e730c9941c84de350f3e4711752"/>
+    <link rel="shortcut icon" href="https://i.imgur.com/pqOWzeR.png">
+    <linkrel="Bookmark" href="https://i.imgur.com/pqOWzeR.png"> 
+    <link rel="alternate" type="application/atom+xml" title="WANGWENZHI" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    
+    <title>
+        
+        FinalShell｜WANGWENZHI
+        
+    </title>
+
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2019/08/26/2019/8/FinalShellSSH/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://i.imgur.com/XQeUnyg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+            	—
+                <span class="brand-logo">
+                    WANGWENZHI
+                </span>
+                —
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/tags">tags</a>
+                    </li>
+                    <li>
+                        <a href="/archives">archives</a>
+                    </li>
+                    <li>
+                        <a href="/works">works</a>
+                    </li>
+                    
+					
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+					
+					
+						<li>
+							<a href="/about">About</a>
+						</li>
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="http://tva1.sinaimg.cn/large/007X8olVly1g6e8zs9uq6j312w0lwqk9.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://tva1.sinaimg.cn/large/007X8olVly1g6e8zs9uq6j312w0lwqk9.jpg');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>FinalShell</h1>
+                    
+                    <h2 class="subheading">SSH工具,服务器管理,远程桌面加速软件</h2>
+                    
+                    <span class="meta">
+                         作者 王文志
+                        <span>
+                          日期 2019-08-26
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                        <a class="tag" href="/tags/#VPN"
+                           title="VPN">VPN</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            FinalShell
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>FinalShell SSH工具,服务器管理,远程桌面加速软件,支持Windows,macOS,Linux,版本2.9.8,更新时间2019.6.19<br>wntr 2017-01-17 11:08  30月前  418704 阅读 0 回复 FinalShell<br>FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,还是功能强大的开发,运维工具,充分满足开发,运维需求.<br>特色功能:<br>免费海外服务器远程桌面加速,ssh加速,双边tcp加速,内网穿透.</p>
+<p>Windows版下载地址:<br><a href="http://www.hostbuf.com/downloads/finalshell_install.exe" target="_blank" rel="noopener">http://www.hostbuf.com/downloads/finalshell_install.exe</a></p>
+<p>macOS版下载地址:<br><a href="http://www.hostbuf.com/downloads/finalshell_install.pkg" target="_blank" rel="noopener">http://www.hostbuf.com/downloads/finalshell_install.pkg</a></p>
+<p>mac版安装路径<br>/Applications/FinalShell.app/Contents/Java/<br>配置文件路径<br>/Users/$USER/Library/FinalShell/</p>
+<p>Linux版安装及教程:<br><a href="http://www.hostbuf.com/t/1059.html" target="_blank" rel="noopener">http://www.hostbuf.com/t/1059.html</a></p>
+<p>更新日志:<br><a href="http://www.hostbuf.com/t/989.html主要特性" target="_blank" rel="noopener">http://www.hostbuf.com/t/989.html主要特性</a>:<br>1.多平台支持Windows,Mac OS X,Linux<br>2.多标签,批量服务器管理.<br>3.支持登录Ssh和Windows远程桌面.<br>4.漂亮的平滑字体显示,内置100多个配色方案.<br>5.终端,sftp同屏显示,同步切换目录.<br>6.命令自动提示,智能匹配,输入更快捷,方便.<br>7.sftp支持,通过各种优化技术,加载更快,切换,打开目录无需等待.<br>8.服务器网络,性能实时监控,无需安装服务器插件.<br>9.内置海外服务器加速,加速远程桌面和ssh连接,操作流畅无卡顿.<br>10.双边加速功能,大幅度提高访问服务器速度.<br>11.内存,Cpu性能监控,Ping延迟丢包,Trace路由监控.<br>12.实时硬盘监控.<br>13.进程管理器.<br>14.快捷命令面板,可同时显示数十个命令.<br>15.内置文本编辑器,支持语法高亮,代码折叠,搜索,替换.<br>16.ssh和远程桌面均支持代理服务器.<br>17.打包传输,自动压缩解压.<br>18.支持rz,sz (zmodem)<br>19.多地点ping监控</p>
+<p>更多功能会逐步增加,保持最少每周一次更新的频率,敬请关注.</p>
+<p>界面截图:<br>Shell终端<br><img src="http://www.hostbuf.com/upload/image/20170928/1506605329395082804.png" alt=""></p>
+<p>进程管理器<br><img src="http://www.hostbuf.com/upload/image/20170426/1493144242449041493.png" alt=""><br>主机检测,Ping监控,Trace实时跟踪<br><img src="http://www.hostbuf.com/upload/image/20170426/1493144485765021287.png" alt=""></p>
+<p>高级网络监控,监控每个进程监听的端口,以及网络连接状态</p>
+<p><img src="http://www.hostbuf.com/upload/image/20171118/1511013349812005421.png" alt=""><br>双边加速<br><img src="http://www.hostbuf.com/upload/image/20170222/1487738221746093924.png" alt=""><br>打包传输,自动压缩解压,适合传输大量文件,文件夹和文本文件.</p>
+<p><img src="http://www.hostbuf.com/upload/image/20170924/1506183003447079520.png" alt=""></p>
+<h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="http://www.hostbuf.com/" target="_blank" rel="noopener">http://www.hostbuf.com/</a></p>
+<h2 id="百度下载链接"><a href="#百度下载链接" class="headerlink" title="百度下载链接"></a>百度下载链接</h2><p><a href="https://pan.baidu.com/s/10Ai33c13mn0vI7w0jfMPCg" target="_blank" rel="noopener">https://pan.baidu.com/s/10Ai33c13mn0vI7w0jfMPCg</a></p>
+<h2 id="其他SSH工具"><a href="#其他SSH工具" class="headerlink" title="其他SSH工具"></a>其他SSH工具</h2><p><a href="https://pan.baidu.com/s/1MOrNzFHq6NIqiv4AbdoZyw" target="_blank" rel="noopener">Xshell6</a></p>
+<p><a href="https://pan.baidu.com/s/1KCU3o4UdpyYlCG8HTvt-0g" target="_blank" rel="noopener">putty</a></p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/30/2019/8/ReNamer/" data-toggle="tooltip" data-placement="top"
+                           title="ReNamer">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/08/26/2019/8/v2ray/" data-toggle="tooltip" data-placement="top"
+                           title="V2Ray">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjExMi84Njc2">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#官网"><span class="toc-text">官网</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#百度下载链接"><span class="toc-text">百度下载链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他SSH工具"><span class="toc-text">其他SSH工具</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#网络"
+                           title="网络">网络</a>
+                        
+                        <a class="tag" href="/tags/#VPN"
+                           title="VPN">VPN</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="https://bandwagonhost.com/">bandwagonhost</a></li>
+                        
+                        <li><a href="https://lai.yuweining.cn/">不死鸟</a></li>
+                        
+                        <li><a href="https://tool.lu/">在线工具</a></li>
+                        
+                        <li><a href="https://www.clipconverter.cc/">youtube下载</a></li>
+                        
+                        <li><a href="https://dalao.ru/">大佬导航</a></li>
+                        
+                        <li><a href="http://www.biewang.com/index">别忘双搜</a></li>
+                        
+                        <li><a href="https://gugeji.com/">咕咯鸡</a></li>
+                        
+                        <li><a href="https://4o4.click/">404解锁</a></li>
+                        
+                        <li><a href="https://ip.sb/">IP</a></li>
+                        
+                        <li><a href="https://mijisou.com/">中文不追踪</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://segmentfault.com/u/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-segmentfault fa-stack-1x fa-inverse">sf</i>
+                            </span>
+                            </a>
+                        </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; WANGWENZHI 2021
+                    <br>
+                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量9865946248794446<span id="busuanzi_value_site_pv"></span>次</span>
+        
+                    <br>
+                    Theme by <a href="http://王文志.com/">WANGWENZHI</a>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://wangwenzhiwwz.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-110405735-1';
+    var _gaDomain = 'auto';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 360 -->
+
+<script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5":"https://jspassport.ssl.qhimg.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640">
+</body>
+
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王文志的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="p:domain_verify" content="0850f57b90f84bf685f130c8d6e43877"/>
+    <meta name="p:domain_verify" content="7ae152f1d1834341bbebc2129928795d"/>
+    <meta name="360-site-verification" content="7fcf4d343b51b2d08e2fcc4a9d522f68" />
+    <meta name="sogou_site_verification" content="W6TKXkflr2"/>
+    <meta name="msvalidate.01" content="83AB792CC43FE1C37F258F83D75E9344" />
+    <meta name="p:domain_verify" content="73bf0e730c9941c84de350f3e4711752"/>
+    <link rel="shortcut icon" href="https://i.imgur.com/pqOWzeR.png">
+    <linkrel="Bookmark" href="https://i.imgur.com/pqOWzeR.png"> 
+    <link rel="alternate" type="application/atom+xml" title="WANGWENZHI" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    
+    <title>
+        
+        WANGWENZHI
+        
+    </title>
+
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://i.imgur.com/XQeUnyg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "true" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+            	—
+                <span class="brand-logo">
+                    WANGWENZHI
+                </span>
+                —
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/tags">tags</a>
+                    </li>
+                    <li>
+                        <a href="/archives">archives</a>
+                    </li>
+                    <li>
+                        <a href="/works">works</a>
+                    </li>
+                    
+					
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+					
+					
+						<li>
+							<a href="/about">About</a>
+						</li>
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+
+<style>
+
+    .custom-haojen-container .post-preview:nth-of-type(1),
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        text-align: center;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        background-size: cover;
+        padding: 0;
+        height: 300px;
+        display: table;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    /*去掉诗歌的背景图片*/
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        background-image: none !important;
+        background-color: rgba(255, 248, 220, 0.5);
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) h2,
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta,
+    .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+        text-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        letter-spacing: 1px;
+        color: #fff;
+        margin-top: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta {
+        font-size: .9em;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-child(1) .post-subtitle {
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-family: unset;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .75)
+    }
+
+    /*不显示摘要*/
+    .custom-haojen-container .post-preview:nth-child(1) .post-content-preview {
+        display: none
+    }
+
+    /*只第一个显示背景图片*/
+    .custom-haojen-container .post-preview:not(:nth-child(1)) {
+        background-image: none !important;
+    }
+
+    /*第一个分界线去掉*/
+    .custom-haojen-container hr:nth-of-type(1) {
+        display: none;
+    }
+
+    /*主题*/
+    .custom-haojen-container .post-preview:nth-of-type(1) > a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /*诗词标题*/
+    .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+        font-size: 35px;
+        font-family: STKaiti;
+        color: rgba(0, 0, 0, .8);
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) .post-meta {
+        color: #0e2231;
+    }
+
+    @media (max-width: 768px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 240px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 28px !important;
+            margin-top: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-of-type(1) > a {
+            padding: 20px
+        }
+    }
+
+    /*手机屏幕*/
+    @media (max-width: 400px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 195px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 20px !important;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 16px;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) a {
+            padding: 30px 20px;
+        }
+    }
+</style>
+
+<!-- Page Header -->
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
+    <div class="row">
+        <header class="intro-header">
+            <div class="container">
+                <div class="site-heading text-center">
+                    <div class="about-me">
+                        <!--移动端头部显示-->
+                        <a href="/about/">
+                        <img src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640"/>
+                        <h5>WANGWENZHI</h5>
+                        
+                        <p></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<!-- Main Content -->
+<div class="container custom-haojen-container">
+    <!-- Post Container -->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            <!-- Main Content -->
+
+
+
+<div class="post-preview  "
+     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgstory-xl.jpg')">
+    <a href="/2021/12/30/2021/Davici/">
+        <h2 class="post-title">
+            DaVinci Resolve
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2021-12-30
+        </p>
+        
+        <h3 class="post-subtitle">
+            迄今最先进的调色工具和专业多轨道剪辑功能合而为一
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                达芬奇调色软件 DaVinci Resolve Studio 15.2.1 Win/Mac 中文英文破解版【软件介绍】DaVinci Resolve 为迄今最先进的调色工具和专业多轨道剪辑功能合而为一，如今您只需要一个系统便能完成剪辑、调色、后期及交付等工作了！Davinci Resolve有着..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('https://github.com/wangwenzhiwwz/images/blob/main/img/20211205135233.png?raw=true')">
+    <a href="/2021/12/22/2021/chrome/">
+        <h2 class="post-title">
+            Google Chrome&Edge浏览器10款必备插件
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2021-12-22
+        </p>
+        
+        <h3 class="post-subtitle">
+            10款你不可不知的（最常用）Chrome 插件，让你的电脑更好用
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                1.AdGuard 广告拦截器一款无与伦比的广告拦截扩展，用以对抗各式广告与弹窗。可以拦截 Facebook、YouTube 和其它所有网站的广告。AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！
+AdGua..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img/rh03v4-cloud-free-tier.webp')">
+    <a href="/2021/12/21/2021/oracle/">
+        <h2 class="post-title">
+            Oracle（甲骨文）免费云服务器注册指南及故障解决！
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2021-12-21
+        </p>
+        
+        <h3 class="post-subtitle">
+            始终免费的VPS！油管8K视频秒开，颠覆你对免费资源的看法。
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                所有命令切换到 root 用户sudo -i
+升级系统CentOS系统执行以下命令：yum update -y &amp;&amp; yum update -y &amp;&amp; yum install -y socat
+Debian/Ubuntu系统执行以下命令：apt update -y..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('http://tva1.sinaimg.cn/large/007X8olVly1g6px1kq5gxj30rs0dw760.jpg')">
+    <a href="/2019/09/06/2019/9/NeatVideo/">
+        <h2 class="post-title">
+            Neat Video
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2019-09-06
+        </p>
+        
+        <h3 class="post-subtitle">
+            Premiere Pro 降噪插件:Neat Video Pro
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                Premiere Pro 降噪插件：Neat Video Pro v3.5（Win64）【插件介绍】大名鼎鼎的降噪插件，已经不需要我多介绍了吧。Neat Video for Premiere更新至3.5版本，正式支持Premiere CC，进一步提升了降噪质量和渲染速度，支持GPU与CPU协同工..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('http://tva1.sinaimg.cn/large/007X8olVly1g6hs0wde2yj31hc0m8wlt.jpg ')">
+    <a href="/2019/08/30/2019/8/Aura/">
+        <h2 class="post-title">
+            Aura
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2019-08-30
+        </p>
+        
+        <h3 class="post-subtitle">
+            无限几何图形循环生成动画AE插件
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                无限几何图形循环生成动画AE插件 Rowbyte Aura v1.1.1 Win/Mac破解版 + 使用教程
+Aura可以在三维空间中无限生成几何图形动画，类似于一个粒子系统，但它不是在所有地方渲染粒子，而是生成矢量形状波，随着时间的推移而变化，就像经典的无线电波插件一样。它可以毫不费力地渲染成..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('http://tva1.sinaimg.cn/large/007X8olVly1g6hp44rufhg30rs0ijnpe.gif')">
+    <a href="/2019/08/30/2019/8/ReNamer/">
+        <h2 class="post-title">
+            ReNamer
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2019-08-30
+        </p>
+        
+        <h3 class="post-subtitle">
+            文件重命名(ReNamer Pro) v7.1绿色版
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                文件重命名(ReNamer Pro) v7.1绿色版文件重命名(ReNamer Pro)是一款国外大神开发的体积小巧、功能强大灵活的文件批量重命名工具，该程序支持包括插入、删除、移除、替换、前缀、后缀以及正则表达式等十四种重命名规则。只需要将待重命名的单个或者大量文件拖放到文件窗口，接着再指定一..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url('http://tva1.sinaimg.cn/large/007X8olVly1g6e8zs9uq6j312w0lwqk9.jpg')">
+    <a href="/2019/08/26/2019/8/FinalShellSSH/">
+        <h2 class="post-title">
+            FinalShell
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2019-08-26
+        </p>
+        
+        <h3 class="post-subtitle">
+            SSH工具,服务器管理,远程桌面加速软件
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                FinalShell SSH工具,服务器管理,远程桌面加速软件,支持Windows,macOS,Linux,版本2.9.8,更新时间2019.6.19wntr 2017-01-17 11:08  30月前  418704 阅读 0 回复 FinalShellFinalShell是一体化的的服务器..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview  "
+     style="background-image: url(' https://i.loli.net/2019/08/26/yzGBm2Zx6V5dkPT.png ')">
+    <a href="/2019/08/26/2019/8/v2ray/">
+        <h2 class="post-title">
+            V2Ray
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2019-08-26
+        </p>
+        
+        <h3 class="post-subtitle">
+            轻松搭建和配置V2Ray
+        </h3>
+        
+        <div class="post-content-preview">
+            <p>
+                1. 服务器端的安装，配置。系统要求
+
+Debian 7
+Debian 8（推荐）
+Ubuntu 14
+Ubuntu 16
+CentOS 7其他Linux版本不建议
+
+官方安装脚本自行搜索(较麻烦，所以我直接删除了)
+VIM 快捷键使用：
+输入i 进入编辑模式，修改完毕，Esc键退出编辑模式，输..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+
+<!-- 翻页 pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page/2/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+        </div>
+        <!-- Sidebar Container -->
+        <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+
+            <!-- About Me -->
+            <section class="visible-md visible-lg" style="padding: 0 18px">
+                <div class="short-about">
+                    <!--侧边栏头像-->
+
+                    
+                    <img src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640"/>
+                    
+                    <h5><a href="/about/">WANGWENZHI</a></h5>
+                    
+                    <hr>
+                    <!-- SNS Link 社交 -->
+                    
+                    <ul class="list-inline">
+                        
+                        
+                        <li>
+                            <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="https://github.com/wangwenzhiwwz">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/wangwenzhi">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="https://segmentfault.com/u/wangwenzhi">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-segmentfault fa-stack-1x fa-inverse">sf</i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+ 
+            <!-- Featured Tags  标签 -->
+            
+            <section>
+                <div class="tags">
+                    
+                    
+                    <a href="/tags/#html" title="html"
+                       rel="2">html</a>
+                    
+                    
+                    
+                    <a href="/tags/#视频" title="视频"
+                       rel="12">视频</a>
+                    
+                    
+                    
+                    <a href="/tags/#windows" title="windows"
+                       rel="19">windows</a>
+                    
+                    
+                    
+                    <a href="/tags/#快捷键" title="快捷键"
+                       rel="2">快捷键</a>
+                    
+                    
+                    
+                    <a href="/tags/#ps" title="ps"
+                       rel="4">ps</a>
+                    
+                    
+                    
+                    <a href="/tags/#github" title="github"
+                       rel="5">github</a>
+                    
+                    
+                    
+                    <a href="/tags/#网络" title="网络"
+                       rel="24">网络</a>
+                    
+                    
+                    
+                    <a href="/tags/#Markdown" title="Markdown"
+                       rel="3">Markdown</a>
+                    
+                    
+                    
+                    <a href="/tags/#图片" title="图片"
+                       rel="11">图片</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a href="/tags/#设计" title="设计"
+                       rel="8">设计</a>
+                    
+                    
+                    
+                    <a href="/tags/#IPhone" title="IPhone"
+                       rel="2">IPhone</a>
+                    
+                    
+                    
+                    <a href="/tags/#摄影" title="摄影"
+                       rel="17">摄影</a>
+                    
+                    
+                    
+                    <a href="/tags/#VPN" title="VPN"
+                       rel="12">VPN</a>
+                    
+                    
+                    
+                    
+                    
+                    <a href="/tags/#软件" title="软件"
+                       rel="17">软件</a>
+                    
+                    
+                    
+                    <a href="/tags/#mac" title="mac"
+                       rel="2">mac</a>
+                    
+                    
+                </div>
+            </section>
+            
+
+            <hr>
+            <h5 style="text-align: center;">Show</h5>
+            <div style="text-align: center; width:100%;">
+           
+           
+
+            <a href="https://www.vultr.com/?ref=7270890"><img src="https://www.vultr.com/media/banners/banner_300x250.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"/></a>
+           
+            	
+            </div>
+
+            
+            
+            <h5 style="text-align: center;">Friends</h5>
+            <ul class="list-inline" style="text-align: center;">
+                
+                <li><a href="https://bandwagonhost.com/" target="_blank">bandwagonhost</a></li>
+                
+                <li><a href="https://lai.yuweining.cn/" target="_blank">不死鸟</a></li>
+                
+                <li><a href="https://tool.lu/" target="_blank">在线工具</a></li>
+                
+                <li><a href="https://www.clipconverter.cc/" target="_blank">youtube下载</a></li>
+                
+                <li><a href="https://dalao.ru/" target="_blank">大佬导航</a></li>
+                
+                <li><a href="http://www.biewang.com/index" target="_blank">别忘双搜</a></li>
+                
+                <li><a href="https://gugeji.com/" target="_blank">咕咯鸡</a></li>
+                
+                <li><a href="https://4o4.click/" target="_blank">404解锁</a></li>
+                
+                <li><a href="https://ip.sb/" target="_blank">IP</a></li>
+                
+                <li><a href="https://mijisou.com/" target="_blank">中文不追踪</a></li>
+                
+            </ul>
+            
+
+            <a href="https://bandwagonhost.com/aff.php?aff=51623"> <img src="https://bwh88.net/templates/organicbandwagon/images/logo.png" alt="cmbDS.jpg" border="0"
+
+            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"/>
+            </a>
+
+            
+            	<video src="https://share.dmca.gripe/kyoXQn1uJAavuS7X.mp4"  autoplay loop muted style="max-width: 100%; display: block;">
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://segmentfault.com/u/wangwenzhi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-segmentfault fa-stack-1x fa-inverse">sf</i>
+                            </span>
+                            </a>
+                        </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; WANGWENZHI 2021
+                    <br>
+                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量9865946248794446<span id="busuanzi_value_site_pv"></span>次</span>
+        
+                    <br>
+                    Theme by <a href="http://王文志.com/">WANGWENZHI</a>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://wangwenzhiwwz.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-110405735-1';
+    var _gaDomain = 'auto';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- 360 -->
+
+<script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5":"https://jspassport.ssl.qhimg.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640">
+</body>
+
+</html>
