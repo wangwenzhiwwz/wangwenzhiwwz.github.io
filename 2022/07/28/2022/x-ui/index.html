@@ -211,7 +211,7 @@
 <p><code>reboot</code> 重启</p>
 <h2 id="Xray-V2ray"><a href="#Xray-V2ray" class="headerlink" title="Xray / V2ray"></a>Xray / V2ray</h2><h3 id="安装-更新方式（Xray-前置）"><a href="#安装-更新方式（Xray-前置）" class="headerlink" title="安装/更新方式（Xray 前置）"></a>安装/更新方式（Xray 前置）</h3><p>支持配置方式: VLESS + TCP + XTLS / TLS + NginxVLESS + TCP + XTLS / TLS + Nginx 及 VLESS + TCP + TLS + Nginx + WebSocket 回落并存模式</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate -q -O install.sh &quot;https://raw.githubusercontent.com/wulabing/Xray_onekey/main/install.sh&quot; &amp;&amp; chmod +x install.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
-<p><a href="https://vpsur.com/wp-content/uploads/2022/01/Screenshot_20220117-142553.jpg" target="_blank" rel="noopener"><img src="https://vpsur.com/wp-content/uploads/2022/01/Screenshot_20220117-142553.jpg" alt="Xray 前置"></a></p>
+<p><img src="https://vpsur.com/wp-content/uploads/2022/01/Screenshot_20220117-142553.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash install.sh</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --register-account -m wwz19971008@gmail.com</span><br><span class="line">~/.acme.sh/acme.sh  --issue -d wangwenzhi.ml  --standalone</span><br><span class="line"></span><br><span class="line">~/.acme.sh/acme.sh --installcert -d wangwenzhi.ml --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure>
 <h1 id="一键脚本搭建V2Ray"><a href="#一键脚本搭建V2Ray" class="headerlink" title="一键脚本搭建V2Ray"></a>一键脚本搭建V2Ray</h1><p>在上图的待输入内容处，粘贴下面的命令（复制下面的命令，然后在 Xshell 待输入内容处“鼠标右键”/“粘贴”即可）：</p>
@@ -228,7 +228,6 @@
 <p>代码：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum -y install wget    ##ContOS Yum 安装 wget</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt-get install wget   ##Debian Ubuntu 安装 wget</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">`</span><br></pre></td></tr></table></figure>
 
                 <hr>
                 
