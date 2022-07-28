@@ -26,11 +26,11 @@
     
     <title>
         
-        WANGWENZHI
+        x-ui｜WANGWENZHI
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/archives/2018/03/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2022/07/28/2022/x-ui/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -51,7 +51,7 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
 " data-ishome = "false" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -146,404 +146,197 @@
 </script>
 
 <!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img3d-rendering-digital-art.jpg">
+
+
 <style>
-    .intro-header .site-heading {
-        margin: 50px;
-    }
     
     header.intro-header {
-        background-image: url('https://i.imgur.com/li1H5cu.jpg')
+        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img3d-rendering-digital-art.jpg');
     }
+
     
 </style>
 
-<!-- Page Header -->
 <header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading text-center">
-                    <h1>archives</h1>
-                    <span class="subheading">根据归档日期检索所有文件</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>x-ui</h1>
+                    
+                    <h2 class="subheading">x-ui面板实现单端口多用户合租</h2>
+                    
+                    <span class="meta">
+                         作者 王文志
+                        <span>
+                          日期 2022-07-28
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#科学上网"
+                           title="科学上网">科学上网</a>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="post-title-haojen">
+        <span>
+            x-ui
+        </span>
+    </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="切换到root"><a href="#切换到root" class="headerlink" title="切换到root"></a>切换到root</h2><p><strong>sudo -i</strong></p>
+<h2 id="1-开启root登入"><a href="#1-开启root登入" class="headerlink" title="1:开启root登入"></a>1:开启root登入</h2><p><code>sudo su</code><br><code>cd /root</code></p>
+<p> 修改authorized_keys文件（即ssh证书）<br><code>vi .ssh/authorized_keys</code><br>把ssh-rsa之前的文件都删除掉.  (i键编辑)</p>
+<p> 编辑ssh配置文件<br><code>nano /etc/ssh/sshd_config</code><br>找到PermitRootLogin, 把前面的#去掉 改成下面这样<br><code>PermitRootLogin yes</code><br>ctrl+x 保存退出 选择y 然后回车  </p>
+<p> passwd</p>
+<p>Wangwenzhi1997\</p>
+<p>然后<br><code>reboot</code><br>重启服务器。就可以使用root用户名配合秘钥登入了</p>
+<h2 id="2-开启防火墙"><a href="#2-开启防火墙" class="headerlink" title="2:开启防火墙"></a>2:开启防火墙</h2><p><code>iptables -P INPUT ACCEPT</code><br><code>iptables -P FORWARD ACCEPT</code><br><code>iptables -P OUTPUT ACCEPT</code><br><code>iptables -F</code><br><code>apt-get purge netfilter-persistent</code></p>
+<p><code>reboot</code> 重启</p>
+<h2 id="Xray-V2ray"><a href="#Xray-V2ray" class="headerlink" title="Xray / V2ray"></a>Xray / V2ray</h2><h3 id="安装-更新方式（Xray-前置）"><a href="#安装-更新方式（Xray-前置）" class="headerlink" title="安装/更新方式（Xray 前置）"></a>安装/更新方式（Xray 前置）</h3><p>支持配置方式: VLESS + TCP + XTLS / TLS + NginxVLESS + TCP + XTLS / TLS + Nginx 及 VLESS + TCP + TLS + Nginx + WebSocket 回落并存模式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate -q -O install.sh &quot;https://raw.githubusercontent.com/wulabing/Xray_onekey/main/install.sh&quot; &amp;&amp; chmod +x install.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+<p><a href="https://vpsur.com/wp-content/uploads/2022/01/Screenshot_20220117-142553.jpg" target="_blank" rel="noopener"><img src="https://vpsur.com/wp-content/uploads/2022/01/Screenshot_20220117-142553.jpg" alt="Xray 前置"></a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash install.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --register-account -m wwz19971008@gmail.com</span><br><span class="line">~/.acme.sh/acme.sh  --issue -d wangwenzhi.ml  --standalone</span><br><span class="line"></span><br><span class="line">~/.acme.sh/acme.sh --installcert -d wangwenzhi.ml --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure>
+<h1 id="一键脚本搭建V2Ray"><a href="#一键脚本搭建V2Ray" class="headerlink" title="一键脚本搭建V2Ray"></a>一键脚本搭建V2Ray</h1><p>在上图的待输入内容处，粘贴下面的命令（复制下面的命令，然后在 Xshell 待输入内容处“鼠标右键”/“粘贴”即可）：</p>
+<p>在上图的待输入内容处，粘贴下面的命令（复制下面的命令，然后在 Xshell 待输入内容处“鼠标右键”/“粘贴”即可）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl ubuntu/debian 系统安装 Curl 方法: <code>apt-get update -y &amp;&amp; apt-get install curl -y</code> centos 系统安装 Curl 方法: <code>yum update -y &amp;&amp; yum install curl -y</code> 安装好 curl 之后就能安装脚本了</p>
+</blockquote>
+<p>然后选择安装，即是输入 1 回车</p>
+<p>选择传输协议，如果没有特别的需求，使用默认的 TCP 传输协议即可，直接回车</p>
+<p>选择端口，如果没有特别的需求，使用默认的端口即可，直接回车</p>
+<p>是否屏蔽广告，除非你真的需要，一般来说，直接回车即可</p>
+<h3 id="Trojan-全能一键脚本合集"><a href="#Trojan-全能一键脚本合集" class="headerlink" title="Trojan 全能一键脚本合集"></a>Trojan 全能一键脚本合集</h3><p>特点：省事，快速，3分钟搭建！</p>
+<p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum -y install wget    ##ContOS Yum 安装 wget</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt-get install wget   ##Debian Ubuntu 安装 wget</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">`</span><br></pre></td></tr></table></figure>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
+                <hr>
+                
 
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- archive list -->
-            
-				
-				
-				
-					
-					
-					<div class="archive archive-year" data-date="2022">
-						<h2 class="archive-title">
-						<span class="fa fa-archive">
-							<a href="/archives/2022">2022</a>
-						</span>
-						</h2>
-				
-				
-					
-					
-					<div class="archive archive-month" data-date="202207">
-						<h3 class="archive-title">
-							<a href="/archives/2022/07">07</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/07/28/2022/x-ui/">
-                        <h4 class="post-title">
-                            x-ui
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            x-ui面板实现单端口多用户合租
-                        </h4>
-                        
-                    </a>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2022/07/23/2022/10video/" data-toggle="tooltip" data-placement="top"
+                           title="追剧网站">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjExMi84Njc2">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
                 </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/07/23/2022/10video/">
-                        <h4 class="post-title">
-                            追剧网站
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            10个免费在线追剧，看电影的网站，免费白嫖就是爽
-                        </h4>
-                        
-                    </a>
+                <!-- City版安装代码已完成 -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#切换到root"><span class="toc-text">切换到root</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-开启root登入"><span class="toc-text">1:开启root登入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开启防火墙"><span class="toc-text">2:开启防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Xray-V2ray"><span class="toc-text">Xray / V2ray</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-更新方式（Xray-前置）"><span class="toc-text">安装/更新方式（Xray 前置）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一键脚本搭建V2Ray"><span class="toc-text">一键脚本搭建V2Ray</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Trojan-全能一键脚本合集"><span class="toc-text">Trojan 全能一键脚本合集</span></a></li></ol></li></ol>
                 </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/07/12/2022/notion/">
-                        <h4 class="post-title">
-                            Notion
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            Notion是一款整合了筆記、知識庫、資料表格、看板、日曆等多種能力於一體的應用程式
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-					
-					</div><!--month-->
-					
-					
-					<div class="archive archive-month" data-date="202206">
-						<h3 class="archive-title">
-							<a href="/archives/2022/06">06</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/06/11/2017/12.11github-添加ssh/">
-                        <h4 class="post-title">
-                            github-添加ssh
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            github-添加ssh
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-					
-					</div><!--month-->
-					
-					
-					<div class="archive archive-month" data-date="202203">
-						<h3 class="archive-title">
-							<a href="/archives/2022/03">03</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/03/15/2022/Xray/">
-                        <h4 class="post-title">
-                            Xray一键安装脚本
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            最新的脚本
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-					
-					</div><!--month-->
-					
-					
-					<div class="archive archive-month" data-date="202202">
-						<h3 class="archive-title">
-							<a href="/archives/2022/02">02</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2022/02/19/2022/DiskGenisPro/">
-                        <h4 class="post-title">
-                            DiskGenisPro数据管理软件
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            文件恢复（文件误删被格式化如何找回）
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-					
-					</div><!--month-->
-					</div><!--year-->
-					
-					
-					
-					<div class="archive archive-year" data-date="2021">
-						<h2 class="archive-title">
-						<span class="fa fa-archive">
-							<a href="/archives/2021">2021</a>
-						</span>
-						</h2>
-				
-				
-					
-					
-					<div class="archive archive-month" data-date="202112">
-						<h3 class="archive-title">
-							<a href="/archives/2021/12">12</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2021/12/21/2021/oracle/">
-                        <h4 class="post-title">
-                            Oracle（甲骨文）免费云服务器注册指南及故障解决！
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            始终免费的VPS！油管8K视频秒开，颠覆你对免费资源的看法。
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-					
-					</div><!--month-->
-					</div><!--year-->
-					
-					
-					
-					<div class="archive archive-year" data-date="2019">
-						<h2 class="archive-title">
-						<span class="fa fa-archive">
-							<a href="/archives/2019">2019</a>
-						</span>
-						</h2>
-				
-				
-					
-					
-					<div class="archive archive-month" data-date="201908">
-						<h3 class="archive-title">
-							<a href="/archives/2019/08">08</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2019/08/26/2019/FinalShellSSH/">
-                        <h4 class="post-title">
-                            FinalShell
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            SSH工具,服务器管理,远程桌面加速软件
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2019/08/26/2019/v2ray/">
-                        <h4 class="post-title">
-                            V2Ray
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            轻松搭建和配置V2Ray
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-					
-					</div><!--month-->
-					</div><!--year-->
-					
-					
-					
-					<div class="archive archive-year" data-date="2018">
-						<h2 class="archive-title">
-						<span class="fa fa-archive">
-							<a href="/archives/2018">2018</a>
-						</span>
-						</h2>
-				
-				
-					
-					
-					<div class="archive archive-month" data-date="201803">
-						<h3 class="archive-title">
-							<a href="/archives/2018/03">03</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2018/03/14/2018/Hexo使用指南/">
-                        <h4 class="post-title">
-                            Hexo之换电脑了怎么办
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            使用Hexo搭建的个人博客网站
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-					
-					</div><!--month-->
-					</div><!--year-->
-					
-					
-					
-					<div class="archive archive-year" data-date="2017">
-						<h2 class="archive-title">
-						<span class="fa fa-archive">
-							<a href="/archives/2017">2017</a>
-						</span>
-						</h2>
-				
-				
-					
-					
-					<div class="archive archive-month" data-date="201712">
-						<h3 class="archive-title">
-							<a href="/archives/2017/12">12</a>
-						</h3>
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2017/12/15/2017/12.15hexo博客图片问题/">
-                        <h4 class="post-title">
-                            图片问题
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            博客图片问题,里要说的是链接地址怎么写。
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
-				
-				
-				
-				
-				<div class="one-tag-list">
-                <div class="post-preview">
-                    <a href="/2017/12/11/2017/12.11Markdown 语法手册/">
-                        <h4 class="post-title">
-                            Markdown 语法手册
-                        </h4>
-                        
-                        <h4 class="post-subtitle">
-                            markdown 语法手册完整
-                        </h4>
-                        
-                    </a>
-                </div>
-				<hr>
-				</div>
-            
+            </div>
         </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#科学上网"
+                           title="科学上网">科学上网</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="https://bandwagonhost.com/">bandwagonhost</a></li>
+                        
+                        <li><a href="https://lai.yuweining.cn/">不死鸟</a></li>
+                        
+                        <li><a href="https://tool.lu/">在线工具</a></li>
+                        
+                        <li><a href="https://www.clipconverter.cc/">youtube下载</a></li>
+                        
+                        <li><a href="https://dalao.ru/">大佬导航</a></li>
+                        
+                        <li><a href="https://ip.sb/">IP</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
     </div>
+</article>
+
+
+
+
+
+
 
 <!-- Footer -->
 <!-- Footer -->
