@@ -26,11 +26,11 @@
     
     <title>
         
-        Hysteria｜WANGWENZHI
+        OpenWrt｜WANGWENZHI
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2022/07/28/2022/Hysteria/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2022/12/04/2022/WKY/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -150,13 +150,13 @@
 <!--only post-->
 
 
-<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgphoto-1581973018012-6962488dc8b2.jpg">
+<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_20221204_011158.png">
 
 
 <style>
     
     header.intro-header {
-        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgphoto-1581973018012-6962488dc8b2.jpg');
+        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_20221204_011158.png');
     }
 
     
@@ -167,14 +167,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>Hysteria</h1>
+                    <h1>OpenWrt</h1>
                     
-                    <h2 class="subheading">Hysteria协议！歇斯底里加速协议</h2>
+                    <h2 class="subheading">玩客云刷机openwrt教程</h2>
                     
                     <span class="meta">
                          作者 王文志
                         <span>
-                          日期 2022-07-28
+                          日期 2022-12-04
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -189,7 +189,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            Hysteria
+            OpenWrt
         </span>
     </div>
 </header>
@@ -200,93 +200,147 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="Hysteria-协议！歇斯底里加速协议，是否能够拯救线路拉胯的-VPS！降低延迟、提升线路质量！"><a href="#Hysteria-协议！歇斯底里加速协议，是否能够拯救线路拉胯的-VPS！降低延迟、提升线路质量！" class="headerlink" title="Hysteria 协议！歇斯底里加速协议，是否能够拯救线路拉胯的 VPS！降低延迟、提升线路质量！"></a>Hysteria 协议！歇斯底里加速协议，是否能够拯救线路拉胯的 VPS！降低延迟、提升线路质量！</h1><ul>
-<li><a href="https://www.v2rayssr.com/hysteria" target="_blank" rel="noopener">Hysteria搭建</a></li>
-</ul>
-<p>文章导读目录</p>
-<p><a href="https://www.v2rayssr.com/hysteria.html#" target="_blank" rel="noopener"></a></p>
+                <h1 id="玩客云刷机armbian变身openwrt旁路由教程＆性能测试"><a href="#玩客云刷机armbian变身openwrt旁路由教程＆性能测试" class="headerlink" title="玩客云刷机armbian变身openwrt旁路由教程＆性能测试"></a>玩客云刷机armbian变身openwrt旁路由教程＆性能测试</h1><p><img src="https://img.senxi.xyz/imgs/2022/12/32913c1cea2dd078.png" alt=""></p>
+<p>玩客云是17年的一款矿渣产品，我当时入手价499可以挖矿换话费和备份手机照片、使用迅雷高速下载，阿里云盘出来后不限速，也没有下载需求了，吃灰良久。</p>
+<p>最近折腾了玩客云刷机OpenWrt作为旁路由的方案，分享给大家，有需要的朋友折腾。</p>
+<p><strong>「玩客云硬件参数：」</strong></p>
 <ul>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E5%89%8D%E8%A8%80" title="前言" target="_blank" rel="noopener">前言</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#Hysteria_%E4%BB%8B%E7%BB%8D" title="Hysteria 介绍" target="_blank" rel="noopener">Hysteria 介绍</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C" title="准备工作" target="_blank" rel="noopener">准备工作</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E5%AE%89%E8%A3%85_Hysteria" title="安装 Hysteria" target="_blank" rel="noopener">安装 Hysteria</a><ul>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E6%9B%B4%E6%96%B0%E5%8F%8A%E5%AE%89%E8%A3%85%E7%BB%84%E4%BB%B6" title="更新及安装组件" target="_blank" rel="noopener">更新及安装组件</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC" title="一键安装脚本" target="_blank" rel="noopener">一键安装脚本</a></li>
+<li><p>CPU是晶晨S805 ，4核心 1.5GHZ</p>
+</li>
+<li><p>双USB2.0</p>
+</li>
+<li><p>千兆单网口</p>
+</li>
+<li><p>1GB内存+8GB存储</p>
+</li>
 </ul>
-</li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#Hysteria_%E4%BD%BF%E7%94%A8" title="Hysteria 使用" target="_blank" rel="noopener">Hysteria 使用</a><ul>
-<li><a href="https://www.v2rayssr.com/hysteria.html#Clash_Socks_%E5%88%86%E6%B5%81%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" title="Clash Socks 分流配置文件" target="_blank" rel="noopener">Clash Socks 分流配置文件</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#MacOS_%E7%BB%88%E7%AB%AF" title="MacOS 终端" target="_blank" rel="noopener">MacOS 终端</a></li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#Windows_%E5%8F%AF%E8%A7%86%E5%8C%96%E5%AE%A2%E6%88%B7%E7%AB%AF" title="Windows 可视化客户端" target="_blank" rel="noopener">Windows 可视化客户端</a></li>
-</ul>
-</li>
-<li><a href="https://www.v2rayssr.com/hysteria.html#%E5%90%8E%E8%AE%B0" title="后记" target="_blank" rel="noopener">后记</a></li>
-</ul>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hysteria 这个协议相信在座的老鸟们并不陌生了，它从2020年到现在也有差不多两年的时间了，据官方介绍，它可以针对恶劣的网络环境进行优化加速。</p>
-<h2 id="Hysteria-介绍"><a href="#Hysteria-介绍" class="headerlink" title="Hysteria 介绍"></a>Hysteria 介绍</h2><blockquote>
-<p>官方介绍：</p>
-<p>Hysteria 是一个功能丰富的，专为恶劣网络环境进行优化的网络工具（双边加速），比如卫星网络、拥挤的公共 Wi-Fi、在中国连接国外服务器等。 基于修改版的 QUIC 协议。目前有以下模式：（仍在增加中）</p>
-<p>1、SOCKS5 代理 (TCP &amp; UDP)<br>2、HTTP/HTTPS 代理<br>3、TCP/UDP 转发<br>4、TCP/UDP TPROXY 透明代理 (Linux)<br>5、TUN (Windows 下为 TAP)</p>
-</blockquote>
-<p>项目地址：<a href="https://www.v2rayssr.com/go?url=https://github.com/HyNetwork/hysteria" target="_blank" rel="noopener">点击访问</a></p>
-<p><a href="https://www.v2rayssr.com/go?url=https://youtu.be/sx-yUO377dQ" target="_blank" rel="noopener"><img src="https://www.v2rayssr.com/wp-content/uploads/2022/06/2.png" alt=""></a></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>1、VPS 一台，重置好主流的操作系统</p>
-<p>2、域名一个，推荐托管到 cloudflare 并解析该域名到 VPS ，<a href="https://www.v2rayssr.com/yumingreg.html" target="_blank" rel="noopener">不会请点击</a></p>
-<h2 id="安装-Hysteria"><a href="#安装-Hysteria" class="headerlink" title="安装 Hysteria"></a>安装 Hysteria</h2><h3 id="更新及安装组件"><a href="#更新及安装组件" class="headerlink" title="更新及安装组件"></a>更新及安装组件</h3><ol>
-<li>apt update -y               #Debian/Ubuntu 命令</li>
-<li><p>apt install -y curl socat   #Debian/Ubuntu 命令</p>
-</li>
-<li><p>yum update -y               #CentOS 命令</p>
-</li>
-<li>yum install -y curl socat   #CentOS 命令</li>
-</ol>
-<h3 id="一键安装脚本"><a href="#一键安装脚本" class="headerlink" title="一键安装脚本"></a>一键安装脚本</h3><p>GitHub 项目地址：<a href="https://www.v2rayssr.com/go?url=https://github.com/emptysuns/Hi_Hysteria" target="_blank" rel="noopener">点击访问</a></p>
+<p>这个配置平平无奇，主要的硬伤是cpu32位的，usb2.0传输速度只有20M/秒左右，下载速度跑不满千兆带宽，好的地方是千兆网口。</p>
+<p><strong>「刷机准备工具：」</strong></p>
 <ol>
-<li>bash &lt;(curl -fsSL <a href="https://git.io/hysteria.sh" target="_blank" rel="noopener">https://git.io/hysteria.sh</a>)</li>
+<li><p>WIN10电脑一台</p>
+</li>
+<li><p>双公头USB线一根</p>
+</li>
+<li><p>矿渣玩客云</p>
+</li>
+<li><p>螺丝刀、吹风机</p>
+</li>
 </ol>
-<h2 id="Hysteria-使用"><a href="#Hysteria-使用" class="headerlink" title="Hysteria 使用"></a>Hysteria 使用</h2><h3 id="Clash-Socks-分流配置文件"><a href="#Clash-Socks-分流配置文件" class="headerlink" title="Clash Socks 分流配置文件"></a>Clash Socks 分流配置文件</h3><p>点击查看：<a href="https://www.v2rayssr.com/go?url=https://raw.githubusercontent.com/V2RaySSR/Tools/master/clashsocks.yaml" target="_blank" rel="noopener">请点击</a></p>
-<h3 id="MacOS-终端"><a href="#MacOS-终端" class="headerlink" title="MacOS 终端"></a>MacOS 终端</h3><p>1、新建文本文档，把服务器的配置文件复制进去，并改名为 <code>config.json</code></p>
-<p>2、下载最新版的 Hysteria For MacOS 的内核：官方最新版下载（<a href="https://www.v2rayssr.com/go?url=https://github.com/HyNetwork/hysteria/releases/latest/download/hysteria-tun-darwin-10.12-amd64" target="_blank" rel="noopener">amd64</a>）（<a href="https://www.v2rayssr.com/go?url=https://github.com/HyNetwork/hysteria/releases/latest/download/hysteria-tun-darwin-10.12-arm64" target="_blank" rel="noopener">ARM</a>）</p>
-<p>3、下载分流规则以及 IP 数据库：<a href="https://www.v2rayssr.com/go?url=https://github.com/V2RaySSR/Tools/raw/master/acl.zip" target="_blank" rel="noopener">点击下载</a></p>
-<p>4、确保下载的 <code>acl</code> 文件夹、hysteria 配置文件 <code>config.json</code> ，以及 hysteria 内核文件，处在同一目录</p>
-<p>5、改名内核名字为 hysteria ，终端 CD 进入包含 hysteria 的目录，并执行下面命令</p>
-<ol>
-<li>chmod +x hysteria</li>
-<li>./hysteria -c ./config.json client</li>
-</ol>
-<h3 id="Windows-可视化客户端"><a href="#Windows-可视化客户端" class="headerlink" title="Windows 可视化客户端"></a>Windows 可视化客户端</h3><p>Hysteria 可视化客户端：V2rayN 已经支持了 Hysteria ，其实也就是换了 Core 的 V2rayN 。但是我们需要进行下面的设置才可以正常的使用 Hysteria。</p>
-<p>1、新建文本文档，把服务器的配置文件复制进去，并改名为 <code>config.json</code></p>
-<p>2、下载最新版的 V2rayN：<a href="https://www.v2rayssr.com/go?url=https://github.com/2dust/v2rayN/releases/latest/download/v2rayN.zip" target="_blank" rel="noopener">官方最新版下载</a></p>
-<p>3、下载最新版的 Hysteria for Windows  内核 ：<a href="https://www.v2rayssr.com/go?url=https://github.com/HyNetwork/hysteria/releases/latest/download/hysteria-tun-windows-6.0-amd64.exe" target="_blank" rel="noopener">官方最新版下载</a></p>
-<p>4、下载分流规则以及 IP 数据库：<a href="https://www.v2rayssr.com/go?url=https://github.com/V2RaySSR/Tools/raw/master/acl.zip" target="_blank" rel="noopener">点击下载</a></p>
-<p>5、解压 V2rayN、分流规则 ZIP 文件</p>
-<p>6、确保 acl 文件夹、Hysteria for Windows 内核在 V2rayN 软件的根目录</p>
-<p>7、打开 V2rayN，点击 服务器 —— 添加自定义配置服务器 —— 别名随意 —— 地址点击浏览（导入 <code>config.json</code> ）—— Core 类型 选择 hysteria</p>
-<blockquote>
-<p>提示：<br>下载已经打包好的 V2rayN-Hysteria 使用包 ：<a href="https://www.v2rayssr.com/go?url=https://github.com/emptysuns/Hi_Hysteria/blob/main/client/windows/v2rayN/v2rayN-hysteriaCore.rar" target="_blank" rel="noopener">点击下载</a>（解压即可食用）<br>上述压缩包项目地址：<a href="https://www.v2rayssr.com/go?url=https://github.com/emptysuns/Hi_Hysteria" target="_blank" rel="noopener">点击访问</a><br>（倘若你对该包抱有疑问，那么使用上述方法）</p>
+<h3 id="玩客云刷机openwrt两种方法："><a href="#玩客云刷机openwrt两种方法：" class="headerlink" title="玩客云刷机openwrt两种方法："></a>玩客云刷机openwrt两种方法：</h3><p><strong>「方法一」</strong>直刷openwrt 这个网上资源只有一个，snail 大神制作的固件，固件没插件，需要自己安装。</p>
+<p><strong>「方法二」</strong>刷armbian安装docker在安装openwrt，这个有比较多的适合固件，openwrt版本新，插件多，本次选这个方案。</p>
+<h3 id="刷机资源分享"><a href="#刷机资源分享" class="headerlink" title="刷机资源分享"></a>刷机资源分享</h3><p>刷机固件、软件，使用阿里云分享，不限速，需要转存后下载，然后解压！</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d71c4ba104.png" alt=""></p>
+<h4 id="玩客云openwrt刷机包："><a href="#玩客云openwrt刷机包：" class="headerlink" title="玩客云openwrt刷机包："></a>玩客云openwrt刷机包：</h4><blockquote>
+<p>❝</p>
+<p><a href="https://www.aliyundrive.com/s/ZM3oScBDcck**「提取码" target="_blank" rel="noopener">https://www.aliyundrive.com/s/ZM3oScBDcck**「提取码</a>: y75j」**</p>
+<p>❞</p>
 </blockquote>
-<p><img src="https://www.v2rayssr.com/wp-content/uploads/2022/06/55.png" alt=""></p>
-<p><img src="https://www.v2rayssr.com/wp-content/uploads/2022/06/22.png" alt=""></p>
-<p><img src="https://www.v2rayssr.com/wp-content/uploads/2022/06/22.png" alt=""></p>
-<p><img src="https://www.v2rayssr.com/wp-content/uploads/2022/06/44.png" alt=""></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>Hysteria 的底层也是基于 UDP 的，然而基于 UDP 加速协议的应用我们并不少见，UDP 会以扔快递的方式冗余发包，这在国外的网络环境下，的确可以看到明显的加速效果，然而，我们这边的运营商会针对 UDP 做 QOS 限速和丢包，包括一些企业局域网的防火墙有时候也会禁用 UDP 协议，这样的环境，也就导致了 UDP 的传输低效而不好用，那即便是做了伪装，丢包率也是依旧感人。</p>
-<p>另外，开启了伪装以后，其实并不能给 Hysteria 带来所谓的加速，反倒是增加了服务器 CPU 的开销，从而导致 Hysteria 的减速。本身来讲，Hysteria 是一个很好的协议，也感谢作者为这个区域作出的贡献，但是很多人就想着能用 Hysteria 协议多倍的发包提速，这就让我们本身就不通畅的线路雪上加霜，就好比便秘的人还要不停的吃辣椒，导致腹胀而不见屎。不可否认，各种协议之间的确是参差不齐，换个协议也只是让心理上得到些许安慰而已。</p>
-<p>从根本上讲，还是需要提高自己VPS的线路质量，从而达到你预期的网络速度。</p>
+<h3 id="第一步：刷入底包-update"><a href="#第一步：刷入底包-update" class="headerlink" title="第一步：刷入底包 update"></a>第一步：刷入底包 update</h3><p><img src="http://img.senxi.xyz/i/2022/10/05/633d385dacd7a.png" alt=""></p>
+<p>WIN10打开烧录软件，选择update镜像，点开始。</p>
+<p>关键步骤，先短接触点，再接通玩客云主板电源。需要说明的是，玩客云有两种版本，它们的短接位置也是不一样的。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633cf77c3e418.png" alt=""></p>
+<p>我的是老主板，上图短接位置，图片来源：@Powersee大神</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633cf81ec5862.png" alt=""></p>
+<p>这个是新版（也就是玩客云主板上标注的有v1.3的主板），短接点是在正面。</p>
+<p>拆机后、usb插入玩客云<strong>「靠近HDMI的接口」</strong>、另一头接入电脑usb、短接焊点、通电。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d3af398e4d.png" alt=""></p>
+<p>正常情况，会出现上图的一个线程，开始写入。如果有错误，换一个usb接口，多试几次。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d3b8b4702d.png" alt=""></p>
+<p>这个固件很小，很快就会写完，一般几秒钟，提示烧录成功后，先点”停止“，然后关闭，拔掉电源、拔掉USB。</p>
+<h3 id="第二步：玩客云刷入armbian5-9系统"><a href="#第二步：玩客云刷入armbian5-9系统" class="headerlink" title="第二步：玩客云刷入armbian5.9系统"></a>第二步：玩客云刷入armbian5.9系统</h3><p>这一步分为好几个部分：</p>
+<ol>
+<li><p>U盘写入armbian5.88系统</p>
+</li>
+<li><p>armbian5.88写入玩客云EMMC</p>
+</li>
+<li><p>U盘写入armbian5.9系统</p>
+</li>
+<li><p>U盘启armbian5.9系统ssh登陆写入EMMC</p>
+</li>
+</ol>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d3cfdb2c9d.png" alt=""></p>
+<p>打开写入U盘镜像软件，选择镜像，确认U盘名称，点flash开始写入。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d3d65990e0.png" alt=""></p>
+<p>等待几分钟，写入速度和U盘传输速度有关，一般是几分钟，提示成功后，关闭软件，拔出U盘。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d3ece9181a.png" alt=""></p>
+<p>把U盘插入玩客云靠近网口的USB，然后通电，指示灯会蓝色→绿色→蓝紫闪烁→蓝色，证明刷机成功，过程好几分钟，多等下。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d40ded1121.png" alt=""></p>
+<p>打开写入软件，选armbian5.9的镜像，写入U盘，过程比前面快一点，这个镜像小一些，同样步骤操作。</p>
+<p>armbian5.9系统写入完成后，把U盘插入玩客云靠近网口的USB，用网线接入路由器LAN口，通电开机。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d5af6e7eea.png" alt=""></p>
+<p>过一会打开路由器后台，找到”aml-s812“的设备IP地址，复制。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d5be67081d.png" alt=""></p>
+<p>WIN10电脑打开putty软件，其他ssh工具也可以，填入上面的IP地址</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d5d5a18ac3.png" alt=""></p>
+<p>登陆，用户名：root  默认密码：1234</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d5e6b9bb66.png" alt=""></p>
+<p>进入目录 <code>cd /boot/install</code> ，写入emmc命令，等待写入完成，耗时几分钟。</p>
+<p>刷入 emmc命令：</p>
+<p>cd /boot/install  sudo ./install.sh</p>
+<p>完成后，拔电源，拔掉U盘，终于ARMBIAN系统刷机完成。</p>
+<h3 id="第三步：docker环境搭建"><a href="#第三步：docker环境搭建" class="headerlink" title="第三步：docker环境搭建"></a>第三步：docker环境搭建</h3><p>国内网络连接不稳定，需要更换软件源，然后更新系统，之后才能安装docker。</p>
+<p><strong>「换Debian源」</strong></p>
+<p><code>mv /etc/apt/sources.list /etc/apt/sources.list.bk   nano /etc/apt/sources.list</code></p>
+<p>进入编辑器后，粘贴下面代码</p>
+<p><code>deb https://mirrors.ustc.edu.cn/debian/ bullseye main non-free contrib   deb-src https://mirrors.ustc.edu.cn/debian/ bullseye main non-free contrib   deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main   deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main   deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main non-free contrib   deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main non-free contrib   deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main non-free contrib   deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main non-free contrib</code></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d62359f905.png" alt=""></p>
+<p>然后保存，退出。</p>
+<p><strong>「更新软件」</strong></p>
+<p><code>apt-get update &amp;&amp; apt-get upgrade</code></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d649e79d7c.png" alt=""></p>
+<p>选择有Y就选Y，有默认的情况就选N</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d652203b88.png" alt=""></p>
+<p>这里选择 NO</p>
+<p><strong>「安装docker」</strong></p>
+<p><code>apt install docker.io</code></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d662e1aeb5.png" alt=""></p>
+<p>等待代码跑完后，docker -v 查看下版本，证明安装成功！</p>
+<h3 id="安装OpenWrt"><a href="#安装OpenWrt" class="headerlink" title="安装OpenWrt"></a>安装OpenWrt</h3><p>镜像一：<a href="https://www.right.com.cn/forum/thread-8024126-1-1.html" target="_blank" rel="noopener">https://www.right.com.cn/forum/thread-8024126-1-1.html</a></p>
+<p>镜像二：<a href="https://hub.docker.com/r/xuanaimai/onecloud" target="_blank" rel="noopener">https://hub.docker.com/r/xuanaimai/onecloud</a></p>
+<p>本次安装的是镜像一，比较精简，功能够用；镜像二功能很全，根据自己需要选择。</p>
+<p><strong>「打开网卡混杂模式」</strong></p>
+<p>ip link set eth0 promisc on</p>
+<p><strong>「创建网络」</strong></p>
+<p>docker network create -d macvlan –subnet=192.168.100.0/24 –gateway=192.168.100.1 -o parent=eth0 macnet</p>
+<p>自己根据 玩客云 所在网段修改，如：玩客云IP:192.168.1.175，则192.168.0.0/24 改成 192.168.1.0/24，192.168.0.1改成主路由地址</p>
+<p><strong>「拉取镜像」</strong></p>
+<p>docker pull jyhking/onecloud:1.1docker run -itd –name=OneCloud –restart=always –network=macnet –privileged=true jyhking/onecloud:1.1 /sbin/init</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d698e6cd3c.png" alt=""></p>
+<p>openwrt镜像运行成功，然后打开路由器后台，找到openwrt地址。</p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d6aececc72.png" alt=""></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d6b91b4951.png" alt=""></p>
+<p><strong>「用户名：root  密码： password」</strong></p>
+<p><strong>「玩客云旁路由设置：」</strong></p>
+<ul>
+<li><p>LAN口固定IP地址，网关指向主路由IP地址</p>
+</li>
+<li><p>关闭DHCP服务器</p>
+</li>
+<li><p>关闭IPV6</p>
+</li>
+<li><p>防火墙自定义规则添加下面代码<code>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</code></p>
+</li>
+</ul>
+<h3 id="玩客云旁路由性能测试"><a href="#玩客云旁路由性能测试" class="headerlink" title="玩客云旁路由性能测试"></a>玩客云旁路由性能测试</h3><p><strong>「1、iperf3内网测速」</strong></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d6cb467610.png" alt=""></p>
+<p>基本上在930Mbps上下，证明网口是千兆的，基本跑满了。</p>
+<p><strong>「2、油管4K视频跑分测试」</strong></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d6d8e99755.png" alt=""></p>
+<p>稳定在5万多分，功耗1瓦多，CPU占用率在 40% 左右。</p>
+<p><strong>「3、fast网速测试」</strong></p>
+<p><img src="http://img.senxi.xyz/i/2022/10/05/633d6e1ce2667.png" alt=""></p>
+<p>测了好几次，最低65Mbps，最高84Mbps，看4K视频完全够用了。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>价格低廉，40多块钱就能入手，千兆网口，可当旁路由使用，能满足100M带宽的科学上网，功耗极低，适合喜欢折腾的朋友。</p>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/12/04/2022/WKY/" data-toggle="tooltip" data-placement="top"
-                           title="OpenWrt">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2022/07/28/2022/x-ui/" data-toggle="tooltip" data-placement="top"
-                           title="x-ui">Next Post &rarr;</a>
+                        <a href="/2022/07/28/2022/Hysteria/" data-toggle="tooltip" data-placement="top"
+                           title="Hysteria">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -324,7 +378,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hysteria-协议！歇斯底里加速协议，是否能够拯救线路拉胯的-VPS！降低延迟、提升线路质量！"><span class="toc-text">Hysteria 协议！歇斯底里加速协议，是否能够拯救线路拉胯的 VPS！降低延迟、提升线路质量！</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hysteria-介绍"><span class="toc-text">Hysteria 介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Hysteria"><span class="toc-text">安装 Hysteria</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#更新及安装组件"><span class="toc-text">更新及安装组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一键安装脚本"><span class="toc-text">一键安装脚本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hysteria-使用"><span class="toc-text">Hysteria 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Clash-Socks-分流配置文件"><span class="toc-text">Clash Socks 分流配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MacOS-终端"><span class="toc-text">MacOS 终端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-可视化客户端"><span class="toc-text">Windows 可视化客户端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#玩客云刷机armbian变身openwrt旁路由教程＆性能测试"><span class="toc-text">玩客云刷机armbian变身openwrt旁路由教程＆性能测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#玩客云刷机openwrt两种方法："><span class="toc-text">玩客云刷机openwrt两种方法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#刷机资源分享"><span class="toc-text">刷机资源分享</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#玩客云openwrt刷机包："><span class="toc-text">玩客云openwrt刷机包：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步：刷入底包-update"><span class="toc-text">第一步：刷入底包 update</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步：玩客云刷入armbian5-9系统"><span class="toc-text">第二步：玩客云刷入armbian5.9系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三步：docker环境搭建"><span class="toc-text">第三步：docker环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装OpenWrt"><span class="toc-text">安装OpenWrt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#玩客云旁路由性能测试"><span class="toc-text">玩客云旁路由性能测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol></li></ol>
                 </div>
             </div>
         </div>
