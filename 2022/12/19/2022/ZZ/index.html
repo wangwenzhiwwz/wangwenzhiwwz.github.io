@@ -26,11 +26,11 @@
     
     <title>
         
-        Oracle（甲骨文）免费云服务器注册指南及故障解决！｜WANGWENZHI
+        IPtables｜WANGWENZHI
         
     </title>
 
-    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2021/12/21/2021/oracle/">
+    <link rel="canonical" href="http://wangwenzhiwwz.github.io/2022/12/19/2022/ZZ/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -150,13 +150,13 @@
 <!--only post-->
 
 
-<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img/rh03v4-cloud-free-tier.webp">
+<img class="wechat-title-img" src="https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img20221219232746.png">
 
 
 <style>
     
     header.intro-header {
-        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img/rh03v4-cloud-free-tier.webp');
+        background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img20221219232746.png');
     }
 
     
@@ -167,14 +167,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>Oracle（甲骨文）免费云服务器注册指南及故障解决！</h1>
+                    <h1>IPtables</h1>
                     
-                    <h2 class="subheading">始终免费的VPS！油管8K视频秒开，颠覆你对免费资源的看法。</h2>
+                    <h2 class="subheading">利用iptables设置端口转发的shell脚本</h2>
                     
                     <span class="meta">
                          作者 王文志
                         <span>
-                          日期 2021-12-21
+                          日期 2022-12-19
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -189,7 +189,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            Oracle（甲骨文）免费云服务器注册指南及故障解决！
+            IPtables
         </span>
     </div>
 </header>
@@ -200,31 +200,31 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="所有命令"><a href="#所有命令" class="headerlink" title="所有命令"></a>所有命令</h1><h2 id="切换到-root-用户"><a href="#切换到-root-用户" class="headerlink" title="切换到 root 用户"></a>切换到 root 用户</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure>
-<h2 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h2><p>CentOS系统执行以下命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum update -y &amp;&amp; yum update -y &amp;&amp; yum install -y socat</span><br></pre></td></tr></table></figure></p>
-<p>Debian/Ubuntu系统执行以下命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update -y &amp;&amp; apt install -y curl &amp;&amp; apt install -y socat</span><br></pre></td></tr></table></figure></p>
-<h2 id="防火墙相关命令"><a href="#防火墙相关命令" class="headerlink" title="防火墙相关命令"></a>防火墙相关命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">firewall-cmd --state                   # 查看防火墙状态</span><br><span class="line">systemctl stop firewalld.service       # 停止防火墙</span><br><span class="line">systemctl disable firewalld.service    # 禁止防火墙开机自启</span><br></pre></td></tr></table></figure>
-<h2 id="甲骨文-oracle-开启-root-密码-登录"><a href="#甲骨文-oracle-开启-root-密码-登录" class="headerlink" title="甲骨文 ( oracle ) 开启 root + 密码 登录"></a>甲骨文 ( oracle ) 开启 root + 密码 登录</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo -i</span><br><span class="line">echo root:V2rayssr |chpasswd root</span><br><span class="line">sed -i &apos;s/^#\?PermitRootLogin.*/PermitRootLogin yes/g&apos; /etc/ssh/sshd_config;</span><br><span class="line">sed -i &apos;s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g&apos; /etc/ssh/sshd_config;</span><br><span class="line">service sshd restart</span><br></pre></td></tr></table></figure>
-<h2 id="BBR2加速"><a href="#BBR2加速" class="headerlink" title="BBR2加速"></a>BBR2加速</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget --no-check-certificate -q -O bbr2.sh &quot;https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh&quot; &amp;&amp; chmod +x bbr2.sh &amp;&amp; bash bbr2.sh auto</span><br></pre></td></tr></table></figure>
-<h2 id="安装-amp-升级x-ui面板一键脚本"><a href="#安装-amp-升级x-ui面板一键脚本" class="headerlink" title="安装&amp;升级x-ui面板一键脚本"></a>安装&amp;升级x-ui面板一键脚本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)</span><br></pre></td></tr></table></figure>
-<h2 id="运行Acme脚本"><a href="#运行Acme脚本" class="headerlink" title="运行Acme脚本"></a>运行Acme脚本</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https://get.acme.sh | sh</span><br></pre></td></tr></table></figure>
-<h2 id="申请证书及密钥"><a href="#申请证书及密钥" class="headerlink" title="申请证书及密钥"></a>申请证书及密钥</h2><p>PS：修改代码中注释的域名，改为你自己的域名<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --register-account -m xxxx@gmail.com</span><br><span class="line">~/.acme.sh/acme.sh  --issue -d 你的域名   --standalone</span><br></pre></td></tr></table></figure></p>
-<p>下载证书及密钥<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --installcert -d 你的域名 --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure></p>
+                <p>利用iptables设置端口转发的shell脚本<br>项目作用<br>便捷地设置iptables流量转发规则<br>当域名解析的地址发生变化时，自动更新流量转发规则，不需要手动变更（适用于ddns域名）<br>用法</p>
+<h1 id="如果vps不能访问-raw-githubusercontent-com-推荐使用这个"><a href="#如果vps不能访问-raw-githubusercontent-com-推荐使用这个" class="headerlink" title="如果vps不能访问 raw.githubusercontent.com 推荐使用这个"></a>如果vps不能访问 raw.githubusercontent.com 推荐使用这个</h1><p>wget –no-check-certificate -qO natcfg.sh <a href="https://www.arloor.com/sh/iptablesUtils/natcfg.sh" target="_blank" rel="noopener">https://www.arloor.com/sh/iptablesUtils/natcfg.sh</a> &amp;&amp; bash natcfg.sh<br>或</p>
+<p>wget –no-check-certificate -qO natcfg.sh <a href="https://raw.githubusercontent.com/arloor/iptablesUtils/master/natcfg.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/arloor/iptablesUtils/master/natcfg.sh</a> &amp;&amp; bash natcfg.sh<br>输出如下：</p>
+<p>#############################################################</p>
+<h1 id="Usage-setup-iptables-nat-rules-for-domian-ip"><a href="#Usage-setup-iptables-nat-rules-for-domian-ip" class="headerlink" title="Usage: setup iptables nat rules for domian/ip"></a>Usage: setup iptables nat rules for domian/ip</h1><h1 id="Website-http-www-arloor-com"><a href="#Website-http-www-arloor-com" class="headerlink" title="Website:  http://www.arloor.com/"></a>Website:  <a href="http://www.arloor.com/" target="_blank" rel="noopener">http://www.arloor.com/</a></h1><h1 id="Author-ARLOOR-97-x64-x6d-x69-110-64-97-114-108-x6f-111-x72-46-x63-x6f-x6d"><a href="#Author-ARLOOR-97-x64-x6d-x69-110-64-97-114-108-x6f-111-x72-46-x63-x6f-x6d" class="headerlink" title="Author: ARLOOR &#97;&#x64;&#x6d;&#x69;&#110;&#64;&#97;&#114;&#108;&#x6f;&#111;&#x72;&#46;&#x63;&#x6f;&#x6d;"></a>Author: ARLOOR <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#58;&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#97;&#114;&#108;&#x6f;&#111;&#x72;&#46;&#x63;&#x6f;&#x6d;">&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#97;&#114;&#108;&#x6f;&#111;&#x72;&#46;&#x63;&#x6f;&#x6d;</a></h1><h1 id="Github-https-github-com-arloor-iptablesUtils"><a href="#Github-https-github-com-arloor-iptablesUtils" class="headerlink" title="Github: https://github.com/arloor/iptablesUtils"></a>Github: <a href="https://github.com/arloor/iptablesUtils" target="_blank" rel="noopener">https://github.com/arloor/iptablesUtils</a></h1><p>#############################################################</p>
+<p>你要做什么呢（请输入数字）？Ctrl+C 退出本脚本<br>1) 增加转发规则          3) 列出所有转发规则<br>2) 删除转发规则          4) 查看当前iptables配置</p>
+<p>#?<br>此时按照需要，输入1-4中的任意数字，然后按照提示即可</p>
+<p>卸载<br>wget –no-check-certificate -qO uninstall.sh <a href="https://raw.githubusercontent.com/arloor/iptablesUtils/master/dnat-uninstall.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/arloor/iptablesUtils/master/dnat-uninstall.sh</a> &amp;&amp; bash uninstall.sh<br>查看日志<br>journalctl -exu dnat<br>配置文件备份和导入导出<br>配置文件在</p>
+<p>/etc/dnat/conf<br>trojan转发<br>总是有人说，不能转发trojan，这么说的人大部分是证书配置不对。最简单的解决方案是：客户端选择不验证证书。复杂一点是自己把证书和中转机的域名搭配好。</p>
+<p>小白记住一句话就好：客户端不验证证书。</p>
+<p>推荐新项目——使用nftables实现nat转发<br>iptables的后继者nftables已经在debain和centos最新的操作系统中作为生产工具提供，nftables提供了很多新的特性，解决了iptables很多痛点。</p>
+<p>因此创建了一个新的项目/arloor/nftables-nat-rust。该项目使用nftables作为nat转发实现，相比本项目具有如下优点：</p>
+<p>支持端口段转发<br>转发规则使用配置文件，可以进行备份以及导入<br>更加现代<br>所以强烈推荐使用/arloor/nftables-nat-rust。不用担心，本项目依然可以正常稳定使用。</p>
+<p>PS: 新旧两个项目并不兼容，切换到新项目时，请先卸载此项目</p>
+<p>电报交流群<br><a href="https://t.me/popstary" target="_blank" rel="noopener">https://t.me/popstary</a></p>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2022/02/19/2022/DiskGenisPro/" data-toggle="tooltip" data-placement="top"
-                           title="DiskGenisPro数据管理软件">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2019/08/26/2019/FinalShellSSH/" data-toggle="tooltip" data-placement="top"
-                           title="FinalShell">Next Post &rarr;</a>
+                        <a href="/2022/12/04/2022/WKY/" data-toggle="tooltip" data-placement="top"
+                           title="OpenWrt">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -262,7 +262,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#所有命令"><span class="toc-text">所有命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#切换到-root-用户"><span class="toc-text">切换到 root 用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级系统"><span class="toc-text">升级系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#防火墙相关命令"><span class="toc-text">防火墙相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#甲骨文-oracle-开启-root-密码-登录"><span class="toc-text">甲骨文 ( oracle ) 开启 root + 密码 登录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BBR2加速"><span class="toc-text">BBR2加速</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-amp-升级x-ui面板一键脚本"><span class="toc-text">安装&升级x-ui面板一键脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行Acme脚本"><span class="toc-text">运行Acme脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请证书及密钥"><span class="toc-text">申请证书及密钥</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#如果vps不能访问-raw-githubusercontent-com-推荐使用这个"><span class="toc-text">如果vps不能访问 raw.githubusercontent.com 推荐使用这个</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Usage-setup-iptables-nat-rules-for-domian-ip"><span class="toc-text">Usage: setup iptables nat rules for domian/ip</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Website-http-www-arloor-com"><span class="toc-text">Website:  http://www.arloor.com/</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Author-ARLOOR-97-x64-x6d-x69-110-64-97-114-108-x6f-111-x72-46-x63-x6f-x6d"><span class="toc-text">Author: ARLOOR admin@arloor.com</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Github-https-github-com-arloor-iptablesUtils"><span class="toc-text">Github: https://github.com/arloor/iptablesUtils</span></a></li></ol>
                 </div>
             </div>
         </div>
