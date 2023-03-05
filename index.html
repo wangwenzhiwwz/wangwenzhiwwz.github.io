@@ -1,969 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>WANGWENZHI's blog</title><meta name="description" content="There is no limit to learning"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/widget-post-list.css"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">WANGWENZHI's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><article class="post-container is-flex is-justify-content-center section container is-max-widescreen pt-4 px-2"><div class="columns is-variable is-1-tablet is-3-desktop-only is-2-widescreen is-full-width"><section class="column"><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://user-images.githubusercontent.com/121604513/219865326-5db3b9dc-fabc-4a09-a4b1-8ae8a921edc8.png" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2023/02/28/2023/CF/"><img class="post-cover-img js-img-fadeIn" src="https://user-images.githubusercontent.com/121604513/219865326-5db3b9dc-fabc-4a09-a4b1-8ae8a921edc8.png" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><header><a href="/tags/科学上网"><i class="tag post-item-tag">科学上网</i></a><a href="/tags/Ai"><i class="tag post-item-tag">Ai</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2023/02/28/2023/CF/">CF WARP解锁ChatGPT</a></h2><time class="has-text-grey" datetime="2023-02-28T14:02:41.000Z">2023-02-28</time><p class="is-flex-grow-2 mt-2">WARP多功能一键脚本支持纯IPV4、纯IPV6的VPS直接安装，主流linux系统均支持支持warp-go与wgcf两种warp内核形式切换相关说明及注意点请查看博客说明
+一键脚本：wget -N --no-check-certificate https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh &amp;amp;&amp;amp; bash CFwarp.sh
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="王文志的个人博客">
-    <meta name="keyword" content="">
-    <meta name="theme-color" content="#fff">
-    <meta name="msapplication-navbutton-color" content="#000">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <meta name="p:domain_verify" content="0850f57b90f84bf685f130c8d6e43877"/>
-    <meta name="p:domain_verify" content="7ae152f1d1834341bbebc2129928795d"/>
-    <meta name="360-site-verification" content="7fcf4d343b51b2d08e2fcc4a9d522f68" />
-    <meta name="sogou_site_verification" content="W6TKXkflr2"/>
-    <meta name="msvalidate.01" content="83AB792CC43FE1C37F258F83D75E9344" />
-    <meta name="p:domain_verify" content="73bf0e730c9941c84de350f3e4711752"/>
-    <link rel="shortcut icon" href="https://i.imgur.com/pqOWzeR.png">
-    <linkrel="Bookmark" href="https://i.imgur.com/pqOWzeR.png"> 
-    <link rel="alternate" type="application/atom+xml" title="WANGWENZHI" href="/atom.xml">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
-    
-    <title>
-        
-        WANGWENZHI
-        
-    </title>
+脚本源码备份Gitlab地址视频教程：
+Chatgpt注册接码TG聊天一条龙保姆级教程：让所有vps解锁Chatgpt官网登录，免费接码注册chatgpt，VPS一键chatgpt脚本，支持telegram-bot机器人聊天
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLMX6BNWCC"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SLMX6BNWCC');
-    </script>
-    
-
-    <link rel="canonical" href="https://wangwenzhi.eu.org/">
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/blog-style.css">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-</head>
-
-<style>
-
-    header.intro-header {
-        background-image: url('https://i.imgur.com/iaziSI1.jpg')
-    }
-</style>
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
-" data-ishome = "true" >
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand animated pulse" href="/">
-            	—
-                <span class="brand-logo">
-                    WANGWENZHI
-                </span>
-                —
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <!-- /.navbar-collapse -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/tags">tags</a>
-                    </li>
-                    <li>
-                        <a href="/archives">archives</a>
-                    </li>
-                    <li>
-                        <a href="/works">works</a>
-                    </li>
-                    
-					
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-					
-					
-						<li>
-							<a href="/about">About</a>
-						</li>
-					
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-</nav>
-<script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-//    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-</script>
-
-<!-- Main Content -->
-
-
-<style>
-
-    .custom-haojen-container .post-preview:nth-of-type(1),
-    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
-        text-align: center;
-        background-repeat: no-repeat;
-        border-radius: 3px;
-        background-size: cover;
-        padding: 0;
-        height: 300px;
-        display: table;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.16);
-    }
-
-    /*去掉诗歌的背景图片*/
-    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
-        background-image: none !important;
-        background-color: rgba(255, 248, 220, 0.5);
-    }
-
-    .custom-haojen-container .post-preview:nth-child(1) h2,
-    .custom-haojen-container .post-preview:nth-child(1) .post-meta,
-    .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
-        text-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-        letter-spacing: 1px;
-        color: #fff;
-        margin-top: 0;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .custom-haojen-container .post-preview:nth-child(1) .post-meta {
-        font-size: .9em;
-        font-weight: 300;
-        margin-top: 0;
-    }
-
-    .custom-haojen-container .post-preview-poetry:nth-child(1) .post-subtitle {
-        letter-spacing: 6px;
-        font-size: 18px;
-        font-family: unset;
-        font-weight: 400;
-        color: rgba(0, 0, 0, .75)
-    }
-
-    /*不显示摘要*/
-    .custom-haojen-container .post-preview:nth-child(1) .post-content-preview {
-        display: none
-    }
-
-    /*只第一个显示背景图片*/
-    .custom-haojen-container .post-preview:not(:nth-child(1)) {
-        background-image: none !important;
-    }
-
-    /*第一个分界线去掉*/
-    .custom-haojen-container hr:nth-of-type(1) {
-        display: none;
-    }
-
-    /*主题*/
-    .custom-haojen-container .post-preview:nth-of-type(1) > a {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    /*诗词标题*/
-    .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
-        font-size: 35px;
-        font-family: STKaiti;
-        color: rgba(0, 0, 0, .8);
-    }
-
-    .custom-haojen-container .post-preview-poetry:nth-of-type(1) .post-meta {
-        color: #0e2231;
-    }
-
-    @media (max-width: 768px) {
-        .custom-haojen-container .post-preview:nth-child(1) {
-            height: 240px;
-        }
-
-        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
-            font-size: 28px !important;
-            margin-top: 0;
-        }
-
-        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .custom-haojen-container .post-preview:nth-of-type(1) > a {
-            padding: 20px
-        }
-    }
-
-    /*手机屏幕*/
-    @media (max-width: 400px) {
-        .custom-haojen-container .post-preview:nth-child(1) {
-            height: 195px;
-        }
-
-        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
-            font-size: 20px !important;
-        }
-
-        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
-            font-size: 16px;
-        }
-
-        .custom-haojen-container .post-preview:nth-child(1) a {
-            padding: 30px 20px;
-        }
-    }
-</style>
-
-<!-- Page Header -->
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
-    <div class="row">
-        <header class="intro-header">
-            <div class="container">
-                <div class="site-heading text-center">
-                    <div class="about-me">
-                        <!--移动端头部显示-->
-                        <a href="/about/">
-                        <img src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640"/>
-                        <h5>WANGWENZHI</h5>
-                        
-                        <p></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div>
-</div>
-<!-- Main Content -->
-<div class="container custom-haojen-container">
-    <!-- Post Container -->
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
-            <!-- Main Content -->
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://images.pexels.com/photos/8728556/pexels-photo-8728556.jpeg?auto=compress&cs=tinysrgb&w=1600')">
-    <a href="/2023/02/28/2023/CF/">
-        <h2 class="post-title">
-            CF WARP解锁ChatGPT
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-02-28
-        </p>
-        
-        <h3 class="post-subtitle">
-            vps解锁Chatgpt官网登录WARP多功能一键脚本
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                WARP多功能一键脚本支持纯IPV4、纯IPV6的VPS直接安装，主流linux系统均支持支持warp-go与wgcf两种warp内核形式切换相关说明及注意点请查看博客说明
-一键脚本：wget -N --no-check-certificate https://gitlab.com/rwkgyg..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://images.unsplash.com/photo-1675557010061-315772f6efef')">
-    <a href="/2023/02/28/2023/AI/">
-        <h2 class="post-title">
-            OpenAI ChatGPT
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-02-28
-        </p>
-        
-        <h3 class="post-subtitle">
-            OpenAI AI.com 域名在近期启用
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                OpenAI 被曝早在 2021 年斥资数千万（1100 万）美元买下 AI.com 域名，并在近期启用
+说明链接：
+warp脚本
+Chatgpt注册
+2NR的apk直接下载
+查询Chatg..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2023/02/28/2023/CF/">Read more</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><header><a href="/tags/科学上网"><i class="tag post-item-tag">科学上网</i></a><a href="/tags/Ai"><i class="tag post-item-tag">Ai</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2023/02/28/2023/AI/">OpenAI ChatGPT</a></h2><time class="has-text-grey" datetime="2023-02-28T09:02:11.000Z">2023-02-28</time><p class="is-flex-grow-2 mt-2">OpenAI 被曝早在 2021 年斥资数千万（1100 万）美元买下 AI.com 域名，并在近期启用
 ChatGPT
-据最新消息，人工智能领域的领先企业 OpenAI 已经斥资数千万美元（1100 万美元）购买了域名 AI.com。近日，该公司正式启用了这一域名，进一步巩固了其在人工智能领域..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgDSC0093.JPG')">
-    <a href="/2023/02/19/2023/oracle/">
-        <h2 class="post-title">
-            甲骨文 ( oracle )
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-02-19
-        </p>
-        
-        <h3 class="post-subtitle">
-            甲骨文 ( oracle ) 开启 root + 密码 登录
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                标题
-sudo -iecho root:password |chpasswd rootsed -i &apos;s/^#\\?PermitRootLogin.*/PermitRootLogin yes/g&apos; /etc/ssh/sshd_config;sed -i &apos;s/^#\..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgDSC0012.JPG')">
-    <a href="/2023/02/19/2023/AWS/">
-        <h2 class="post-title">
-            AWS亚马逊云
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-02-19
-        </p>
-        
-        <h3 class="post-subtitle">
-            AWS亚马逊云永久免费CDN服务
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                教程文档
-AWS亚马逊云永久免费CDN服务 - cloudfront - 科学上网 技术分享优选IP工具：https://github.com/XIU2/CloudflareSpeedTest测速地址：https://cachefly.cachefly.net/100mb.testCFT IP段..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/imgphoto-1581973018012-6962488dc8b2.jpg')">
-    <a href="/2022/12/19/2022/Xray/">
-        <h2 class="post-title">
-            Xray
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2022-12-19
-        </p>
-        
-        <h3 class="post-subtitle">
-            Xray一键脚本使用方法
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                Xray一键脚本使用方法Xray一键脚本使用步骤如下：
-
-准备一个境外服务器，想服务器速度快请参考 搬瓦工VPS购买教程 或从  CN2 GIA VPS商家推荐 选购，想ip被封后免费换请参考：购买vultr服务器超详细图文教程。
-
-如果用VMESS+WS+TLS或者VLESS系列协议，则还需一..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img20221219232746.png')">
-    <a href="/2022/12/19/2022/ZZ/">
-        <h2 class="post-title">
-            IPtables
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2022-12-19
-        </p>
-        
-        <h3 class="post-subtitle">
-            利用iptables设置端口转发的shell脚本
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                利用iptables设置端口转发的shell脚本项目作用便捷地设置iptables流量转发规则当域名解析的地址发生变化时，自动更新流量转发规则，不需要手动变更（适用于ddns域名）用法如果vps不能访问 raw.githubusercontent.com 推荐使用这个wget --no-chec..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_20221204_011158.png')">
-    <a href="/2022/12/04/2022/WKY/">
-        <h2 class="post-title">
-            OpenWrt
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2022-12-04
-        </p>
-        
-        <h3 class="post-subtitle">
-            玩客云刷机openwrt教程
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                玩客云刷机armbian变身openwrt旁路由教程＆性能测试
-玩客云是17年的一款矿渣产品，我当时入手价499可以挖矿换话费和备份手机照片、使用迅雷高速下载，阿里云盘出来后不限速，也没有下载需求了，吃灰良久。
-最近折腾了玩客云刷机OpenWrt作为旁路由的方案，分享给大家，有需要的朋友折腾。
-..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview  "
-     style="background-image: url('https://raw.githubusercontent.com/wangwenzhiwwz/images/main/img3d-rendering-digital-art.jpg')">
-    <a href="/2022/07/28/2022/x-ui/">
-        <h2 class="post-title">
-            x-ui
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2022-07-28
-        </p>
-        
-        <h3 class="post-subtitle">
-            x-ui面板实现单端口多用户合租
-        </h3>
-        
-        <div class="post-content-preview">
-            <p>
-                切换到rootsudo -i
-1:开启root登入sudo sucd /root
- 修改authorized_keys文件（即ssh证书）vi .ssh/authorized_keys把ssh-rsa之前的文件都删除掉.  (i键编辑)
- 编辑ssh配置文件nano /etc/ssh/sshd_..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-
-<!-- 翻页 pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page/2/">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
-
-
-        </div>
-        <!-- Sidebar Container -->
-        <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-
-            <!-- About Me -->
-            <section class="visible-md visible-lg" style="padding: 0 18px">
-                <div class="short-about">
-                    <!--侧边栏头像-->
-
-                    
-                    <img src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640"/>
-                    
-                    <h5><a href="/about/">WANGWENZHI</a></h5>
-                    
-                    <hr>
-                    <!-- SNS Link 社交 -->
-                    
-                    <ul class="list-inline">
-                        
-                        
-                        <li>
-                            <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/@wangwenzhi">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-youtube fa-stack-1x fa-inverse">
-                                
-                                </i>
-                            </span>
-                        </a>
-                    </li>
-                    
-
-                    
-                        <li>
-                            <a target="_blank" href="https://space.bilibili.com/236167915">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-bilibili fa-stack-1x fa-inverse">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" viewBox="0 -70 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488.6 104.1C505.3 122.2 513 143.8 511.9 169.8V372.2C511.5 398.6 502.7 420.3 485.4 437.3C468.2 454.3 446.3 463.2 419.9 464H92.02C65.57 463.2 43.81 454.2 26.74 436.8C9.682 419.4 .7667 396.5 0 368.2V169.8C.7667 143.8 9.682 122.2 26.74 104.1C43.81 87.75 65.57 78.77 92.02 78H121.4L96.05 52.19C90.3 46.46 87.42 39.19 87.42 30.4C87.42 21.6 90.3 14.34 96.05 8.603C101.8 2.868 109.1 0 117.9 0C126.7 0 134 2.868 139.8 8.603L213.1 78H301.1L375.6 8.603C381.7 2.868 389.2 0 398 0C406.8 0 414.1 2.868 419.9 8.603C425.6 14.34 428.5 21.6 428.5 30.4C428.5 39.19 425.6 46.46 419.9 52.19L394.6 78L423.9 78C450.3 78.77 471.9 87.75 488.6 104.1H488.6zM449.8 173.8C449.4 164.2 446.1 156.4 439.1 150.3C433.9 144.2 425.1 140.9 416.4 140.5H96.05C86.46 140.9 78.6 144.2 72.47 150.3C66.33 156.4 63.07 164.2 62.69 173.8V368.2C62.69 377.4 65.95 385.2 72.47 391.7C78.99 398.2 86.85 401.5 96.05 401.5H416.4C425.6 401.5 433.4 398.2 439.7 391.7C446 385.2 449.4 377.4 449.8 368.2L449.8 173.8zM185.5 216.5C191.8 222.8 195.2 230.6 195.6 239.7V273C195.2 282.2 191.9 289.9 185.8 296.2C179.6 302.5 171.8 305.7 162.2 305.7C152.6 305.7 144.7 302.5 138.6 296.2C132.5 289.9 129.2 282.2 128.8 273V239.7C129.2 230.6 132.6 222.8 138.9 216.5C145.2 210.2 152.1 206.9 162.2 206.5C171.4 206.9 179.2 210.2 185.5 216.5H185.5zM377 216.5C383.3 222.8 386.7 230.6 387.1 239.7V273C386.7 282.2 383.4 289.9 377.3 296.2C371.2 302.5 363.3 305.7 353.7 305.7C344.1 305.7 336.3 302.5 330.1 296.2C323.1 289.9 320.7 282.2 320.4 273V239.7C320.7 230.6 324.1 222.8 330.4 216.5C336.7 210.2 344.5 206.9 353.7 206.5C362.9 206.9 370.7 210.2 377 216.5H377z"/></svg>
-                                    </i>
-                                </span>
-                            </a>
-                        </li>
-                    
-
-
-
-                        
-                        <li>
-                            <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="https://github.com/wangwenzhiwwz">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/wangwenzhi">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                    </ul>
-                </div>
-            </section>
- 
-            <!-- Featured Tags  标签 -->
-            
-            <section>
-                <div class="tags">
-                    
-                    
-                    <a href="/tags/#Github" title="Github"
-                       rel="4">Github</a>
-                    
-                    
-                    
-                    <a href="/tags/#软件" title="软件"
-                       rel="3">软件</a>
-                    
-                    
-                    
-                    <a href="/tags/#科学上网" title="科学上网"
-                       rel="11">科学上网</a>
-                    
-                    
-                    
-                    <a href="/tags/#Ai" title="Ai"
-                       rel="2">Ai</a>
-                    
-                    
-                </div>
-            </section>
-            
-
-
-            <h5 style="text-align: center;">-----------------------------</h5>
-
-            <div style="text-align: center; width:100%;">
-
-            </div>
-
-            
-            
-            <h3 style="text-align: center;">Friends</h3>
-            <ul class="list-inline" style="text-align: center;">
-                
-                <li><a href="https://ai.com/" target="_blank">ChatGPT</a></li>
-                
-                <li><a href="https://ulefone.com/" target="_blank">Ulefone</a></li>
-                
-                <li><a href="https://ping.chinaz.com/" target="_blank">Ping</a></li>
-                
-                <li><a href="https://github.com/wangwenzhiwwz/" target="_blank">Github</a></li>
-                
-                <li><a href="https://www.zcool.com.cn/u/15698819" target="_blank">站酷</a></li>
-                
-                <li><a href="https://www.xinpianchang.com/u12508640" target="_blank">新片场</a></li>
-                
-                <li><a href="https://www.nivod.tv/" target="_blank">泥视频</a></li>
-                
-                <li><a href="https://jpsmile.com/" target="_blank">Jpsmile&#39;s</a></li>
-                
-                <li><a href="https://www.v2ex.com/member/wangwenzhi" target="_blank">v2ex</a></li>
-                
-                <li><a href="https://cli.im/" target="_blank">二维码生成</a></li>
-                
-                <li><a href="https://www.base64encode.net/" target="_blank">Base64</a></li>
-                
-                <li><a href="https://app.netlify.com/login/email" target="_blank">Netlify</a></li>
-                
-                <li><a href="http://www.ip111.cn/" target="_blank">IP</a></li>
-                
-            </ul>
-            
-
-            <h5 style="text-align: center;">-----------------------------</h5>
-
-            <a href="https://bandwagonhost.com/aff.php?aff=51623"> <img src="https://bwh88.net/templates/organicbandwagon/images/logo.png" alt="cmbDS.jpg" border="0"
-            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"/>
-            </a>
-
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <br>
-                <ul class="list-inline text-center">
-                
-                
-                    <li>
-                        <a target="_blank" href="https://twitter.com/wangwenzhiwwz">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCzpnHbU5VldcsW11H14DR-g">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-youtube fa-stack-1x fa-inverse">
-                                
-                                </i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank" href="https://space.bilibili.com/236167915">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-bilibili fa-stack-1x fa-inverse">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="White" viewBox="0 -60 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488.6 104.1C505.3 122.2 513 143.8 511.9 169.8V372.2C511.5 398.6 502.7 420.3 485.4 437.3C468.2 454.3 446.3 463.2 419.9 464H92.02C65.57 463.2 43.81 454.2 26.74 436.8C9.682 419.4 .7667 396.5 0 368.2V169.8C.7667 143.8 9.682 122.2 26.74 104.1C43.81 87.75 65.57 78.77 92.02 78H121.4L96.05 52.19C90.3 46.46 87.42 39.19 87.42 30.4C87.42 21.6 90.3 14.34 96.05 8.603C101.8 2.868 109.1 0 117.9 0C126.7 0 134 2.868 139.8 8.603L213.1 78H301.1L375.6 8.603C381.7 2.868 389.2 0 398 0C406.8 0 414.1 2.868 419.9 8.603C425.6 14.34 428.5 21.6 428.5 30.4C428.5 39.19 425.6 46.46 419.9 52.19L394.6 78L423.9 78C450.3 78.77 471.9 87.75 488.6 104.1H488.6zM449.8 173.8C449.4 164.2 446.1 156.4 439.1 150.3C433.9 144.2 425.1 140.9 416.4 140.5H96.05C86.46 140.9 78.6 144.2 72.47 150.3C66.33 156.4 63.07 164.2 62.69 173.8V368.2C62.69 377.4 65.95 385.2 72.47 391.7C78.99 398.2 86.85 401.5 96.05 401.5H416.4C425.6 401.5 433.4 398.2 439.7 391.7C446 385.2 449.4 377.4 449.8 368.2L449.8 173.8zM185.5 216.5C191.8 222.8 195.2 230.6 195.6 239.7V273C195.2 282.2 191.9 289.9 185.8 296.2C179.6 302.5 171.8 305.7 162.2 305.7C152.6 305.7 144.7 302.5 138.6 296.2C132.5 289.9 129.2 282.2 128.8 273V239.7C129.2 230.6 132.6 222.8 138.9 216.5C145.2 210.2 152.1 206.9 162.2 206.5C171.4 206.9 179.2 210.2 185.5 216.5H185.5zM377 216.5C383.3 222.8 386.7 230.6 387.1 239.7V273C386.7 282.2 383.4 289.9 377.3 296.2C371.2 302.5 363.3 305.7 353.7 305.7C344.1 305.7 336.3 302.5 330.1 296.2C323.1 289.9 320.7 282.2 320.4 273V239.7C320.7 230.6 324.1 222.8 330.4 216.5C336.7 210.2 344.5 206.9 353.7 206.5C362.9 206.9 370.7 210.2 377 216.5H377z"/></svg>
-                                </i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-
-
-                
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/wangwenzhi1997">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank" href="http://weibo.com/wangwenzhiwwz">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/wangwenzhiwwz">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank"  href="https://github.com/wangwenzhiwwz">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-                    <li>
-                        <a target="_blank"  href="https://www.linkedin.com/in/wangwenzhi">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; WANGWENZHI 2023
-                    <br>
-                     
-
-                     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-        
-                    <br>
-                    Theme by <a href="https://wangwenzhiwwz.github.io/">WANGWENZHI</a>
-                </p>
-                
-
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="/js/blog.js"></script>
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+据最新消息，人工智能领域的领先企业 OpenAI 已经斥资数千万美元（1100 万美元）购买了域名 AI.com。近日，该公司正式启用了这一域名，进一步巩固了其在人工智能领域的领导地位。
+据悉，OpenAI 的这一举措旨在提高其品牌的知名度和可信度，并更好地向全球范围内的客户和利益相关者展示其创新技术和解决方案。同时，AI.com 这一短小精悍的域名也有望为 OpenAI 带来更多的流量和搜索排名，进一步增强其在线存在感和竞争力。
+OpenAI 是一家人工智能技术公司，由多位顶尖科学家和企业家创立，其业务覆盖人工智能基础研究、产品研发、技术咨询和服务等领域。目前，该公司已经成为人工智能领..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2023/02/28/2023/AI/">Read more</a></section></article><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://mma.prnewswire.com/media/467598/Oracle_Logo.jpg?p=facebook" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2023/02/19/2023/oracle/"><img class="post-cover-img js-img-fadeIn" src="https://mma.prnewswire.com/media/467598/Oracle_Logo.jpg?p=facebook" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><header><a href="/tags/科学上网"><i class="tag post-item-tag">科学上网</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2023/02/19/2023/oracle/">甲骨文 ( oracle )</a></h2><time class="has-text-grey" datetime="2023-02-19T05:02:21.000Z">2023-02-19</time><p class="is-flex-grow-2 mt-2">标题
+sudo -i
+echo root:password |chpasswd root
+sed -i &amp;#39;s/^#\\?PermitRootLogin.*/PermitRootLogin yes/g&amp;#39; /etc/ssh/sshd_config;
+sed -i &amp;#39;s/^#\\?PasswordAuthentication.*/PasswordAuthentication yes/g&amp;#39; /etc/ssh/sshd_config;
+service sshd restart
+</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2023/02/19/2023/oracle/">Read more</a></section></article><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://www.excelonsolutions.com/wp-content/uploads/2021/07/aws-logo-1.png" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2023/02/19/2023/AWS/"><img class="post-cover-img js-img-fadeIn" src="https://www.excelonsolutions.com/wp-content/uploads/2021/07/aws-logo-1.png" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><header><a href="/tags/科学上网"><i class="tag post-item-tag">科学上网</i></a></header><h2 class="mt-4 mb-0 is-family-serif"><a href="/2023/02/19/2023/AWS/">AWS亚马逊云</a></h2><time class="has-text-grey" datetime="2023-02-19T05:00:00.000Z">2023-02-19</time><p class="is-flex-grow-2 mt-2">教程文档
+AWS亚马逊云永久免费CDN服务 - cloudfront - 科学上网 技术分享优选IP工具：https://github.com/XIU2/CloudflareSpeedTest测速地址：https://cachefly.cachefly.net/100mb.testCFT IP段：https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html
+
+由于CFT的CDN包含了中国IP段，需要备案才能使用，需要将其全部剔除，否则优选出来延迟最低的都是中国的CDN
+
+下方为剔除中国CDN的IP段，官方可能会定期更新IP段，建议自己进行剔除操作更新日期：2022年7月29日
+20..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2023/02/19/2023/AWS/">Read more</a></section></article><section class="paginator is-flex is-justify-content-flex-end is-flex-wrap-wrap mt-5"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-next has-text-grey"></i></a></section></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen"><style>.search-widget .search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--second-text-color);
+}
+.search-widget .search-content {
+    position: absolute;
+    left: 0;
+    top: calc(100% - 3px);
+    z-index: 2;
+
+    width: 100%;
+    height: 0;
+    max-height: 550px;
+
+    overflow: auto;
+    box-sizing: border-box;
+
+    background: var(--top-bar-bg-color);
+    backdrop-filter: blur(var(--backdropFilter));
+    -webkit-backdrop-filter: blur(var(--backdropFilter));
+
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.08);
+}
+
+.search-widget .search-content a:hover h5 {
+    color: #3273dc!important;
+}
+</style><main class="aside-card-container search-widget is-relative"><label for="searchInput"><div class="is-flex px-4" id="searchButton"><i class="iconfont icon--search1 mr-1"></i><input class="search-input is-flex-grow-1" id="searchInput" placeholder="Search everything.."></div></label><section class="search-content content" id="searchContent"></section></main><script>var searchDatabase = []
+var searchInputEl = document.getElementById('searchInput')
+var searchButtonEl = document.getElementById('searchButton')
+var searchResultEl = document.getElementById('searchContent')
+
+searchInputEl.oninput = function (evt) {
+    var searchValue = evt.srcElement.value
+    var haveSearchValue = Boolean(searchValue.trim())
+    if (!haveSearchValue) {
+        searchResultEl.style.height = 0
+        searchResultEl.innerHTML = null
+        return
     }
-</script>
 
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async("https://wangwenzhi.eu.org/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
+    var searchResults = searching(searchValue)
+
+    if (searchResults.length > 0) {
+        renderSearchResults(searchResults)
     }
-</script>
+}
 
-<!--fastClick.js -->
-<script>
-    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+function renderSearchResults(results) {
+    searchResultEl.innerHTML = null
+    var fragment = document.createDocumentFragment()
+
+    results.forEach(function (item) {
+        var link = document.createElement('a')
+        var title = document.createElement('h5')
+        var content = document.createElement('p')
+
+        title.className = 'mb-1'
+        title.innerText = item.title
+        content.innerText = item.content
+
+        link.href = item.link
+        link.appendChild(title)
+        link.appendChild(content)
+        link.className = 'p-4 is-block'
+
+        fragment.appendChild(link)
     })
-</script>
 
-<!-- Google Analytics -->
+    searchResultEl.appendChild(fragment)
+    searchResultEl.style.height = 'auto'
+}
 
+function searching(inputText) {
+    var inputTexts = inputText.split(' ')
+    var searchResults = []
+    inputTexts.forEach(function (searchKey) {
+        var haveSearchValue = Boolean(searchKey.trim())
+        if (!haveSearchValue) return
 
-<script>
-    // dynamic User by Hux
-    var _gaId = 'UA-110405735-1';
-    var _gaDomain = 'auto';
-    // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
-</script>
+        var key = searchKey.toLowerCase()
 
+        for (var entry of searchDatabase) {
+            var title = entry.getElementsByTagName('title')[0].textContent
+            var link = entry.getElementsByTagName('link')[0].getAttribute('href')
+            var contentWithTags = entry.getElementsByTagName('content')[0].textContent
+            var rawContent = contentWithTags.trim().replace(/<[^>]+>/g, '').toLowerCase()
 
-<!-- Baidu Tongji -->
+            var LENGTH = 80
+            var finalContent = ''
+            var contentLength = rawContent.length
+            var searchResultIdx = rawContent.indexOf(key)
 
+            var startIdx = searchResultIdx - 20,
+                endIdx = startIdx + LENGTH
 
-<!-- swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+            if (startIdx < 0) {
+                startIdx = 0
+                endIdx = 100
+            }
 
-  _st('install','','2.0.0');
-</script>
+            endIdx > contentLength && (endIdx = contentLength)
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            finalContent = rawContent.substring(startIdx, endIdx)
 
-<!-- 360 -->
+            if (title.indexOf(key) > -1 || searchResultIdx > -1) {
+                searchResults.push({
+                    link: link,
+                    title: title,
+                    content: finalContent
+                })
+            }
+        }
+    })
+    return searchResults
+}
 
-<script>(function(){
-var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5":"https://jspassport.ssl.qhimg.com/11.0.1.js?e8e9290bae1c7fe0260e9c9c3c21dcd5";
-document.write('<script src="' + src + '" id="sozz"><\/script>');
-})();
-</script>
+searchButtonEl.onclick = function () {
+    if (searchDatabase.length > 0) return;
 
-<!--wechat title img-->
-<img class="wechat-title-img" src="http://q1.qlogo.cn/g?b=qq&amp;nk=99218632&amp;s=640">
-</body>
+    fetch(window.location.href + '/search.xml').then(res => res.text()).then(res => {
+        var domparser = new DOMParser
+        var doc = domparser.parseFromString(res, 'application/xml')
+        searchDatabase = doc.getElementsByTagName('search')[0].children
+    })
+}</script><main class="aside-card-container profile-widget"><!-- todo: 使用取色工具动态阴影--><section class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center"><section class="is-flex is-justify-content-center avatar is-clipped"><div class="avatar-placeholder"></div></section><h3 class="user-name">WANGWENZHI</h3><blockquote class="has-text-centered is-relative"><span style="margin-bottom: 5px;">There is no limit to learning</span></blockquote><address class="has-text-centered has-text-grey"><i class="iconfont icon-location" style="margin-right: 5px;"></i><span class="has-text-grey">Shenzhen</span></address></section><section class="sns-container is-flex is-justify-content-center is-align-items-center"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com/wangwenzhiwwz"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/wangwenzhiwwz"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com/wangwenzhiwwz"><i class="iconfont icon-ins"></i></a><!-- RSS--><a title="rss" target="_blank" rel="noopener nofollow" href="/atom.xml"><i class="iconfont icon-rss"></i></a><!-- 知乎--><a title="zhihu" target="_blank" rel="noopener nofollow" href="//zhihu.com//"><i class="iconfont icon-zhihu"></i></a><!-- 领英--><a title="linkedin" target="_blank" rel="noopener nofollow" href="//www.linkedin.com/in/wangwenzhi"><i class="iconfont icon-linkedin"></i></a><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com/wangwenzhiwwz"><i class="iconfont icon-tian7_facebook"></i></a></section></main><main class="aside-card-container recent-widget"><h3>Recent</h3><ul><li class="is-flex"><!-- change to element replace image placeholder--><img class="js-img-fadeIn" src="https://user-images.githubusercontent.com/121604513/219865326-5db3b9dc-fabc-4a09-a4b1-8ae8a921edc8.png" alt="cover"><!--else--><!--    div.post-img-placeholder--><section class="is-flex-grow-2"><p class="has-text-weight-semibold" style="line-height: 20px; font-size: 14px"><a href="/2023/02/28/2023/CF/">CF WARP解锁ChatGPT</a></p><time class="has-text-weight-semibold has-text-grey" datetime="2023-02-28T14:02:41.000Z">2023-02-28</time></section></li><li class="is-flex"><!-- change to element replace image placeholder--><img class="js-img-fadeIn" src="https://ui-avatars.com/api/?background=f5f5f5&amp;name=Op" alt="cover"><!--else--><!--    div.post-img-placeholder--><section class="is-flex-grow-2"><p class="has-text-weight-semibold" style="line-height: 20px; font-size: 14px"><a href="/2023/02/28/2023/AI/">OpenAI ChatGPT</a></p><time class="has-text-weight-semibold has-text-grey" datetime="2023-02-28T09:02:11.000Z">2023-02-28</time></section></li><li class="is-flex"><!-- change to element replace image placeholder--><img class="js-img-fadeIn" src="https://mma.prnewswire.com/media/467598/Oracle_Logo.jpg?p=facebook" alt="cover"><!--else--><!--    div.post-img-placeholder--><section class="is-flex-grow-2"><p class="has-text-weight-semibold" style="line-height: 20px; font-size: 14px"><a href="/2023/02/19/2023/oracle/">甲骨文 ( oracle )</a></p><time class="has-text-weight-semibold has-text-grey" datetime="2023-02-19T05:02:21.000Z">2023-02-19</time></section></li><li class="is-flex"><!-- change to element replace image placeholder--><img class="js-img-fadeIn" src="https://www.excelonsolutions.com/wp-content/uploads/2021/07/aws-logo-1.png" alt="cover"><!--else--><!--    div.post-img-placeholder--><section class="is-flex-grow-2"><p class="has-text-weight-semibold" style="line-height: 20px; font-size: 14px"><a href="/2023/02/19/2023/AWS/">AWS亚马逊云</a></p><time class="has-text-weight-semibold has-text-grey" datetime="2023-02-19T05:00:00.000Z">2023-02-19</time></section></li></ul></main><main class="aside-card-container archives-widget"><h3>Archives</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li></ul></section></main><main class="aside-card-container tag-widget"><h3>Tags</h3><section><a href="/tags/Github"><span class="tag post-item-tag" style="margin-bottom: 5px;">Github</span></a><a href="/tags/科学上网"><span class="tag post-item-tag" style="margin-bottom: 5px;">科学上网</span></a><a href="/tags/软件"><span class="tag post-item-tag" style="margin-bottom: 5px;">软件</span></a><a href="/tags/Ai"><span class="tag post-item-tag" style="margin-bottom: 5px;">Ai</span></a></section></main><main class="aside-card-container friend-widget"><h3>Friends</h3><section><a href="https://ai.com/"><span class="tag post-item-tag" style="margin-bottom: 5px;">ChatGPT</span></a><a href="https://ulefone.com/"><span class="tag post-item-tag" style="margin-bottom: 5px;">Ulefone</span></a><a href="https://ping.chinaz.com/"><span class="tag post-item-tag" style="margin-bottom: 5px;">Ping</span></a><a href="https://github.com/wangwenzhiwwz/"><span class="tag post-item-tag" style="margin-bottom: 5px;">Github</span></a><a href="https://www.zcool.com.cn/u/15698819"><span class="tag post-item-tag" style="margin-bottom: 5px;">站酷</span></a><a href="https://www.xinpianchang.com/u12508640"><span class="tag post-item-tag" style="margin-bottom: 5px;">新片场</span></a><a href="https://www.nivod.tv/"><span class="tag post-item-tag" style="margin-bottom: 5px;">泥视频</span></a><a href="https://jpsmile.com/"><span class="tag post-item-tag" style="margin-bottom: 5px;">Jpsmile's</span></a><a href="https://www.v2ex.com/member/wangwenzhi"><span class="tag post-item-tag" style="margin-bottom: 5px;">v2ex</span></a><a href="https://cli.im/"><span class="tag post-item-tag" style="margin-bottom: 5px;">二维码生成</span></a><a href="https://www.base64encode.net/"><span class="tag post-item-tag" style="margin-bottom: 5px;">Base64</span></a><a href="https://app.netlify.com/login/email"><span class="tag post-item-tag" style="margin-bottom: 5px;">Netlify</span></a><a href="http://www.ip111.cn/"><span class="tag post-item-tag" style="margin-bottom: 5px;">IP</span></a></section></main></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
 
-</html>
+window.addEventListener('resize', $claudia.throttle(function () {
+    var images = document.querySelectorAll('.js-img-fadeIn')
+
+    images.forEach($claudia.blurBackdropImg)
+}, 150))</script></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com/wangwenzhiwwz"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/wangwenzhiwwz"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com/wangwenzhiwwz"><i class="iconfont icon-ins"></i></a><!-- RSS--><a title="rss" target="_blank" rel="noopener nofollow" href="/atom.xml"><i class="iconfont icon-rss"></i></a><!-- 知乎--><a title="zhihu" target="_blank" rel="noopener nofollow" href="//zhihu.com//"><i class="iconfont icon-zhihu"></i></a><!-- 领英--><a title="linkedin" target="_blank" rel="noopener nofollow" href="//www.linkedin.com/in/wangwenzhi"><i class="iconfont icon-linkedin"></i></a><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com/wangwenzhiwwz"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> WANGWENZHI 2023</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+
+window.addEventListener('resize', $claudia.throttle(function () {
+    var images = document.querySelectorAll('.js-img-fadeIn')
+
+    images.forEach($claudia.blurBackdropImg)
+}, 150))</script></body></html>
