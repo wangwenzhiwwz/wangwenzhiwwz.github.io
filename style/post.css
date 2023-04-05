@@ -24,7 +24,7 @@
     transform: translateY(0); }
 
 .post-page .post-content code {
-  border-radius: 4px;
+  border-radius: 20px;
   background: var(--third-bg-color); }
 
 .post-page .post-content pre {
@@ -43,7 +43,7 @@
   margin: 0 auto;
   max-height: 500px;
   border-radius: 6px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   opacity: 0;
   will-change: opacity; }
 
