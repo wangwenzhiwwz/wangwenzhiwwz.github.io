@@ -93,7 +93,7 @@
     color: inherit; }
     :root body a:hover, :root body a:hover .iconfont {
       text-decoration: none;
-      color: #3273dc !important; }
+      color: #ff8800 !important; }
   :root body .tag.post-item-tag {
     margin-right: 5px;
     font-weight: bold;
@@ -105,7 +105,7 @@
   :root body .button.is-default {
     height: 40px;
     border: none;
-    border-radius: 6px;
+    border-radius: 15px;
     color: var(--second-text-color);
     background: var(--third-bg-color); }
   :root body > main {
