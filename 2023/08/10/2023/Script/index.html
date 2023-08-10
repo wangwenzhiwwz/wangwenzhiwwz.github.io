@@ -1,0 +1,325 @@
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>Script</title><meta name="description" content="Life-long learning"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><link rel="stylesheet" href="/style/common/jquery.fancybox.min.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="
+更新列表2023-0525 检测是否可以访问 ChatGPT 脚本 来源
+PLAINTEXT
+bash &amp;lt;(curl -Ls https://raw.githubusercontent.com/missuo/OpenAI-Checker/main/openai.sh)
+
+2023-4-29 修改检测是否可以访问 ChatGPT 脚本
+BASH
+bash &amp;lt;(curl -Ls https://ourl.co/oaic)
+
+BASH
+bash &amp;lt;(curl -Ls https://cdn.jsdelivr.net/gh/missuo/OpenAI-Checker/openai.sh)
+
+综合工具箱（强烈推荐，集成了很多脚本）BASH
+wget -O box.sh https://raw.gi.."></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">WANGWENZHI's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Script</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#更新列表"><span class="toc-text">更新列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合工具箱（强烈推荐，集成了很多脚本）"><span class="toc-text">综合工具箱（强烈推荐，集成了很多脚本）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#杜甫测试"><span class="toc-text">杜甫测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DD-相关"><span class="toc-text">DD 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、甲骨文-DD-脚本"><span class="toc-text">1、甲骨文 DD 脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、MoeClub-脚本"><span class="toc-text">2、MoeClub 脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、另一位大佬的脚本"><span class="toc-text">3、另一位大佬的脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、秋水逸冰-Windows-2012-2016-2019-2022-10-11-DD-镜像"><span class="toc-text">4、秋水逸冰 Windows 2012/2016/2019/2022 10/11 DD 镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试相关"><span class="toc-text">测试相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#机器测试"><span class="toc-text">机器测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单线程测试"><span class="toc-text">单线程测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最全测速脚本"><span class="toc-text">最全测速脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#superbench"><span class="toc-text">superbench</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bench-sh"><span class="toc-text">Bench.sh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#速度测试"><span class="toc-text">速度测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#显示延迟、抖动"><span class="toc-text">显示延迟、抖动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#直接显示回程线路"><span class="toc-text">直接显示回程线路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四网测速"><span class="toc-text">四网测速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三网测速"><span class="toc-text">三网测速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试-25-端口是否开放"><span class="toc-text">测试 25 端口是否开放</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试-IPv4-优先还是-IPv6-优先"><span class="toc-text">测试 IPv4 优先还是 IPv6 优先</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#流媒体测试"><span class="toc-text">流媒体测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全媒体测试"><span class="toc-text">全媒体测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#奈飞测试"><span class="toc-text">奈飞测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WARP"><span class="toc-text">WARP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#服务器时间"><span class="toc-text">服务器时间</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-同步时间"><span class="toc-text">CentOS 同步时间</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BBR"><span class="toc-text">BBR</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-7-BBR"><span class="toc-text">CentOS 7 BBR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一键开启-BBR"><span class="toc-text">一键开启 BBR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-相关"><span class="toc-text">Docker 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#更新、安装必备软件"><span class="toc-text">更新、安装必备软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#海外服务器"><span class="toc-text">海外服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非大陆-Docker-安装"><span class="toc-text">非大陆 Docker 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卸载-Docker"><span class="toc-text">卸载 Docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非大陆-Docker-compose-安装"><span class="toc-text">非大陆 Docker-compose 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#大陆服务器"><span class="toc-text">大陆服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#国内机安装-docker"><span class="toc-text">国内机安装 docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#国内机安装-docker-compose"><span class="toc-text">国内机安装 docker-compose</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卸载-docker"><span class="toc-text">卸载 docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#防火墙"><span class="toc-text">防火墙</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-关闭防火墙"><span class="toc-text">CentOS 关闭防火墙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#宝塔相关"><span class="toc-text">宝塔相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#宝塔去除登陆-已经失效，解决方法见：https-blog-laoda-de-archives-bt-to-aapanel"><span class="toc-text">宝塔去除登陆 (已经失效，解决方法见：https://blog.laoda.de/archives/bt-to-aapanel)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宝塔-amp-aapanel-破解（这个目前也不保证可用了）"><span class="toc-text">宝塔 & aapanel 破解（这个目前也不保证可用了）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#呆梨相关"><span class="toc-text">呆梨相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#XUI"><span class="toc-text">XUI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mack-a"><span class="toc-text">mack-a</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/科学上网"><i class="tag post-item-tag">科学上网</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">Script</h1><time class="has-text-grey" datetime="2023-08-10T12:15:00.000Z">2023-08-10</time><article class="mt-2 post-content"><p><img src="https://wangwenzhi.eu.org/images/images/Script.png" alt=""></p>
+<h2 id="更新列表"><a href="#更新列表" class="headerlink" title="更新列表"></a><strong>更新列表</strong></h2><p>2023-0525 检测是否可以访问 ChatGPT 脚本 <a href="https://github.com/moeakwak/chatgpt-web-share/wiki/%E4%B8%AD%E6%96%87%E6%8C%87%E5%8D%97" target="_blank" rel="noopener">来源</a></p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code>bash &lt;(curl -Ls https://raw.githubusercontent.com/missuo/OpenAI-Checker/main/openai.sh)
+</code></pre><hr>
+<p>2023-4-29 修改检测是否可以访问 ChatGPT 脚本</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Ls https://ourl.co/oaic)
+</code></pre><hr>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Ls https://cdn.jsdelivr.net/gh/missuo/OpenAI-Checker/openai.sh)
+</code></pre><hr>
+<h2 id="综合工具箱（强烈推荐，集成了很多脚本）"><a href="#综合工具箱（强烈推荐，集成了很多脚本）" class="headerlink" title="综合工具箱（强烈推荐，集成了很多脚本）"></a><strong>综合工具箱（强烈推荐，集成了很多脚本）</strong></h2><p><strong>BASH</strong></p>
+<pre><code>wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh &amp;&amp; chmod +x box.sh &amp;&amp; clear &amp;&amp; ./box.sh
+</code></pre><hr>
+<h2 id="杜甫测试"><a href="#杜甫测试" class="headerlink" title="杜甫测试"></a><strong>杜甫测试</strong></h2><p><strong>BASH</strong></p>
+<pre><code>wget -q https://github.com/Aniverse/A/raw/i/a &amp;&amp; bash a
+</code></pre><hr>
+<h2 id="DD-相关"><a href="#DD-相关" class="headerlink" title="DD 相关"></a><strong>DD 相关</strong></h2><h3 id="1、甲骨文-DD-脚本"><a href="#1、甲骨文-DD-脚本" class="headerlink" title="1、甲骨文 DD 脚本"></a><strong>1、甲骨文 DD 脚本</strong></h3><p>DD 成 Debian 10</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget --no-check-certificate -qO- &#39;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#39;) -d 10 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre><hr>
+<p>DD 成 Ubuntu 20.04</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget --no-check-certificate -qO- &#39;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#39;) -u 20.04 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre><hr>
+<h3 id="2、MoeClub-脚本"><a href="#2、MoeClub-脚本" class="headerlink" title="2、MoeClub 脚本"></a><strong>2、MoeClub 脚本</strong></h3><p><strong>重点推荐</strong>：</p>
+<p>时间：22/11/2021 15:21 萌咖更新脚本：</p>
+<ol>
+<li><p>新增对 Oracle AMD，Oracle ARM 全面支持。可支持从 Ubuntu, Oracle Linux 等系统网络重装.</p>
+</li>
+<li><p>更新 dd 镜像的基础系统版本.</p>
+</li>
+<li><p>移除对外部 wget 的依赖.</p>
+</li>
+<li><p>新增 -port 参数，可更改默认 SSH 端口.</p>
+</li>
+<li><p>更新 内置的网络参数计算 逻辑.</p>
+</li>
+<li><p>更新 grub 配置文件定位逻辑，可支持任意引导 grub 的系统.</p>
+</li>
+</ol>
+<p>以下系统已通过测试 (其他自测):</p>
+<p>Debian: 9, 10, 11;</p>
+<p>Ubuntu: 18.04, 20.04;</p>
+<p>CentOS: 6.10;</p>
+<p>以下平台已通过测试 (其他自测):</p>
+<p>Oracle、Do、Azure</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget --no-check-certificate -qO- &#39;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#39;) -d 10 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre><hr>
+<ul>
+<li>d 10 -v 64</li>
+<li>d 9 -v 64</li>
+<li>u 20.04 -v 64</li>
+<li>u 18.04 -v 64</li>
+</ul>
+<p>开机改密码脚本：</p>
+<p>开机改密：</p>
+<p><strong>BASH</strong></p>
+<pre><code>#!/bin/bash
+echo root:Vicer |sudo chpasswd root
+sudo sed -i &#39;s/^#\?PermitRootLogin.*/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config;
+sudo sed -i &#39;s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config;
+sudo reboot
+</code></pre><hr>
+<h3 id="3、另一位大佬的脚本"><a href="#3、另一位大佬的脚本" class="headerlink" title="3、另一位大佬的脚本"></a><strong>3、另一位大佬的脚本</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget --no-check-certificate -O AutoReinstall.sh https://git.io/AutoReinstall.sh &amp;&amp; bash AutoReinstall.sh
+</code></pre><hr>
+<ul>
+<li>CentOS 默认密码 Pwd@CentOS 其它系统 Pwd@Linux</li>
+<li>OpenVZ / LXC 架构系统不适用</li>
+</ul>
+<p>来源：<a href="https://blog.hicasper.com/post/135.html" target="_blank" rel="noopener">https://blog.hicasper.com/post/135.html</a> 参考：<a href="https://www.ydyno.com/archives/1245.html" target="_blank" rel="noopener">https://www.ydyno.com/archives/1245.html</a> 感谢大佬的付出！</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget --no-check-certificate -qO- &#39;https://file.geekn.net/CNODnjau/InstallNET.sh&#39;) -d 11 -v 64 -a -firmware
+</code></pre><hr>
+<ul>
+<li>firmware 额外的驱动支持</li>
+<li>d 后面是系统版本号</li>
+<li>v 后面写 64 位 32 位</li>
+<li>a （不清楚这个干啥的但是每个脚本都带）</li>
+</ul>
+<p>–mirror 后面是镜像源地址</p>
+<ul>
+<li>p 后面写自定义密码</li>
+</ul>
+<p><strong>BASH</strong></p>
+<pre><code>镜像站地址
+官方给出的地址列表：https://www.debian.org/mirror/list
+
+一些国内的
+ftp.cn.debian.org
+mirror.bjtu.edu.cn
+mirror.lzu.edu.cn
+mirror.nju.edu.cn
+mirrors.163.com
+mirrors.bfsu.edu.cn
+mirrors.hit.edu.cn
+mirrors.huaweicloud.com
+mirror.sjtu.edu.cn
+mirrors.tuna.tsinghua.edu.cn
+mirrors.ustc.edu.cn
+
+使用方法：（大致都是一样的）
+
+清华源
+--mirror &#39;https://mirrors.ustc.edu.cn/debian/&#39;
+
+腾讯源
+--mirror &#39;https://mirrors.aliyun.com/debian/&#39;
+
+阿里源
+--mirror &#39;https://mirrors.aliyun.com/debian/&#39;
+
+华为源
+--mirror &#39;https://mirrors.huaweicloud.com/debian/&#39;
+</code></pre><hr>
+<h3 id="4、秋水逸冰-Windows-2012-2016-2019-2022-10-11-DD-镜像"><a href="#4、秋水逸冰-Windows-2012-2016-2019-2022-10-11-DD-镜像" class="headerlink" title="4、秋水逸冰 Windows 2012/2016/2019/2022 10/11 DD 镜像"></a><strong>4、秋水逸冰 Windows 2012/2016/2019/2022 10/11 DD 镜像</strong></h3><p>适用于 UEFI 启动的多个 Windows 系统 DD 镜像：</p>
+<p><a href="https://teddysun.com/656.html" target="_blank" rel="noopener">https://teddysun.com/656.html</a></p>
+<p>分别是：</p>
+<ol>
+<li>Windows Server 2012 R2 Datacenter</li>
+<li>Windows Server 2016 Datacenter (build: 14393.5006)</li>
+<li>Windows Server 2019 Datacenter (build: 17763.2686)</li>
+<li>Windows Server 2022 Datacenter (build: 20348.587)</li>
+<li>Windows 10 Enterprise LTSC (build: 19044.1288)</li>
+<li>Windows 11 Pro for Workstations 21H2 (build: 22000.194)</li>
+</ol>
+<p>适用于 BIOS 启动的 Windows Server 2022 Datacenter DD 镜像：</p>
+<p><a href="https://teddysun.com/629.html" target="_blank" rel="noopener">https://teddysun.com/629.html</a></p>
+<p>适用于 BIOS 启动的 Windows 11 Pro for Workstations 21H2 DD 镜像：</p>
+<p><a href="https://teddysun.com/642.html" target="_blank" rel="noopener">https://teddysun.com/642.html</a></p>
+<p>适用于 BIOS 启动的 Windows 10 Enterprise LTSC DD 镜像：</p>
+<p><a href="https://teddysun.com/640.html" target="_blank" rel="noopener">https://teddysun.com/640.html</a></p>
+<p>适用于 BIOS 启动的 Windows Server 2019/2016/2012R2 Datacenter DD 镜像：</p>
+<p><a href="https://teddysun.com/545.html" target="_blank" rel="noopener">https://teddysun.com/545.html</a></p>
+<p>分别是：</p>
+<ol>
+<li>Windows Server 2019 Datacenter（Build: 17763.2686）</li>
+<li>Windows Server 2016 Datacenter（Build: 14393.5006）</li>
+<li>Windows Server 2012 R2 Datacenter</li>
+</ol>
+<h2 id="测试相关"><a href="#测试相关" class="headerlink" title="测试相关"></a><strong>测试相关</strong></h2><h3 id="机器测试"><a href="#机器测试" class="headerlink" title="机器测试"></a><strong>机器测试</strong></h3><h3 id="单线程测试"><a href="#单线程测试" class="headerlink" title="单线程测试"></a><strong>单线程测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Lso- https://bench.im/hyperspeed)
+</code></pre><hr>
+<h3 id="最全测速脚本"><a href="#最全测速脚本" class="headerlink" title="最全测速脚本"></a><strong>最全测速脚本</strong></h3><p><strong>BASH</strong></p>
+<pre><code>curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
+</code></pre><hr>
+<h3 id="superbench"><a href="#superbench" class="headerlink" title="superbench"></a><strong>superbench</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -qO- git.io/superbench.sh | bash
+</code></pre><hr>
+<h3 id="Bench-sh"><a href="#Bench-sh" class="headerlink" title="Bench.sh"></a><strong>Bench.sh</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -qO- bench.sh | bash
+</code></pre><hr>
+<h3 id="速度测试"><a href="#速度测试" class="headerlink" title="速度测试"></a><strong>速度测试</strong></h3><h3 id="显示延迟、抖动"><a href="#显示延迟、抖动" class="headerlink" title="显示延迟、抖动"></a><strong>显示延迟、抖动</strong></h3><p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget -qO- https://bench.im/hyperspeed)
+</code></pre><hr>
+<h3 id="直接显示回程线路"><a href="#直接显示回程线路" class="headerlink" title="直接显示回程线路"></a><strong>直接显示回程线路</strong></h3><p><strong>BASH</strong></p>
+<pre><code>curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash
+</code></pre><hr>
+<p><strong>BASH</strong></p>
+<pre><code>wget -q route.f2k.pub -O route &amp;&amp; bash route
+</code></pre><hr>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code># 第一个
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+bash testrace.sh
+
+# 第二个
+wget -qO- git.io/besttrace | bash
+</code></pre><hr>
+<h3 id="四网测速"><a href="#四网测速" class="headerlink" title="四网测速"></a><strong>四网测速</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -O jcnf.sh https://raw.githubusercontent.com/Netflixxp/jcnfbesttrace/main/jcnf.sh
+
+bash jcnf.sh
+</code></pre><hr>
+<p>### </p>
+<h3 id="三网测速"><a href="#三网测速" class="headerlink" title="三网测速"></a><strong>三网测速</strong></h3><p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Lso- https://git.io/superspeed_uxh)
+</code></pre><hr>
+<p>带快速四网测试版本：</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Lso- https://dl.233.mba/d/sh/speedtest.sh)
+</code></pre><hr>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Lso- https://git.io/J1SEh)
+</code></pre><hr>
+<p>带综合测试的版本（CPU 信息、Geekbench 等）：</p>
+<p><strong>BASH</strong></p>
+<pre><code>bash &lt;(wget --no-check-certificate -O- https://dl.233.mba/d/sh/superbenchpro.sh)
+</code></pre><hr>
+<p>来源：<a href="https://www.wrnxr.cn/163.html" target="_blank" rel="noopener">https://www.wrnxr.cn/163.html</a></p>
+<h3 id="测试-25-端口是否开放"><a href="#测试-25-端口是否开放" class="headerlink" title="测试 25 端口是否开放"></a><strong>测试 25 端口是否开放</strong></h3><p><strong>BASH</strong></p>
+<pre><code>telnet smtp.aol.com 25
+</code></pre><hr>
+<h3 id="测试-IPv4-优先还是-IPv6-优先"><a href="#测试-IPv4-优先还是-IPv6-优先" class="headerlink" title="测试 IPv4 优先还是 IPv6 优先"></a><strong>测试 IPv4 优先还是 IPv6 优先</strong></h3><p><strong>BASH</strong></p>
+<pre><code>curl ip.p3terx.com
+</code></pre><hr>
+<h3 id="流媒体测试"><a href="#流媒体测试" class="headerlink" title="流媒体测试"></a><strong>流媒体测试</strong></h3><h3 id="全媒体测试"><a href="#全媒体测试" class="headerlink" title="全媒体测试"></a><strong>全媒体测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+</code></pre><hr>
+<h3 id="奈飞测试"><a href="#奈飞测试" class="headerlink" title="奈飞测试"></a><strong>奈飞测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.5/nf_2.5_linux_amd64 &amp;&amp; chmod +x nf &amp;&amp; clear &amp;&amp; ./nf
+</code></pre><hr>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code>#第一个
+bash &lt;(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+
+# 第二个
+bash &lt;(curl -sSL &quot;https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh&quot;)
+</code></pre><hr>
+<h2 id="WARP"><a href="#WARP" class="headerlink" title="WARP"></a><strong>WARP</strong></h2><p><strong>BASH</strong></p>
+<pre><code>wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/YG-tsj/CFWarp-Pro/multi.sh &amp;&amp; chmod +x multi.sh &amp;&amp; ./multi.sh
+</code></pre><hr>
+<p>之后进入脚本快捷方式为 <code>bash multi.sh</code></p>
+<h2 id="服务器时间"><a href="#服务器时间" class="headerlink" title="服务器时间"></a><strong>服务器时间</strong></h2><h3 id="CentOS-同步时间"><a href="#CentOS-同步时间" class="headerlink" title="CentOS 同步时间"></a><strong>CentOS 同步时间</strong></h3><p><strong>BASH</strong></p>
+<pre><code>yum -y install ntpdate
+timedatectl set-timezone Asia/Shanghai
+ntpdate ntp1.aliyun.com
+</code></pre><hr>
+<h2 id="BBR"><a href="#BBR" class="headerlink" title="BBR"></a><strong>BBR</strong></h2><h3 id="CentOS-7-BBR"><a href="#CentOS-7-BBR" class="headerlink" title="CentOS 7 BBR"></a><strong>CentOS 7 BBR</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh
+</code></pre><hr>
+<h3 id="一键开启-BBR"><a href="#一键开启-BBR" class="headerlink" title="一键开启 BBR"></a><strong>一键开启 BBR</strong></h3><p>注意：需要 Linux Kernel 内核升级到 4.9 及以上版本可以实现 BBR 加速</p>
+<p><strong>BASH</strong></p>
+<pre><code>uname -srm
+</code></pre><hr>
+<p>输出结果：</p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code>Linux 3.10.0-957.12.2.el7.x86_64 x86_64
+3 - 内核版本.
+10 - 主修订版本.
+0-957 - 次要修订版本.
+12 - 补丁版本.
+</code></pre><hr>
+<p>一般来说，Ubuntu18.04 以上就可以 (默认的内核 <code>4.15</code>)</p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code>echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf
+echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf
+
+sysctl -p
+
+sysctl net.ipv4.tcp_available_congestion_control
+
+lsmod | grep bbr
+</code></pre><hr>
+<h2 id="Docker-相关"><a href="#Docker-相关" class="headerlink" title="Docker 相关"></a><strong>Docker 相关</strong></h2><h3 id="更新、安装必备软件"><a href="#更新、安装必备软件" class="headerlink" title="更新、安装必备软件"></a><strong>更新、安装必备软件</strong></h3><p><strong>BASH</strong></p>
+<pre><code>apt-get update &amp;&amp; apt-get install -y wget vim
+</code></pre><hr>
+<h3 id="海外服务器"><a href="#海外服务器" class="headerlink" title="海外服务器"></a><strong>海外服务器</strong></h3><h3 id="非大陆-Docker-安装"><a href="#非大陆-Docker-安装" class="headerlink" title="非大陆 Docker 安装"></a><strong>非大陆 Docker 安装</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -qO- get.docker.com | bash
+</code></pre><hr>
+<h3 id="卸载-Docker"><a href="#卸载-Docker" class="headerlink" title="卸载 Docker"></a><strong>卸载 Docker</strong></h3><p><strong>BASH</strong></p>
+<pre><code>sudo apt-get purge docker-ce docker-ce-cli containerd.io
+</code></pre><hr>
+<p><strong>BASH</strong></p>
+<pre><code>sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+</code></pre><hr>
+<h3 id="非大陆-Docker-compose-安装"><a href="#非大陆-Docker-compose-安装" class="headerlink" title="非大陆 Docker-compose 安装"></a><strong>非大陆 Docker-compose 安装</strong></h3><p><strong>BASH</strong></p>
+<pre><code>sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre><hr>
+<p><strong>BASH</strong></p>
+<pre><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre><hr>
+<p>查看版本</p>
+<p><strong>BASH</strong></p>
+<pre><code>docker-compose --version
+</code></pre><hr>
+<h3 id="大陆服务器"><a href="#大陆服务器" class="headerlink" title="大陆服务器"></a><strong>大陆服务器</strong></h3><h3 id="国内机安装-docker"><a href="#国内机安装-docker" class="headerlink" title="国内机安装 docker"></a><strong>国内机安装 docker</strong></h3><p><strong>BASH</strong></p>
+<pre><code>curl -sSL https://get.daocloud.io/docker | sh
+</code></pre><hr>
+<h3 id="国内机安装-docker-compose"><a href="#国内机安装-docker-compose" class="headerlink" title="国内机安装 docker-compose"></a><strong>国内机安装 docker-compose</strong></h3><p><strong>BASH</strong></p>
+<pre><code>curl -L https://get.daocloud.io/docker/compose/releases/download/v2.1.1/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+</code></pre><hr>
+<h3 id="卸载-docker"><a href="#卸载-docker" class="headerlink" title="卸载 docker"></a><strong>卸载 docker</strong></h3><p><strong>PLAINTEXT</strong></p>
+<pre><code>sudo apt-get remove docker docker-engine
+rm -fr /var/lib/docker/
+</code></pre><hr>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a><strong>防火墙</strong></h2><h3 id="CentOS-关闭防火墙"><a href="#CentOS-关闭防火墙" class="headerlink" title="CentOS 关闭防火墙"></a><strong>CentOS 关闭防火墙</strong></h3><p><strong>BASH</strong></p>
+<pre><code>systemctl start supervisord
+systemctl disable firewalld
+systemctl stop firewalld
+</code></pre><hr>
+<h2 id="宝塔相关"><a href="#宝塔相关" class="headerlink" title="宝塔相关"></a><strong>宝塔相关</strong></h2><h3 id="宝塔去除登陆-已经失效，解决方法见：https-blog-laoda-de-archives-bt-to-aapanel"><a href="#宝塔去除登陆-已经失效，解决方法见：https-blog-laoda-de-archives-bt-to-aapanel" class="headerlink" title="宝塔去除登陆 (已经失效，解决方法见：https://blog.laoda.de/archives/bt-to-aapanel)"></a><strong>宝塔去除登陆 (已经失效，解决方法见：<a href="https://blog.laoda.de/archives/bt-to-aapanel" target="_blank" rel="noopener">https://blog.laoda.de/archives/bt-to-aapanel</a>)</strong></h3><p><strong>BASH</strong></p>
+<pre><code>sed -i &quot;s|if (bind_user == &#39;True&#39;) {|if (bind_user == &#39;REMOVED&#39;) {|g&quot; /www/server/panel/BTPanel/static/js/index.js
+rm -rf /www/server/panel/data/bind.pl
+</code></pre><hr>
+<h3 id="宝塔-amp-aapanel-破解（这个目前也不保证可用了）"><a href="#宝塔-amp-aapanel-破解（这个目前也不保证可用了）" class="headerlink" title="宝塔 &amp; aapanel 破解（这个目前也不保证可用了）"></a><strong>宝塔 &amp; aapanel 破解（这个目前也不保证可用了）</strong></h3><p><strong>BASH</strong></p>
+<pre><code># 宝塔&amp;aapanel破解
+编辑 /www/server/panel/class/panelplugin.py
+找到 softList[&#39;list&#39;] = tmpList 这行代码
+在下面添加以下代码，注意缩进
+
+softList[&#39;pro&#39;] = 1
+for soft in softList[&#39;list&#39;]:
+soft[&#39;endtime&#39;] = 0
+
+编辑完毕后保存重启面板即可
+</code></pre><hr>
+<h2 id="呆梨相关"><a href="#呆梨相关" class="headerlink" title="呆梨相关"></a><strong>呆梨相关</strong></h2><h3 id="XUI"><a href="#XUI" class="headerlink" title="XUI"></a><strong>XUI</strong></h3><p><strong>BASH</strong></p>
+<pre><code>bash &lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+</code></pre><hr>
+<p>脚本来源：<a href="https://github.com/FranzKafkaYu/x-ui" target="_blank" rel="noopener">https://github.com/FranzKafkaYu/x-ui</a></p>
+<h3 id="mack-a"><a href="#mack-a" class="headerlink" title="mack-a"></a><strong>mack-a</strong></h3><p><strong>BASH</strong></p>
+<pre><code>wget -P /root -N --no-check-certificate &quot;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&quot; &amp;&amp; chmod 700 /root/install.sh &amp;&amp; /root/install.sh
+</code></pre><hr>
+<p>持续更新中</p>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2023/08/01/2023/alist/" title="AList"><span class="has-text-weight-semibold">Next: AList</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="wangwenzhiwwz/wangwenzhiwwz.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com/wangwenzhiwwz"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/wangwenzhiwwz"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com/wangwenzhiwwz"><i class="iconfont icon-ins"></i></a><!-- 领英--><a title="linkedin" target="_blank" rel="noopener nofollow" href="//www.linkedin.com/in/wangwenzhi"><i class="iconfont icon-linkedin"></i></a><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com/wangwenzhiwwz"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> WANGWENZHI 2023</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="WANGWENZHI" href="//wangwenzhiwwz.github.io">WANGWENZHI&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/wangwenzhiwwz/wangwenzhiwwz.github.io" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/jquery-3.6.1.min.js"></script><script src="/js/jquery-fancybox.min.js"></script><script src="/js/img_zoom.js"></script><script src="/js/post.js"></script></body></html>
