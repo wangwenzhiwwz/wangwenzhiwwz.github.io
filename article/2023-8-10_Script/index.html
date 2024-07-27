@@ -1,0 +1,846 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本 | WANGWENZHI</title><meta name="keywords" content="VPS"><meta name="author" content="WANGWENZHI"><meta name="copyright" content="WANGWENZHI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本"><meta name="application-name" content="常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本"><meta property="og:url" content="https://wangwenzhi.eu.org/article/2023-8-10_Script/index.html"><meta property="og:site_name" content="WANGWENZHI"><meta property="og:description" content="更新列表2023-0525 检测是否可以访问 ChatGPT 脚本 来源 PLAINTEXT bash &amp;lt;(curl -Ls https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;missuo&amp;#x2F;OpenAI-Checker&amp;#x2F;main&amp;#x2F;openai.sh)    2023-4-2"><meta property="og:locale" content="en"><meta property="og:image" content="https://wangwenzhi.eu.org/images/images/Script.png"><meta property="article:author" content="WANGWENZHI"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://wangwenzhi.eu.org/images/images/Script.png"><meta name="description" content="更新列表2023-0525 检测是否可以访问 ChatGPT 脚本 来源 PLAINTEXT bash &amp;lt;(curl -Ls https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;missuo&amp;#x2F;OpenAI-Checker&amp;#x2F;main&amp;#x2F;openai.sh)    2023-4-2"><link rel="shortcut icon" href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png"><link rel="canonical" href="https://wangwenzhi.eu.org/article/2023-8-10_Script/"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: undefined,
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: WANGWENZHI","link":"Link: ","source":"Source: WANGWENZHI","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'WANGWENZHI',
+  title: '常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本',
+  postAI: '',
+  pageFillDescription: '更新列表, 综合工具箱（强烈推荐集成了很多脚本）, 杜甫测试, DD 相关, 1、甲骨文 DD 脚本, 2、MoeClub 脚本, 3、另一位大佬的脚本, 4、秋水逸冰 Windows 2012x2F2016x2F2019x2F2022 10x2F11 DD 镜像, 测试相关, 机器测试, 单线程测试, 最全测速脚本, superbench, Bench.sh, 速度测试, 显示延迟、抖动, 直接显示回程线路, 四网测速, , 三网测速, 测试 25 端口是否开放, 测试 IPv4 优先还是 IPv6 优先, 流媒体测试, 全媒体测试, 奈飞测试, WARP, 服务器时间, CentOS 同步时间, BBR, CentOS 7 BBR, 一键开启 BBR, Docker 相关, 更新、安装必备软件, 海外服务器, 非大陆 Docker 安装, 卸载 Docker, 非大陆 Docker-compose 安装, 大陆服务器, 国内机安装 docker, 国内机安装 docker-compose, 卸载 docker, 防火墙, CentOS 关闭防火墙, 宝塔相关, 宝塔去除登陆 (已经失效解决方法见：), 宝塔 amp aapanel 破解（这个目前也不保证可用了）, 呆梨相关, XUI, mack-a更新列表检测是否可以访问脚本来源修改检测是否可以访问脚本综合工具箱强烈推荐集成了很多脚本杜甫测试相关甲骨文脚本成自定义密码自定义端口成自定义密码自定义端口脚本重点推荐时间萌咖更新脚本新增对全面支持可支持从等系统网络重装更新镜像的基础系统版本移除对外部的依赖新增参数可更改默认端口更新内置的网络参数计算逻辑更新配置文件定位逻辑可支持任意引导的系统以下系统已通过测试其他自测以下平台已通过测试其他自测自定义密码自定义端口开机改密码脚本开机改密另一位大佬的脚本默认密码其它系统架构系统不适用来源参考感谢大佬的付出额外的驱动支持后面是系统版本号后面写位位不清楚这个干啥的但是每个脚本都带后面是镜像源地址后面写自定义密码镜像站地址官方给出的地址列表一些国内的使用方法大致都是一样的清华源腾讯源阿里源华为源秋水逸冰镜像适用于启动的多个系统镜像分别是适用于启动的镜像适用于启动的镜像适用于启动的镜像适用于启动的镜像分别是测试相关机器测试单线程测试最全测速脚本速度测试显示延迟抖动直接显示回程线路第一个第二个四网测速三网测速带快速四网测试版本带综合测试的版本信息等来源测试端口是否开放测试优先还是优先流媒体测试全媒体测试奈飞测试第一个第二个之后进入脚本快捷方式为服务器时间同步时间一键开启注意需要内核升级到及以上版本可以实现加速输出结果内核版本主修订版本次要修订版本补丁版本一般来说以上就可以默认的内核相关更新安装必备软件海外服务器非大陆安装卸载非大陆安装查看版本大陆服务器国内机安装国内机安装卸载防火墙关闭防火墙宝塔相关宝塔去除登陆已经失效解决方法见宝塔破解这个目前也不保证可用了宝塔破解编辑找到这行代码在下面添加以下代码注意缩进编辑完毕后保存重启面板即可呆梨相关脚本来源持续更新中',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-27 22:41:51',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://wangwenzhi.eu.org/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">WANGWENZHI</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> Search</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Ai/" style="font-size: 1.05rem;">Ai<sup>1</sup></a><a href="/tags/BLog/" style="font-size: 1.05rem;">BLog<sup>2</sup></a><a href="/tags/Blog/" style="font-size: 1.05rem;">Blog<sup>2</sup></a><a href="/tags/Docker/" style="font-size: 1.05rem;">Docker<sup>3</sup></a><a href="/tags/Github/" style="font-size: 1.05rem;">Github<sup>4</sup></a><a href="/tags/VPS/" style="font-size: 1.05rem;">VPS<sup>7</sup></a><a href="/tags/%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC/" style="font-size: 1.05rem;">一键脚本<sup>3</sup></a><a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 1.05rem;">分享<sup>1</sup></a><a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 1.05rem;">科学上网<sup>17</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.05rem;">软件<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">July 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">August 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">July 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">February 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url">科学上网</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/VPS/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>VPS</span></a></span></div></div><h1 class="post-title" itemprop="name headline">常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-08-10T12:15:00.000Z" title="Created 2023-08-10 20:15:00">2023-08-10</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-07-27T14:41:51.966Z" title="Updated 2024-07-27 22:41:51">2024-07-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">Post View:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为深圳"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>深圳</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://wangwenzhi.eu.org/images/images/Script.png"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://wangwenzhi.eu.org/article/2023-8-10_Script/"><header><a class="post-meta-categories" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url">科学上网</a><a href="/tags/VPS/" tabindex="-1" itemprop="url">VPS</a><h1 id="CrawlerTitle" itemprop="name headline">常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">WANGWENZHI</span><time itemprop="dateCreated datePublished" datetime="2023-08-10T12:15:00.000Z" title="Created 2023-08-10 20:15:00">2023-08-10</time><time itemprop="dateCreated datePublished" datetime="2024-07-27T14:41:51.966Z" title="Updated 2024-07-27 22:41:51">2024-07-27</time></header><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/Script.png"></p>
+<h2 id="更新列表"><a href="#更新列表" class="headerlink" title="更新列表"></a><strong>更新列表</strong></h2><p>2023-0525 检测是否可以访问 ChatGPT 脚本 <a target="_blank" rel="noopener" href="https://github.com/moeakwak/chatgpt-web-share/wiki/%E4%B8%AD%E6%96%87%E6%8C%87%E5%8D%97">来源</a></p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Ls https://raw.githubusercontent.com/missuo/OpenAI-Checker/main/openai.sh)
+</code></pre>
+
+<hr>
+<p>2023-4-29 修改检测是否可以访问 ChatGPT 脚本</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Ls https://ourl.co/oaic)
+</code></pre>
+
+<hr>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Ls https://cdn.jsdelivr.net/gh/missuo/OpenAI-Checker/openai.sh)
+</code></pre>
+
+<hr>
+<h2 id="综合工具箱（强烈推荐，集成了很多脚本）"><a href="#综合工具箱（强烈推荐，集成了很多脚本）" class="headerlink" title="综合工具箱（强烈推荐，集成了很多脚本）"></a><strong>综合工具箱（强烈推荐，集成了很多脚本）</strong></h2><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh &amp;&amp; chmod +x box.sh &amp;&amp; clear &amp;&amp; ./box.sh
+</code></pre>
+
+<hr>
+<h2 id="杜甫测试"><a href="#杜甫测试" class="headerlink" title="杜甫测试"></a><strong>杜甫测试</strong></h2><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -q https://github.com/Aniverse/A/raw/i/a &amp;&amp; bash a
+</code></pre>
+
+<hr>
+<h2 id="DD-相关"><a href="#DD-相关" class="headerlink" title="DD 相关"></a><strong>DD 相关</strong></h2><h3 id="1、甲骨文-DD-脚本"><a href="#1、甲骨文-DD-脚本" class="headerlink" title="1、甲骨文 DD 脚本"></a><strong>1、甲骨文 DD 脚本</strong></h3><p>DD 成 Debian 10</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget --no-check-certificate -qO- &#x27;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#x27;) -d 10 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre>
+
+<hr>
+<p>DD 成 Ubuntu 20.04</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget --no-check-certificate -qO- &#x27;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#x27;) -u 20.04 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre>
+
+<hr>
+<h3 id="2、MoeClub-脚本"><a href="#2、MoeClub-脚本" class="headerlink" title="2、MoeClub 脚本"></a><strong>2、MoeClub 脚本</strong></h3><p><strong>重点推荐</strong>：</p>
+<p>时间：22&#x2F;11&#x2F;2021 15:21 萌咖更新脚本：</p>
+<ol>
+<li><p>新增对 Oracle AMD，Oracle ARM 全面支持。可支持从 Ubuntu, Oracle Linux 等系统网络重装.</p>
+</li>
+<li><p>更新 dd 镜像的基础系统版本.</p>
+</li>
+<li><p>移除对外部 wget 的依赖.</p>
+</li>
+<li><p>新增 -port 参数，可更改默认 SSH 端口.</p>
+</li>
+<li><p>更新 内置的网络参数计算 逻辑.</p>
+</li>
+<li><p>更新 grub 配置文件定位逻辑，可支持任意引导 grub 的系统.</p>
+</li>
+</ol>
+<p>以下系统已通过测试 (其他自测):</p>
+<p>Debian: 9, 10, 11;</p>
+<p>Ubuntu: 18.04, 20.04;</p>
+<p>CentOS: 6.10;</p>
+<p>以下平台已通过测试 (其他自测):</p>
+<p>Oracle、Do、Azure</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget --no-check-certificate -qO- &#x27;https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh&#x27;) -d 10 -v 64 -p &quot;自定义root密码&quot; -port &quot;自定义ssh端口&quot;
+</code></pre>
+
+<hr>
+<ul>
+<li>d 10 -v 64</li>
+<li>d 9 -v 64</li>
+<li>u 20.04 -v 64</li>
+<li>u 18.04 -v 64</li>
+</ul>
+<p>开机改密码脚本：</p>
+<p>开机改密：</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">#!/bin/bash
+echo root:Vicer |sudo chpasswd root
+sudo sed -i &#x27;s/^#\?PermitRootLogin.*/PermitRootLogin yes/g&#x27; /etc/ssh/sshd_config;
+sudo sed -i &#x27;s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g&#x27; /etc/ssh/sshd_config;
+sudo reboot
+</code></pre>
+
+<hr>
+<h3 id="3、另一位大佬的脚本"><a href="#3、另一位大佬的脚本" class="headerlink" title="3、另一位大佬的脚本"></a><strong>3、另一位大佬的脚本</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget --no-check-certificate -O AutoReinstall.sh https://git.io/AutoReinstall.sh &amp;&amp; bash AutoReinstall.sh
+</code></pre>
+
+<hr>
+<ul>
+<li>CentOS 默认密码 Pwd@CentOS 其它系统 Pwd@Linux</li>
+<li>OpenVZ &#x2F; LXC 架构系统不适用</li>
+</ul>
+<p>来源：<a target="_blank" rel="noopener" href="https://blog.hicasper.com/post/135.html">https://blog.hicasper.com/post/135.html</a> 参考：<a target="_blank" rel="noopener" href="https://www.ydyno.com/archives/1245.html">https://www.ydyno.com/archives/1245.html</a> 感谢大佬的付出！</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget --no-check-certificate -qO- &#x27;https://file.geekn.net/CNODnjau/InstallNET.sh&#x27;) -d 11 -v 64 -a -firmware
+</code></pre>
+
+<hr>
+<ul>
+<li>firmware 额外的驱动支持</li>
+<li>d 后面是系统版本号</li>
+<li>v 后面写 64 位 32 位</li>
+<li>a （不清楚这个干啥的但是每个脚本都带）</li>
+</ul>
+<p>–mirror 后面是镜像源地址</p>
+<ul>
+<li>p 后面写自定义密码</li>
+</ul>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">镜像站地址
+官方给出的地址列表：https://www.debian.org/mirror/list
+
+一些国内的
+ftp.cn.debian.org
+mirror.bjtu.edu.cn
+mirror.lzu.edu.cn
+mirror.nju.edu.cn
+mirrors.163.com
+mirrors.bfsu.edu.cn
+mirrors.hit.edu.cn
+mirrors.huaweicloud.com
+mirror.sjtu.edu.cn
+mirrors.tuna.tsinghua.edu.cn
+mirrors.ustc.edu.cn
+
+使用方法：（大致都是一样的）
+
+清华源
+--mirror &#x27;https://mirrors.ustc.edu.cn/debian/&#x27;
+
+腾讯源
+--mirror &#x27;https://mirrors.aliyun.com/debian/&#x27;
+
+阿里源
+--mirror &#x27;https://mirrors.aliyun.com/debian/&#x27;
+
+华为源
+--mirror &#x27;https://mirrors.huaweicloud.com/debian/&#x27;
+</code></pre>
+
+<hr>
+<h3 id="4、秋水逸冰-Windows-2012-2016-2019-2022-10-11-DD-镜像"><a href="#4、秋水逸冰-Windows-2012-2016-2019-2022-10-11-DD-镜像" class="headerlink" title="4、秋水逸冰 Windows 2012&#x2F;2016&#x2F;2019&#x2F;2022 10&#x2F;11 DD 镜像"></a><strong>4、秋水逸冰 Windows 2012&#x2F;2016&#x2F;2019&#x2F;2022 10&#x2F;11 DD 镜像</strong></h3><p>适用于 UEFI 启动的多个 Windows 系统 DD 镜像：</p>
+<p><a target="_blank" rel="noopener" href="https://teddysun.com/656.html">https://teddysun.com/656.html</a></p>
+<p>分别是：</p>
+<ol>
+<li>Windows Server 2012 R2 Datacenter</li>
+<li>Windows Server 2016 Datacenter (build: 14393.5006)</li>
+<li>Windows Server 2019 Datacenter (build: 17763.2686)</li>
+<li>Windows Server 2022 Datacenter (build: 20348.587)</li>
+<li>Windows 10 Enterprise LTSC (build: 19044.1288)</li>
+<li>Windows 11 Pro for Workstations 21H2 (build: 22000.194)</li>
+</ol>
+<p>适用于 BIOS 启动的 Windows Server 2022 Datacenter DD 镜像：</p>
+<p><a target="_blank" rel="noopener" href="https://teddysun.com/629.html">https://teddysun.com/629.html</a></p>
+<p>适用于 BIOS 启动的 Windows 11 Pro for Workstations 21H2 DD 镜像：</p>
+<p><a target="_blank" rel="noopener" href="https://teddysun.com/642.html">https://teddysun.com/642.html</a></p>
+<p>适用于 BIOS 启动的 Windows 10 Enterprise LTSC DD 镜像：</p>
+<p><a target="_blank" rel="noopener" href="https://teddysun.com/640.html">https://teddysun.com/640.html</a></p>
+<p>适用于 BIOS 启动的 Windows Server 2019&#x2F;2016&#x2F;2012R2 Datacenter DD 镜像：</p>
+<p><a target="_blank" rel="noopener" href="https://teddysun.com/545.html">https://teddysun.com/545.html</a></p>
+<p>分别是：</p>
+<ol>
+<li>Windows Server 2019 Datacenter（Build: 17763.2686）</li>
+<li>Windows Server 2016 Datacenter（Build: 14393.5006）</li>
+<li>Windows Server 2012 R2 Datacenter</li>
+</ol>
+<h2 id="测试相关"><a href="#测试相关" class="headerlink" title="测试相关"></a><strong>测试相关</strong></h2><h3 id="机器测试"><a href="#机器测试" class="headerlink" title="机器测试"></a><strong>机器测试</strong></h3><h3 id="单线程测试"><a href="#单线程测试" class="headerlink" title="单线程测试"></a><strong>单线程测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Lso- https://bench.im/hyperspeed)
+</code></pre>
+
+<hr>
+<h3 id="最全测速脚本"><a href="#最全测速脚本" class="headerlink" title="最全测速脚本"></a><strong>最全测速脚本</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
+</code></pre>
+
+<hr>
+<h3 id="superbench"><a href="#superbench" class="headerlink" title="superbench"></a><strong>superbench</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -qO- git.io/superbench.sh | bash
+</code></pre>
+
+<hr>
+<h3 id="Bench-sh"><a href="#Bench-sh" class="headerlink" title="Bench.sh"></a><strong>Bench.sh</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -qO- bench.sh | bash
+</code></pre>
+
+<hr>
+<h3 id="速度测试"><a href="#速度测试" class="headerlink" title="速度测试"></a><strong>速度测试</strong></h3><h3 id="显示延迟、抖动"><a href="#显示延迟、抖动" class="headerlink" title="显示延迟、抖动"></a><strong>显示延迟、抖动</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget -qO- https://bench.im/hyperspeed)
+</code></pre>
+
+<hr>
+<h3 id="直接显示回程线路"><a href="#直接显示回程线路" class="headerlink" title="直接显示回程线路"></a><strong>直接显示回程线路</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash
+</code></pre>
+
+<hr>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -q route.f2k.pub -O route &amp;&amp; bash route
+</code></pre>
+
+<hr>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext"># 第一个
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+bash testrace.sh
+
+# 第二个
+wget -qO- git.io/besttrace | bash
+</code></pre>
+
+<hr>
+<h3 id="四网测速"><a href="#四网测速" class="headerlink" title="四网测速"></a><strong>四网测速</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -O jcnf.sh https://raw.githubusercontent.com/Netflixxp/jcnfbesttrace/main/jcnf.sh
+
+bash jcnf.sh
+</code></pre>
+
+<hr>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="三网测速"><a href="#三网测速" class="headerlink" title="三网测速"></a><strong>三网测速</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Lso- https://git.io/superspeed_uxh)
+</code></pre>
+
+<hr>
+<p>带快速四网测试版本：</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Lso- https://dl.233.mba/d/sh/speedtest.sh)
+</code></pre>
+
+<hr>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Lso- https://git.io/J1SEh)
+</code></pre>
+
+<hr>
+<p>带综合测试的版本（CPU 信息、Geekbench 等）：</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(wget --no-check-certificate -O- https://dl.233.mba/d/sh/superbenchpro.sh)
+</code></pre>
+
+<hr>
+<p>来源：<a target="_blank" rel="noopener" href="https://www.wrnxr.cn/163.html">https://www.wrnxr.cn/163.html</a></p>
+<h3 id="测试-25-端口是否开放"><a href="#测试-25-端口是否开放" class="headerlink" title="测试 25 端口是否开放"></a><strong>测试 25 端口是否开放</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">telnet smtp.aol.com 25
+</code></pre>
+
+<hr>
+<h3 id="测试-IPv4-优先还是-IPv6-优先"><a href="#测试-IPv4-优先还是-IPv6-优先" class="headerlink" title="测试 IPv4 优先还是 IPv6 优先"></a><strong>测试 IPv4 优先还是 IPv6 优先</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">curl ip.p3terx.com
+</code></pre>
+
+<hr>
+<h3 id="流媒体测试"><a href="#流媒体测试" class="headerlink" title="流媒体测试"></a><strong>流媒体测试</strong></h3><h3 id="全媒体测试"><a href="#全媒体测试" class="headerlink" title="全媒体测试"></a><strong>全媒体测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+</code></pre>
+
+<hr>
+<h3 id="奈飞测试"><a href="#奈飞测试" class="headerlink" title="奈飞测试"></a><strong>奈飞测试</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.5/nf_2.5_linux_amd64 &amp;&amp; chmod +x nf &amp;&amp; clear &amp;&amp; ./nf
+</code></pre>
+
+<hr>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext">#第一个
+bash &lt;(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+
+# 第二个
+bash &lt;(curl -sSL &quot;https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh&quot;)
+</code></pre>
+
+<hr>
+<h2 id="WARP"><a href="#WARP" class="headerlink" title="WARP"></a><strong>WARP</strong></h2><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/YG-tsj/CFWarp-Pro/multi.sh &amp;&amp; chmod +x multi.sh &amp;&amp; ./multi.sh
+</code></pre>
+
+<hr>
+<p>之后进入脚本快捷方式为 <code>bash multi.sh</code></p>
+<h2 id="服务器时间"><a href="#服务器时间" class="headerlink" title="服务器时间"></a><strong>服务器时间</strong></h2><h3 id="CentOS-同步时间"><a href="#CentOS-同步时间" class="headerlink" title="CentOS 同步时间"></a><strong>CentOS 同步时间</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">yum -y install ntpdate
+timedatectl set-timezone Asia/Shanghai
+ntpdate ntp1.aliyun.com
+</code></pre>
+
+<hr>
+<h2 id="BBR"><a href="#BBR" class="headerlink" title="BBR"></a><strong>BBR</strong></h2><h3 id="CentOS-7-BBR"><a href="#CentOS-7-BBR" class="headerlink" title="CentOS 7 BBR"></a><strong>CentOS 7 BBR</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh
+</code></pre>
+
+<hr>
+<h3 id="一键开启-BBR"><a href="#一键开启-BBR" class="headerlink" title="一键开启 BBR"></a><strong>一键开启 BBR</strong></h3><p>注意：需要 Linux Kernel 内核升级到 4.9 及以上版本可以实现 BBR 加速</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">uname -srm
+</code></pre>
+
+<hr>
+<p>输出结果：</p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext">Linux 3.10.0-957.12.2.el7.x86_64 x86_64
+3 - 内核版本.
+10 - 主修订版本.
+0-957 - 次要修订版本.
+12 - 补丁版本.
+</code></pre>
+
+<hr>
+<p>一般来说，Ubuntu18.04 以上就可以 (默认的内核 <code>4.15</code>)</p>
+<p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext">echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf
+echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf
+
+sysctl -p
+
+sysctl net.ipv4.tcp_available_congestion_control
+
+lsmod | grep bbr
+</code></pre>
+
+<hr>
+<h2 id="Docker-相关"><a href="#Docker-相关" class="headerlink" title="Docker 相关"></a><strong>Docker 相关</strong></h2><h3 id="更新、安装必备软件"><a href="#更新、安装必备软件" class="headerlink" title="更新、安装必备软件"></a><strong>更新、安装必备软件</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">apt-get update &amp;&amp; apt-get install -y wget vim
+</code></pre>
+
+<hr>
+<h3 id="海外服务器"><a href="#海外服务器" class="headerlink" title="海外服务器"></a><strong>海外服务器</strong></h3><h3 id="非大陆-Docker-安装"><a href="#非大陆-Docker-安装" class="headerlink" title="非大陆 Docker 安装"></a><strong>非大陆 Docker 安装</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -qO- get.docker.com | bash
+</code></pre>
+
+<hr>
+<h3 id="卸载-Docker"><a href="#卸载-Docker" class="headerlink" title="卸载 Docker"></a><strong>卸载 Docker</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">sudo apt-get purge docker-ce docker-ce-cli containerd.io
+</code></pre>
+
+<hr>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+</code></pre>
+
+<hr>
+<h3 id="非大陆-Docker-compose-安装"><a href="#非大陆-Docker-compose-安装" class="headerlink" title="非大陆 Docker-compose 安装"></a><strong>非大陆 Docker-compose 安装</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre>
+
+<hr>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">sudo chmod +x /usr/local/bin/docker-compose
+</code></pre>
+
+<hr>
+<p>查看版本</p>
+<p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">docker-compose --version
+</code></pre>
+
+<hr>
+<h3 id="大陆服务器"><a href="#大陆服务器" class="headerlink" title="大陆服务器"></a><strong>大陆服务器</strong></h3><h3 id="国内机安装-docker"><a href="#国内机安装-docker" class="headerlink" title="国内机安装 docker"></a><strong>国内机安装 docker</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">curl -sSL https://get.daocloud.io/docker | sh
+</code></pre>
+
+<hr>
+<h3 id="国内机安装-docker-compose"><a href="#国内机安装-docker-compose" class="headerlink" title="国内机安装 docker-compose"></a><strong>国内机安装 docker-compose</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">curl -L https://get.daocloud.io/docker/compose/releases/download/v2.1.1/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+</code></pre>
+
+<hr>
+<h3 id="卸载-docker"><a href="#卸载-docker" class="headerlink" title="卸载 docker"></a><strong>卸载 docker</strong></h3><p><strong>PLAINTEXT</strong></p>
+<pre><code class="hljs plaintext">sudo apt-get remove docker docker-engine
+rm -fr /var/lib/docker/
+</code></pre>
+
+<hr>
+<h2 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a><strong>防火墙</strong></h2><h3 id="CentOS-关闭防火墙"><a href="#CentOS-关闭防火墙" class="headerlink" title="CentOS 关闭防火墙"></a><strong>CentOS 关闭防火墙</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">systemctl start supervisord
+systemctl disable firewalld
+systemctl stop firewalld
+</code></pre>
+
+<hr>
+<h2 id="宝塔相关"><a href="#宝塔相关" class="headerlink" title="宝塔相关"></a><strong>宝塔相关</strong></h2><h3 id="宝塔去除登陆-已经失效，解决方法见：https-blog-laoda-de-archives-bt-to-aapanel"><a href="#宝塔去除登陆-已经失效，解决方法见：https-blog-laoda-de-archives-bt-to-aapanel" class="headerlink" title="宝塔去除登陆 (已经失效，解决方法见：https://blog.laoda.de/archives/bt-to-aapanel)"></a><strong>宝塔去除登陆 (已经失效，解决方法见：<a target="_blank" rel="noopener" href="https://blog.laoda.de/archives/bt-to-aapanel">https://blog.laoda.de/archives/bt-to-aapanel</a>)</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">sed -i &quot;s|if (bind_user == &#x27;True&#x27;) &#123;|if (bind_user == &#x27;REMOVED&#x27;) &#123;|g&quot; /www/server/panel/BTPanel/static/js/index.js
+rm -rf /www/server/panel/data/bind.pl
+</code></pre>
+
+<hr>
+<h3 id="宝塔-aapanel-破解（这个目前也不保证可用了）"><a href="#宝塔-aapanel-破解（这个目前也不保证可用了）" class="headerlink" title="宝塔 &amp; aapanel 破解（这个目前也不保证可用了）"></a><strong>宝塔 &amp; aapanel 破解（这个目前也不保证可用了）</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext"># 宝塔&amp;aapanel破解
+编辑 /www/server/panel/class/panelplugin.py
+找到 softList[&#x27;list&#x27;] = tmpList 这行代码
+在下面添加以下代码，注意缩进
+
+softList[&#x27;pro&#x27;] = 1
+for soft in softList[&#x27;list&#x27;]:
+soft[&#x27;endtime&#x27;] = 0
+
+编辑完毕后保存重启面板即可
+</code></pre>
+
+<hr>
+<h2 id="呆梨相关"><a href="#呆梨相关" class="headerlink" title="呆梨相关"></a><strong>呆梨相关</strong></h2><h3 id="XUI"><a href="#XUI" class="headerlink" title="XUI"></a><strong>XUI</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">bash &lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+</code></pre>
+
+<hr>
+<p>脚本来源：<a target="_blank" rel="noopener" href="https://github.com/FranzKafkaYu/x-ui">https://github.com/FranzKafkaYu/x-ui</a></p>
+<h3 id="mack-a"><a href="#mack-a" class="headerlink" title="mack-a"></a><strong>mack-a</strong></h3><p><strong>BASH</strong></p>
+<pre><code class="hljs plaintext">wget -P /root -N --no-check-certificate &quot;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&quot; &amp;&amp; chmod 700 /root/install.sh &amp;&amp; /root/install.sh
+</code></pre>
+
+<hr>
+<p>持续更新中</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" title="头像" alt="头像"></a><div class="post-copyright__author_name">WANGWENZHI</div><div class="post-copyright__author_desc">王文志的博客</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://wangwenzhi.eu.org/article/2023-8-10_Script/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://wangwenzhi.eu.org/article/2023-8-10_Script/')">常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://wangwenzhi.eu.org/article/2023-8-10_Script/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=常用的脚本 检测是否可以访问 ChatGPT 脚本 修改检测是否可以访问 ChatGPT 脚本&amp;url=https://wangwenzhi.eu.org/article/2023-8-10_Script/&amp;pic=https://wangwenzhi.eu.org/images/images/Script.png" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/VPS/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>VPS<span class="tagsPageCount">7</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://wangwenzhi.eu.org/images/images/chatgpt.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/article/2023-8-1_alist/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/alist.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">目前最好用的网盘直链程序 AList</div></div></a></div><div class="next-post pull-right"><a href="/article/2024-7-22_ZeroTier/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/ZeroTier.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">VPS[CentOS]中安装 ZeroTier</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/article/2024-7-26_%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" title="搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/HEXO.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2024-07-26</div><div class="title">搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南</div></div></a></div><div><a href="/article/2023-8-1_alist/" title="目前最好用的网盘直链程序 AList"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/alist.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-08-01</div><div class="title">目前最好用的网盘直链程序 AList</div></div></a></div><div><a href="/article/2023-8-1_AppleCMS/" title="用docker搭建苹果CMS网站"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/AppleCMS.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-08-01</div><div class="title">用docker搭建苹果CMS网站</div></div></a></div><div><a href="/article/2023-8-1_NeZha/" title="哪吒监控 哪吒监控接入 Github、Gitlab、Jihulab、Gitee 作为后台管理员账号"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/NeZha.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-08-01</div><div class="title">哪吒监控 哪吒监控接入 Github、Gitlab、Jihulab、Gitee 作为后台管理员账号</div></div></a></div><div><a href="/article/2023-8-1_NPM/" title="Nginx Proxy Manager 安装使用一键脚本"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/NPM.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-08-01</div><div class="title">Nginx Proxy Manager 安装使用一键脚本</div></div></a></div><div><a href="/article/2019-08-26_FinalShellSSH/" title="FinalShell SSH工具,服务器管理,远程桌面加速软件,支持Windows,macOS,Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/FinalShell.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2019-08-26</div><div class="title">FinalShell SSH工具,服务器管理,远程桌面加速软件,支持Windows,macOS,Linux</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">WANGWENZHI</h1><div class="author-info__desc">王文志的博客</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/wangwenzhiwwz" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/236167915/" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>Announcement</span></div><div class="announcement_content">欢迎来看我的博客鸭~</div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E5%88%97%E8%A1%A8"><span class="toc-text">更新列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E5%B7%A5%E5%85%B7%E7%AE%B1%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%8C%E9%9B%86%E6%88%90%E4%BA%86%E5%BE%88%E5%A4%9A%E8%84%9A%E6%9C%AC%EF%BC%89"><span class="toc-text">综合工具箱（强烈推荐，集成了很多脚本）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%9C%E7%94%AB%E6%B5%8B%E8%AF%95"><span class="toc-text">杜甫测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DD-%E7%9B%B8%E5%85%B3"><span class="toc-text">DD 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E7%94%B2%E9%AA%A8%E6%96%87-DD-%E8%84%9A%E6%9C%AC"><span class="toc-text">1、甲骨文 DD 脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81MoeClub-%E8%84%9A%E6%9C%AC"><span class="toc-text">2、MoeClub 脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%8F%A6%E4%B8%80%E4%BD%8D%E5%A4%A7%E4%BD%AC%E7%9A%84%E8%84%9A%E6%9C%AC"><span class="toc-text">3、另一位大佬的脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E7%A7%8B%E6%B0%B4%E9%80%B8%E5%86%B0-Windows-2012-2016-2019-2022-10-11-DD-%E9%95%9C%E5%83%8F"><span class="toc-text">4、秋水逸冰 Windows 2012&#x2F;2016&#x2F;2019&#x2F;2022 10&#x2F;11 DD 镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3"><span class="toc-text">测试相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E6%B5%8B%E8%AF%95"><span class="toc-text">机器测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E7%BA%BF%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">单线程测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%85%A8%E6%B5%8B%E9%80%9F%E8%84%9A%E6%9C%AC"><span class="toc-text">最全测速脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#superbench"><span class="toc-text">superbench</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bench-sh"><span class="toc-text">Bench.sh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9F%E5%BA%A6%E6%B5%8B%E8%AF%95"><span class="toc-text">速度测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E5%BB%B6%E8%BF%9F%E3%80%81%E6%8A%96%E5%8A%A8"><span class="toc-text">显示延迟、抖动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%9B%9E%E7%A8%8B%E7%BA%BF%E8%B7%AF"><span class="toc-text">直接显示回程线路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E7%BD%91%E6%B5%8B%E9%80%9F"><span class="toc-text">四网测速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BD%91%E6%B5%8B%E9%80%9F"><span class="toc-text">三网测速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95-25-%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E5%BC%80%E6%94%BE"><span class="toc-text">测试 25 端口是否开放</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95-IPv4-%E4%BC%98%E5%85%88%E8%BF%98%E6%98%AF-IPv6-%E4%BC%98%E5%85%88"><span class="toc-text">测试 IPv4 优先还是 IPv6 优先</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%AA%92%E4%BD%93%E6%B5%8B%E8%AF%95"><span class="toc-text">流媒体测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%AA%92%E4%BD%93%E6%B5%8B%E8%AF%95"><span class="toc-text">全媒体测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E9%A3%9E%E6%B5%8B%E8%AF%95"><span class="toc-text">奈飞测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WARP"><span class="toc-text">WARP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E9%97%B4"><span class="toc-text">服务器时间</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-%E5%90%8C%E6%AD%A5%E6%97%B6%E9%97%B4"><span class="toc-text">CentOS 同步时间</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BBR"><span class="toc-text">BBR</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-7-BBR"><span class="toc-text">CentOS 7 BBR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AF-BBR"><span class="toc-text">一键开启 BBR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E7%9B%B8%E5%85%B3"><span class="toc-text">Docker 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E3%80%81%E5%AE%89%E8%A3%85%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6"><span class="toc-text">更新、安装必备软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%B7%E5%A4%96%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">海外服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%A4%A7%E9%99%86-Docker-%E5%AE%89%E8%A3%85"><span class="toc-text">非大陆 Docker 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD-Docker"><span class="toc-text">卸载 Docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%A4%A7%E9%99%86-Docker-compose-%E5%AE%89%E8%A3%85"><span class="toc-text">非大陆 Docker-compose 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E9%99%86%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">大陆服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E6%9C%BA%E5%AE%89%E8%A3%85-docker"><span class="toc-text">国内机安装 docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E6%9C%BA%E5%AE%89%E8%A3%85-docker-compose"><span class="toc-text">国内机安装 docker-compose</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD-docker"><span class="toc-text">卸载 docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">防火墙</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">CentOS 关闭防火墙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9D%E5%A1%94%E7%9B%B8%E5%85%B3"><span class="toc-text">宝塔相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9D%E5%A1%94%E5%8E%BB%E9%99%A4%E7%99%BB%E9%99%86-%E5%B7%B2%E7%BB%8F%E5%A4%B1%E6%95%88%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E8%A7%81%EF%BC%9Ahttps-blog-laoda-de-archives-bt-to-aapanel"><span class="toc-text">宝塔去除登陆 (已经失效，解决方法见：https:&#x2F;&#x2F;blog.laoda.de&#x2F;archives&#x2F;bt-to-aapanel)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9D%E5%A1%94-aapanel-%E7%A0%B4%E8%A7%A3%EF%BC%88%E8%BF%99%E4%B8%AA%E7%9B%AE%E5%89%8D%E4%B9%9F%E4%B8%8D%E4%BF%9D%E8%AF%81%E5%8F%AF%E7%94%A8%E4%BA%86%EF%BC%89"><span class="toc-text">宝塔 &amp; aapanel 破解（这个目前也不保证可用了）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%86%E6%A2%A8%E7%9B%B8%E5%85%B3"><span class="toc-text">呆梨相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#XUI"><span class="toc-text">XUI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mack-a"><span class="toc-text">mack-a</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/article/2024-7-27_AI/" title="OpenAI ChatGPT 是一家人工智能技术公司，由多位顶尖科学家和企业家创立，其业务覆盖人工智能基础研究、产品研发、技术咨询和服务等领域"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/chatgpt.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OpenAI ChatGPT 是一家人工智能技术公司，由多位顶尖科学家和企业家创立，其业务覆盖人工智能基础研究、产品研发、技术咨询和服务等领域"/></a><div class="content"><a class="title" href="/article/2024-7-27_AI/" title="OpenAI ChatGPT 是一家人工智能技术公司，由多位顶尖科学家和企业家创立，其业务覆盖人工智能基础研究、产品研发、技术咨询和服务等领域">OpenAI ChatGPT 是一家人工智能技术公司，由多位顶尖科学家和企业家创立，其业务覆盖人工智能基础研究、产品研发、技术咨询和服务等领域</a><time datetime="2024-07-27T13:12:58.000Z" title="Created 2024-07-27 21:12:58">2024-07-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2024-07-27_Markdown%20%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/" title="Markdown 语法手册 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/Markdown.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Markdown 语法手册 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多"/></a><div class="content"><a class="title" href="/article/2024-07-27_Markdown%20%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/" title="Markdown 语法手册 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多">Markdown 语法手册 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多</a><time datetime="2024-07-27T06:07:17.000Z" title="Created 2024-07-27 14:07:17">2024-07-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2024-07-27_github-%E6%B7%BB%E5%8A%A0ssh/" title="github-添加ssh 很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/github.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github-添加ssh 很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？"/></a><div class="content"><a class="title" href="/article/2024-07-27_github-%E6%B7%BB%E5%8A%A0ssh/" title="github-添加ssh 很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？">github-添加ssh 很多朋友在用github管理项目的时候，都是直接使用https url克隆到本地，当然也有有些人使用 SSH url 克隆到本地。然而，为什么绝大多数人会使用https url克隆呢？</a><time datetime="2024-07-27T05:59:37.000Z" title="Created 2024-07-27 13:59:37">2024-07-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2024-7-26_%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" title="搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/HEXO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南"/></a><div class="content"><a class="title" href="/article/2024-7-26_%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" title="搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南">搭建Hexo博客，快速简洁高效，零成本搭建个人博客：Hexo + GitHub Pages + Cloudflare Pages 完整指南</a><time datetime="2024-07-26T13:12:58.000Z" title="Created 2024-07-26 21:12:58">2024-07-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2024-07-26_wwz.im/" title="WWZ.iM The new domain name is the abbreviation of wangwenzhi, im means my own, and the combination is wangwenzhi myself, even if wwz.im"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/images/wwz.im.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="WWZ.iM The new domain name is the abbreviation of wangwenzhi, im means my own, and the combination is wangwenzhi myself, even if wwz.im"/></a><div class="content"><a class="title" href="/article/2024-07-26_wwz.im/" title="WWZ.iM The new domain name is the abbreviation of wangwenzhi, im means my own, and the combination is wangwenzhi myself, even if wwz.im">WWZ.iM The new domain name is the abbreviation of wangwenzhi, im means my own, and the combination is wangwenzhi myself, even if wwz.im</a><time datetime="2024-07-25T17:01:11.000Z" title="Created 2024-07-26 01:01:11">2024-07-26</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" rel="noopener" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" href="/docs/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2024 By <a class="footer-bar-link" href="/" title="WANGWENZHI" target="_blank">WANGWENZHI</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://image.anheyu.com" title="图床">图床</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="湘ICP备-xxxxxxx号">湘ICP备-xxxxxxx号</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">30</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">7</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://wangwenzhi.eu.org/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Ai/" style="font-size: 0.88rem;">Ai<sup>1</sup></a><a href="/tags/BLog/" style="font-size: 0.88rem;">BLog<sup>2</sup></a><a href="/tags/Blog/" style="font-size: 0.88rem;">Blog<sup>2</sup></a><a href="/tags/Docker/" style="font-size: 0.88rem;">Docker<sup>3</sup></a><a href="/tags/Github/" style="font-size: 0.88rem;">Github<sup>4</sup></a><a href="/tags/VPS/" style="font-size: 0.88rem;">VPS<sup>7</sup></a><a href="/tags/%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC/" style="font-size: 0.88rem;">一键脚本<sup>3</sup></a><a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 0.88rem;">分享<sup>1</sup></a><a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 0.88rem;">科学上网<sup>17</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 0.88rem;">软件<sup>3</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 WANGWENZHI 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("04/01/2021 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
