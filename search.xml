@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>SERV00 免费10年的云服务器 Serv00 是一家波兰的免费VPS提供商，成立于2008年，致力于 Web 应用托管市场和 UNIX/Linux 服务器管理 | WWZ.iM</title>
+      <link href="/article/2024-09-02_serv00/"/>
+      <url>/article/2024-09-02_serv00/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://wangwenzhi.eu.org/images/images/serv00.png"></p><h1 id="一键脚本"><a href="#一键脚本" class="headerlink" title="一键脚本"></a>一键脚本</h1><pre><code class="hljs plaintext">bash &lt;(curl -s https://raw.githubusercontent.com/gshtwy/socks5-for-serv00/main/install-socks5-hysteria.sh)</code></pre><p><a href="https://wangwenzhi.serv00.net/">APP.WWZ.iM</a></p><p><a href="https://panel5.serv00.com/login/?next=/">Sign in</a></p><p>1.免费提供 3GB 的存储空间</p><p>2.内存：512MB</p><p>3.流量：不限流量 （可以搭建IP节点）</p><p>4.支持PHP、MySQL等网站开发语言和数据库</p><p>5.可以同时搭建100个网站</p><p>6.可自定义开放端口</p><p>7.支持SSH远程访问</p><p>8.免费提供的二级域名，可以自定义绑定</p><p>9.官方要求至少每隔3个月登入一次</p><p>官方免费注册：【<a href="https://www.serv00.com/"><strong>点击前往</strong></a>】</p><p><a href="https://www.serv00.com/">Serv00.com » Home</a></p><p>如何通过SSH远程连接VPS？</p><p>首先需要添加ip白名单：【<a href="https://www.serv00.com/ip_unban/"><strong>点击前往</strong></a>】</p><p>SSH远程终端连接工具：【<a href="https://github.com/kingToolbox/WindTerm/releases/tag/2.6.0"><strong>WindTerm</strong></a>】</p><p>!<a href="https://www.freedidi.com/wp-content/uploads/2024/06/screencapture-serv00-offer-2024-06-26-15_58_03.webp">https://www.freedidi.com/wp-content/uploads/2024/06/screencapture-serv00-offer-2024-06-26-15_58_03.webp</a></p><p><strong>am-nodejs-proxy</strong></p><p>基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。</p><ul><li><a href="https://github.com/ansoncloud8/am-nodejs-proxy/blob/main/README_CN.md">中文文档</a></li><li><a href="https://youtu.be/tj9uD575R80">视频教程</a></li><li><a href="https://t.me/AM_CLUBS">Telegram交流群</a></li><li><a href="https://youtube.com/@AM_CLUB">YouTube频道</a></li><li><a href="https://github.com/ansoncloud8">Github仓库</a></li></ul><p>This README explains how to set up and use the <code>start.sh</code> script to manage the project components.</p><p><strong>Initial Setup</strong></p><ol><li>Connect to your host using SSH:</li></ol><pre><code class="hljs plaintext">ssh &lt;username&gt;@&lt;panel&gt;.serv00.com</code></pre><p>Use the information emailed to you by serv00.</p><ol><li>Enable management permissions:</li></ol><pre><code class="hljs plaintext">devil binexec on</code></pre><p><em><strong>AFTER THIS STEP, EXIT FROM SSH AND LOG IN AGAIN.</strong></em></p><ol><li>Clone the repository:</li></ol><pre><code class="hljs plaintext">cd domains/&lt;username&gt;.serv00.netgit clone https://github.com/ansoncloud8/am-nodejs-proxy.gitcd am-nodejs-proxy</code></pre><p><strong>Usage</strong></p><p>To use the script, run:</p><pre><code class="hljs plaintext">./start.sh &lt;action&gt; &lt;sub-action&gt;</code></pre><table><thead><tr><th>Action</th><th>Sub-Action</th><th>Command</th><th>Description</th></tr></thead><tbody><tr><td>setup</td><td>xray&#x2F;node</td><td><code>./start.sh setup xray</code></td><td>Setup services in a single command</td></tr><tr><td>check</td><td>xray&#x2F;node</td><td><code>./start.sh check xray</code></td><td>Checks Cloudflared and other services</td></tr><tr><td>show</td><td>xray&#x2F;node&#x2F;all</td><td><code>./start.sh show xray</code></td><td>Displays VLESS connection links from node&#x2F;.env</td></tr></tbody></table><p><em><strong>NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.</strong></em></p><p><strong>Checking Sessions</strong></p><p>To check the status of a specific component, you can attach to its tmux session:</p><pre><code class="hljs plaintext">tmux attach -t &lt;session&gt;</code></pre><p>Replace <code>&lt;session&gt;</code> with:</p><ul><li><code>cf</code> for Cloudflared</li><li><code>node</code> for Node.js</li><li><code>xray</code> for Xray</li></ul><p>For example, to check the Cloudflared session:</p><pre><code class="hljs plaintext">tmux attach -t cf</code></pre><p>To detach from a tmux session without closing it, press:</p><pre><code class="hljs plaintext">Ctrl + b, then d</code></pre><p>This key combination allows you to exit the session while leaving it running in the background.</p><p><strong>Notes</strong></p><ul><li>The script uses tmux to manage sessions for each component.</li><li>Cron jobs are set up for periodic maintenance of Node.js and Xray.</li><li>Cloudflared, Node.js, and Xray configurations are generated automatically.</li><li>The script includes functions for port management and cleanup.</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPS </tag>
+            
+            <tag> Free </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一键安装Hysteria 2 Hysteria协议大家可能在很多地方都见过，很多人都说是可以拯救吃灰小鸡的脚本。但是由于他使用的udp协议，并且比较暴力。</title>
       <link href="/article/2024-08-08_Hysteria2/"/>
       <url>/article/2024-08-08_Hysteria2/</url>
@@ -231,6 +258,222 @@
         <tags>
             
             <tag> 科学上网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing Ulefone Armor 27T Pro FLIR Thermal Pro with IR Night Vision</title>
+      <link href="/article/2024-7-15_Armor27Pro/"/>
+      <url>/article/2024-7-15_Armor27Pro/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/aW8FSVuJY7U" title="Introducing Ulefone Armor 27T Pro: FLIR Thermal Pro with IR Night Vision" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><h3 id="基本信息："><a href="#基本信息：" class="headerlink" title="基本信息："></a><strong>基本信息：</strong></h3><p>型号: Armor 27T Pro</p><p>Slogan: Lead the Thermal and Night Vision</p><p>颜色: Black</p><p><strong>810H ICON</strong></p><p><strong>IP68&#x2F;IP69K ICON</strong></p><h3 id="参数："><a href="#参数：" class="headerlink" title="参数："></a><strong>参数：</strong></h3><table><thead><tr><th>Dimensions</th><th>182.8 x 86.8 x 18.5 mm</th></tr></thead><tbody><tr><td>Screen</td><td>6.78” FHD+</td></tr><tr><td>1080 x 2460 Resolution</td><td></td></tr><tr><td>120Hz Refresh Rate</td><td></td></tr><tr><td>Processor</td><td>MediaTek Dimensity 6300 5G</td></tr><tr><td>Memory</td><td>12GB RAM LPDDR4X  + 12GB Virtual Memory, 256GB ROM UFS2.2</td></tr><tr><td>Rear Camera</td><td>50MP  Main Camera</td></tr><tr><td>64MP Infrared Night Vision Camera</td><td></td></tr><tr><td>Front Camera</td><td>32MP</td></tr><tr><td>Battery</td><td>10600mAh Mega Battery</td></tr><tr><td>33W Fast Charging</td><td></td></tr><tr><td>30W Fast Wireless Charging</td><td></td></tr><tr><td>Network</td><td>GSM: B2&#x2F;3&#x2F;5&#x2F;8</td></tr></tbody></table><p>CDMA: BC0&#x2F;BC1&#x2F;BC10<br>WCDMA: B1&#x2F;2&#x2F;4&#x2F;5&#x2F;6&#x2F;8&#x2F;19</p><p>LTE-FDD: B1&#x2F;2&#x2F;3&#x2F;4&#x2F;5&#x2F;7&#x2F;8&#x2F;12&#x2F;13&#x2F;17&#x2F;18&#x2F;19&#x2F;20&#x2F;25&#x2F;26&#x2F;28A&#x2F;28B&#x2F;66&#x2F;71</p><p>LTE-TDD: B34&#x2F;38&#x2F;39&#x2F;40&#x2F;41</p><p>5G NR Sub6: N1&#x2F;2&#x2F;3&#x2F;5&#x2F;7&#x2F;8&#x2F;20&#x2F;25&#x2F;28&#x2F;38&#x2F;40&#x2F;41&#x2F;66&#x2F;71&#x2F;77&#x2F;78&#x2F;79 |<br>| OS | Android 14 |<br>| Differentiation | IP69K&#x2F;IP68&#x2F;MIL-STD-810H Certified<br>Thermal by FLIR 2.5<br>IR Blaster<br>uSmart Expansion Connector 2.0<br>Wireless Reverse Charging<br>Custom Key<br>Outdoor Toolbox<br>-30℃ Low-temperature Solid-state Battery |<br>| Others | Face Unlock + Fingerprint ID<br>NFC |</p><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/0rq2djvKK30" title="Ulefone Armor 27T Pro Unboxing: Unveil the FLIR Thermal Rugged Flagship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/-i8w3jB6h68" title="Ulefone Armor 27T Pro: Built-in FLIR Thermal Camera Showcase | Thermal by FLIR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/vz4g1U0ymPI" title="Ulefone Armor 27T Pro &amp; 27 Pro: 10600mAh Battery &amp; Fast Charging Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/tSJOXCfrmgw" title="Ulefone Armor 27 Series Accessories Showcase: Full Potential Unleashed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing Ulefone Armor 25T Series Thermal Imaging Turbo Meets Night Vision</title>
+      <link href="/article/2024-7-5_Armor25Pro/"/>
+      <url>/article/2024-7-5_Armor25Pro/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/qxv4TvhDiAw" title="Introducing Ulefone Armor 25T Series: Thermal Imaging Turbo Meets Night Vision" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/JfSQEcsS7bs" title="Ulefone Armor 25T Pro Coming Soon! | Enhanced Thermal Imaging by ThermoVue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/K4-l0GDIPjY" title="Ulefone Armor 25T Pro: Built-in Thermal Camera Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/FC9a2gDJK-Y" title="Ulefone Armor 25T Pro First Hands-On - Thermal Imaging Meets IR Night Vision!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/U7lAUjhyfqw" title="Ulefone Armor 25T Series Camera Test | Mega 1.31&quot; Main Camera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Meet Ulefone Armor 26 Ultra Walkie-Talkie Version 5G Rugged Flagship with DMR Radio!</title>
+      <link href="/article/2024-4-23_Armor26Ultra/"/>
+      <url>/article/2024-4-23_Armor26Ultra/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/RqlAdzTxQbE?si=AiVGg71xy9w771Hy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><h2 id="📎-资料"><a href="#📎-资料" class="headerlink" title="📎 资料"></a>📎 资料</h2><p><a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/8de6dcdf-172b-4660-80ec-06dcd4abe7e5/edbb099f-0eda-4bb9-a7c4-3f90c537f5a5/Armor_26_Ultra%E5%88%86%E9%95%9C.pdf">Armor 26 Ultra分镜.pdf</a></p><h3 id="基本信息："><a href="#基本信息：" class="headerlink" title="基本信息："></a><strong>基本信息：</strong></h3><p>型号: Armor 26 Ultra</p><p>颜色: Black</p><p><strong>810H ICON</strong></p><p><strong>IP68&#x2F;IP69K ICON</strong></p><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/Y2yPBSYQkfw" title="Introducing Ulefone Armor 26 Ultra - Mega Performance 5G Rugged Flagship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/bLd1gKBtzAY" title="Ulefone Armor 26 Ultra First Look - Ultra Flagship Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing Ulefone Armor Pad 3 Pro - 33280mAh Battery Flagship Rugged Tablet!</title>
+      <link href="/article/2024-4-13_ArmorPad3Pro/"/>
+      <url>/article/2024-4-13_ArmorPad3Pro/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/h8ZVScdsWGc?si=0Eh5us9tiHVMCXcn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing the Ulefone Armor 23 Ultra - Flagship Rugged with Satellite Communication</title>
+      <link href="/article/2024-3-1_Armor23Ultra/"/>
+      <url>/article/2024-3-1_Armor23Ultra/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ynM2jFYncnE?si=jRneCkPSwdGH3qSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><div class="video-container"><iframe width="703" height="395" src="https://www.youtube.com/embed/slLKqvrhe-0" title="How to Guarantee Ulefone Armor 23 Ultra Quality? | Reliability Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-container"><iframe width="703" height="395" src="https://www.youtube.com/embed/s2r79Mvbad4" title="Ulefone Armor 23 Ultra Camera Performance | 50MP + 50MP + 64MP + 3.2x Optical Zoom" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing the Ulefone Armor 22 - NightElf Ultra 2.0 Camera (2023 MUSE Design Awards Winner)</title>
+      <link href="/article/2023-12-1_Armor22/"/>
+      <url>/article/2023-12-1_Armor22/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GVeko9aDHzw?si=F-n4pUs1djlrAt-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><h2 id="📎-资料"><a href="#📎-资料" class="headerlink" title="📎 资料"></a>📎 资料</h2><p><a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/8de6dcdf-172b-4660-80ec-06dcd4abe7e5/45d07b19-1493-43c8-9088-cc8f1788f97d/Armor_22%E5%88%86%E9%95%9C.pdf">Armor 22分镜.pdf</a></p><p><a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/8de6dcdf-172b-4660-80ec-06dcd4abe7e5/8d5490be-6170-4b0f-8dae-bce3cd369e3c/Armor_22%E6%95%85%E4%BA%8B%E6%9D%BF.pdf">Armor 22故事板.pdf</a></p><p><a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/8de6dcdf-172b-4660-80ec-06dcd4abe7e5/3eaf113c-ddc2-41cc-9fce-6bd28d2131ce/Armor_22%E6%8B%8D%E6%91%84%E9%80%9A%E5%91%8A.pdf">Armor 22拍摄通告.pdf</a></p><p><a href="https://www.youtube.com/watch?v=GVeko9aDHzw&t=11s">https://www.youtube.com/watch?v=GVeko9aDHzw&amp;t=11s</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing the Ulefone Armor 15 - A World Leading Rugged Phone Built in TWS Earbuds</title>
+      <link href="/article/2023-11-15_Armor15/"/>
+      <url>/article/2023-11-15_Armor15/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/JFRP5vrq1c0?si=q1T4RrUNLzR7Jn0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><p>Electronics like smartphones and earphones have become a must in our daily life. When you go out for school, shopping, work or travel, you would bring a phone, earphones and other devices for calling, chatting, music and so on. However, carrying those things simultaneously will be not convenient and exhaust you a lot.</p><p>To make electronics that you carry with everyday lesser and travel lighter, Armor 15 with built-in TWS Earbuds is born — Just like AirPods in your smartphone. It is a milestone for our team to integrate earbuds into a rugged phone. And it proved to be a great solution for a much simpler life.</p><p>With soft ear tips and ergonomic design, the TWS earbuds are comfortable fit. And it allows you to wear for running, fitness, hiking and other sports.</p><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/QJS6Y0_pcSQ?si=OTtDUarQOA7-kUJm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p>You will take it out from the top of Armor 15 whenever you need it; it is connected to the device the instant you fetch it.</p><p>Just throw the earbuds back into the case on the top of Armor 15 and forget about charging, it couldn’t be more convenient! Up to 5 hours of listening time for single charge, making it up to 505 hours total battery life with Armor 15 case.</p><p>Based on BT5.0, the TWS earbuds are widely compatible with varieties of devices like tablets, laptops, etc.</p><p>When you make phone calls, the TWS earbuds offer HiFi sound quality.</p><p>It will not occupy extra space for it stays in the Armor 15 when not used. Besides, it is effortless to take it out or put it back.</p><p>There is a multifunctional touch key on either earbud to support changing for multiple touch control modes.</p><p>Armor 15 has passed the strict IP68&#x2F;IP69K, MIL-STD-810G military protection standard test, with excellent waterproof, shockproof and dust-proof performance.</p><p>Equipped with front-facing dual speakers, dual Smart PA,  100dB loudness, max 2W power, Armor 15 produces top stereo auditory effects.</p><p>With a dual rear main camera setup, including a 12MP main camera plus one 13MP wide-angle lens, Armor 15 let you shoot wider scenery and zoom for better photography effects.</p><p>Configured with 16MP, the front module allows you to take high-quality pictures. Whenever you want to snap a selfie, make a video call or do a live webcast, there is much clear and more details to be seen.</p><p>Armor 15 packs MediaTek Helio G35 processor, which combines octa-core CPU and 2.3GHz frequency. It has great performance to make the download and upload instantly. Along with 6GB RAM and 128GB ROM, it provides spacious space for downloaded apps, videos, images, and music storage.</p><p>Driven by Android 12 OS, Armor 15 will become more personalized with the changes in visual effects. Privacy and security have been improved and the loading of apps is also faster.</p><p>There is a custom key, which can be set on the Settings in advance for single click, double click or long press to quickly access PTT Intercom (Zello), flashlight, Screen Shot and other regularly used apps. Armor 15 supports NFC + Google Pay; rich global frequency bands and Dual 4G Dual VoLTE are supported to make the users being closer and enjoy high-quality HD voice calls. Armor 15 provides 6 navigation system choices for your reference, including GPS, GLONASS, Beidou, Galileo, QZSS, and Digital Compass.</p><p>The multifunctional protective case fits the Armor 15 perfectly and provides all-round protection to it. The case is easy to assemble and disassemble, which combines a clip for 180° rotation and a carabiner to hang on your backpack, waist, toolkit bag, etc.</p><p>Armor 15 is a great companion for sports, outdoor camping, picnic, cargo driver, and so on.</p><pre><code>                             Press Reviews                      Technical Specification </code></pre><p>Model:                        Ulefone Armor 15</p><p>Features:                   Built-in TWS Earbuds, Symmetrical Dual Speakers, Underwater</p><pre><code>                                Camera, Custom Key + Camera Key, Headset-free FM Radio</code></pre><p>Protection Grade:    IP68&#x2F;IP69K, MIL-STD-810G</p><p>Size:                           170.2<em>79.6</em>18.2 mm</p><p>Screen:                      5.45-inch, 720*1440 HD+</p><p>CPU:                           Helio G35,  2.3GHz</p><p>Memory:                    6GB RAM + 128GB ROM</p><p>Rear Camera:           12MP+13MP Dual Camera</p><p>Front Camera:          16MP</p><p>Battery:                      6600mAh</p><p>Network:                    4G: </p><pre><code>                                FDD-LTE: B1/2/3/4/5/7/8/12/13/17/18/19/20/25/26/28A/28B/B66                                TDD-LTE: B38/39/40/41                                3G: WCDMA: B1/2/4/5/8                                2G: GSM: B2/3/5/8</code></pre><p>System:                      Android 12</p><pre><code>                                  In the box</code></pre><p>All our products are produced by our own factory. We have a thorough understanding of the whole process of each production link. Besides, we are stricter in quality control, and the quality of products is more guaranteed. Usually, every single mobile phone will go through a number of rigorous quality tests, such as pressing test, USB endurance test, touch screen test, mini-drop endurance test, 1.5m drop test, waterproof test and so on. Each test will be conducted up to tens of thousands of times.</p><p>If you are a member of the press and need more resources, please download our press kit or reach us at <a href="mailto:&#112;&#114;&#x40;&#x75;&#x6c;&#101;&#102;&#x6f;&#110;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#112;&#114;&#x40;&#x75;&#x6c;&#101;&#102;&#x6f;&#110;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>.</p><p>We’ve made an FAQ section below, and we’ll keep adding new FAQs and updating them via Kickstarter.</p><ol><li><p>Back our campaign and leave a comment on our Kickstarter page.</p></li><li><p>Send a direct message to us on Kickstarter.</p></li><li><p>Contact us on Facebook.</p></li></ol><p>風險與挑戰<br>Armor 15 is the world’s first rugged phone built in TWS earbuds. Its hardware integration is very high, and we have strict attitude toward our product design. It is a great challenge, but with our years of experience in the mobile phone manufacturing industry, we are very confident in the Armor 15’s craftsmanship and production schedule.</p><p>However, we also know that hidden obstacles and challenges often occur. Because of that, we’ve made sure to account for some amount of craziness or unforeseen problems that may occur in our schedule. If something does go wrong, we promise to keep our backers updated and informed about any issues and about the way in which we are solving them.</p><p>Please be aware that there may be extra customs fees due to the policy of different countries, and you will be responsible for customs fees, duties, VAT, import taxes, etc. administered by your government. They are excluded from the shipping fees. Normally, you won’t be charged import duty taxes. However, given many different regulations in different countries, we can’t guarantee that 100%.</p><p>Due to the impact of COVID-19 and some other international events, the timeliness of global logistics and transportation has become less optimistic. Although our logistics partners will try to do their best, we still cannot guarantee that there will be no accidents. We will always pay attention to the logistics dynamics, and will notify you in time once any abnormality is found. In addition, due to the rising cost of logistics and transportation, we cannot pay the high shipping fee, and the shipping cost will be paid by you. Thank you for your understanding and support!</p><p>瞭解 Kickstarter 的問責制度<br>環保承諾<br>歡迎你來環境資源中心瞭解 Kickstarter 是如何鼓勵各位專案發起人採用可持續做法的。<br>經久耐用的設計<br>We adopts more wear-resistant shell material, and the internal structure design is stronger, which can greatly reduce the chance of physical damage to the phone. Meanwhile, our devices have passed varieties of rigorous tests to ensure that the service life will be longer than ordinary mobile phones.</p><p>環境友善工廠<br>We have our own factory, which has a history of more than 10 years. Our factory strictly comply with government regulations; and all waste is recycled or disposed of properly to minimize environmental harm. We regularly update and upgrade our equipments and train employees, providing a comfortable working environment for them.</p><p>Sustainable Distribution<br>As a company with many years of history, we have a stable and healthy supply chain system, as well as many excellent partners and distributors, our production and delivery will be more reliable.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Introducing the Ulefone Note 16 Pro - Elegance Meets Experience</title>
+      <link href="/article/2023-10-10_Note16Pro/"/>
+      <url>/article/2023-10-10_Note16Pro/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GEfBRDodXwI?si=AGmWu_BgSGjrKWSl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><p><strong>New Design</strong>  <strong>Fascinating Colors</strong></p><p><strong>6.52” HD+ Waterdrop Screen</strong></p><p><strong>50MP Main Camera</strong>  Full of Details</p><p><strong>8MP Front Camera</strong>  Sharp Portrait Capture</p><p><strong>Up to 16GB RAM, Up to 512GB ROM</strong>  Infinite Possibilities</p><p><strong>Unisoc 8-Core Processor</strong></p><p><strong>4400mAh Battery</strong>  Power for All Day</p><p><strong>Android 13</strong></p><p><strong>NFC</strong></p><p><strong>4G LTE, Dual-band Wi-Fi</strong></p><p><strong>Side Fingerprint Sensor</strong></p><p><strong>Face Unlock</strong></p><p><strong>Splashproof</strong></p><p><strong>Free TPU Phone Case</strong></p><p><a href="https://www.youtube.com/watch?v=GEfBRDodXwI">https://www.youtube.com/watch?v=GEfBRDodXwI</a></p><p><a href="https://www.youtube.com/watch?v=75Gl6P96CBs">https://www.youtube.com/watch?v=75Gl6P96CBs</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
             
         </tags>
       
@@ -620,6 +863,33 @@
         <tags>
             
             <tag> 科学上网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>A Guided Tour of Ulefone Armor 17 Pro | 2022 Best Rugged Phone</title>
+      <link href="/article/2022-11-30_Armor17pro/"/>
+      <url>/article/2022-11-30_Armor17pro/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/6ba_homr8Vo?si=HUXu6KpOhP-jP7G_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><p><a href="https://www.youtube.com/watch?v=NrdBvN9-AIg">https://www.youtube.com/watch?v=NrdBvN9-AIg</a></p><p><a href="https://www.youtube.com/watch?v=N9YKxqAxk5Y">https://www.youtube.com/watch?v=N9YKxqAxk5Y</a></p><p><a href="https://www.youtube.com/watch?v=gYURRb4sAys">https://www.youtube.com/watch?v=gYURRb4sAys</a></p><p><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F517ffd1b-97a8-4810-8dec-d4ed52631731%2F220914_GQ3100_%25E6%259C%2580%25E6%2596%25B0ID_-220909.png?table=block&id=7563d4f3-4db3-4ab5-ad7a-75f4d6b2d847&spaceId=8de6dcdf-172b-4660-80ec-06dcd4abe7e5&width=2000&userId=8a584c4d-b7d9-4ca2-8c28-4f7c1ee492c5&cache=v2" alt="220914 GQ3100 最新ID -220909.png"></p><p>生活工作场景</p><p>商务人士</p><p>磁吸生态</p><p><a href="https://www.youtube.com/watch?v=NrdBvN9-AIg&t=67s">https://www.youtube.com/watch?v=NrdBvN9-AIg&amp;t=67s</a></p><h1 id="卖点"><a href="#卖点" class="headerlink" title="卖点"></a>卖点</h1><ol><li><strong>磁吸生态</strong></li><li><strong>商务轻薄</strong></li><li><strong>生活三防</strong></li><li><strong>主摄</strong></li><li><strong>夜视</strong></li><li><strong>屏幕</strong></li><li><strong>芯片</strong></li><li><strong>存储</strong></li></ol><p><a href="https://www.notion.so/c53ecb3d8a854eccb0b6ed53423d66a7?pvs=21">Armor 15 脚本</a></p><p>开箱</p><p><img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F920dfa1a-108c-4735-8e53-0a81622bda1e%2FArmor_17_Pro_%25E5%25BC%2580%25E7%25AE%25B1.png?table=block&id=843eea06-2dfa-4da1-b20f-26f5f2e2d728&spaceId=8de6dcdf-172b-4660-80ec-06dcd4abe7e5&width=2000&userId=8a584c4d-b7d9-4ca2-8c28-4f7c1ee492c5&cache=v2" alt="Armor 17 Pro 开箱.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作记录 </tag>
+            
+            <tag> 视频制作 </tag>
             
         </tags>
       
