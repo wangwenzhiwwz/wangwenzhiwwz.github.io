@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Reality 协议使用X-ui搭建 | WWZ.iM | 目前最安全的X-ray代理协议reality，从购买vps到搭建教程演示</title>
+      <link href="/article/Reality/"/>
+      <url>/article/Reality/</url>
+      
+        <content type="html"><![CDATA[<aside>💡 **搭建 Reality 协议** | WWZ.iM</aside><h1 id="搭建-Reality"><a href="#搭建-Reality" class="headerlink" title="搭建 Reality"></a><strong>搭建 Reality</strong></h1><h3 id="安装所需组件"><a href="#安装所需组件" class="headerlink" title="安装所需组件"></a><strong>安装所需组件</strong></h3><p>以下命令，请根据自己的操作系统作出选择</p><pre><code class="hljs plaintext">## 以下为 CentOS 命令yum update -yyum install curl wget -y</code></pre><pre><code class="hljs plaintext">## 以下为 Debian / Ubuntu 命令apt update -yapt install curl wget -y</code></pre><h3 id="安装-X-ui"><a href="#安装-X-ui" class="headerlink" title="安装 X-ui"></a><strong>安装 X-ui</strong></h3><blockquote><p>因为原版的 X-UI 已经很久没有更新和维护了，以下的 X-UI 为改版，来自 GitHub ：点击访问</p><p>更新频率更高，推荐大家使用。</p></blockquote><pre><code class="hljs plaintext">bash &lt;(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)</code></pre><h3 id="设置-X-ui-面板"><a href="#设置-X-ui-面板" class="headerlink" title="设置 X-ui 面板"></a><strong>设置 X-ui 面板</strong></h3><p>找到左侧面板设置，记录 “面板 url 根路径” ，以后访问 X-ui 面板的地址为 <code>http://ip:端口/面板url根路径</code></p><h3 id="如何寻找-TLS1-3-H2-的网站"><a href="#如何寻找-TLS1-3-H2-的网站" class="headerlink" title="如何寻找 TLS1.3&#x2F;H2 的网站"></a><strong>如何寻找 TLS1.3&#x2F;H2 的网站</strong></h3><blockquote><p>目标网站最低标准：国外网站，支持 TLSv1.3 与 H2，域名非跳转用</p><p>加分项：IP 相近（更像，且延迟低），Server Hello 后的握手消息一起加密（如 dl.google.com），有 OCSP Stapling</p><p>配置加分项：禁回国流量，TCP&#x2F;80、UDP&#x2F;443 也转发（REALITY 对外表现即为端口转发，目标 IP 冷门或许更好）</p></blockquote><p>可以使用这个网站：<a href="https://www.ssllabs.com/projects/index.html">点击访问</a> ，来寻找 <code>TLS1.3 / X25519 / H2</code> 的指向站点，更多注意事项，请看 本期视频</p><p>也可以使用这个网站：<a href="http://web.chacuo.net/netocspstapling">点击访问</a> ，来查询目标网站是否支持 <code>OCSP Stapling</code> （<strong>加分项而已，不支持也没有太大关系</strong>）</p><p><strong>注意：大家代理出现问题，第一个需要检查的是目标网站是否存在问题！！！！！！</strong></p><h3 id="部署-Reality-节点"><a href="#部署-Reality-节点" class="headerlink" title="部署 Reality 节点"></a><strong>部署 Reality 节点</strong></h3><p>创建 Reality 节点还是很简单的，如下图，更多注意事项请看 <a href="https://www.youtube.com/watch?v=DO1_C9YWOYY">本期视频</a></p><h3 id="开启-BBR-加速"><a href="#开启-BBR-加速" class="headerlink" title="开启 BBR 加速"></a><strong>开启 BBR 加速</strong></h3><p>以下 BBR 加速，请自选一种</p><h3 id="1、系统自带-BBR-加速"><a href="#1、系统自带-BBR-加速" class="headerlink" title="1、系统自带 BBR 加速"></a><strong>1、系统自带 BBR 加速</strong></h3><pre><code class="hljs plaintext">echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.confecho &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.confsysctl -p</code></pre><h3 id="2、BBRplus-加速"><a href="#2、BBRplus-加速" class="headerlink" title="2、BBRplus 加速"></a><strong>2、BBRplus 加速</strong></h3><pre><code class="hljs plaintext">wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh</code></pre><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="Reality-客户端"><a href="#Reality-客户端" class="headerlink" title="Reality 客户端"></a><strong>Reality 客户端</strong></h1><p>以下客户端来自 <a href="https://github.com/XTLS/Xray-core">XTLS</a> 官方推荐（部分我没有进行尝试，大家可以自行尝试）</p><ul><li>OpenWrt<ul><li><a href="https://github.com/xiaorouji/openwrt-passwall">PassWall</a>, <a href="https://github.com/xiaorouji/openwrt-passwall2">PassWall 2</a></li><li><a href="https://github.com/fw876/helloworld">ShadowSocksR Plus+</a></li><li><a href="https://github.com/yichya/luci-app-xray">luci-app-xray</a> (<a href="https://github.com/yichya/openwrt-xray">openwrt-xray</a>)</li></ul></li><li>Windows<ul><li><a href="https://github.com/2dust/v2rayN">v2rayN</a></li><li><a href="https://github.com/Matsuridayo/nekoray">NekoRay</a></li><li><a href="https://github.com/LorenEteval/Furious">Furious</a></li><li><a href="https://github.com/hiddify/HiddifyN">HiddifyN</a></li><li><a href="https://github.com/InvisibleManVPN/InvisibleMan-XRayClient">Invisible Man – Xray</a></li></ul></li><li>Android<ul><li><a href="https://github.com/2dust/v2rayNG">v2rayNG</a></li><li><a href="https://github.com/hiddify/HiddifyNG">HiddifyNG</a></li><li><a href="https://github.com/XTLS/X-flutter">X-flutter</a></li></ul></li><li>iOS &amp; macOS arm64<ul><li><a href="https://github.com/arror/Mango">Mango</a></li><li><a href="https://apps.apple.com/app/foxray/id6448898396">FoXray</a></li><li><a href="https://apps.apple.com/app/streisand/id6450534064">Streisand</a></li></ul></li><li>macOS arm64 &amp; x64<ul><li><a href="https://github.com/yanue/V2rayU">V2rayU</a></li><li><a href="https://github.com/tzmax/V2RayXS">V2RayXS</a></li><li><a href="https://github.com/LorenEteval/Furious">Furious</a></li><li><a href="https://apps.apple.com/app/foxray/id6448898396">FoXray</a></li></ul></li><li>Linux<ul><li><a href="https://github.com/v2rayA/v2rayA">v2rayA</a></li><li><a href="https://github.com/Matsuridayo/nekoray">NekoRay</a></li><li><a href="https://github.com/LorenEteval/Furious">Furious</a></li></ul></li></ul><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h1><p>有了 <code>X-ui</code> 面板，可视化的搭建 <code>Reality</code> ，也是极为方便，而且这种协议也是目前来说比较安全的代理方式之一，不需要自己购买的域名，可以有效的去除普通 <code>TLS</code> 代理过程中的一些特征。</p><p>但是互联网没有绝对，无非也就是矛与盾之间的较量，只是在目前来说不容易被封 IP 和端口。</p><p>若是你问我，是不是推荐所有人都来使用它，其实我不推荐，这只是一种方法，若是你自创的一种方式能长期稳定的使用，那么我不推荐你进行更换，就和 <code>XTLS</code> 官方所说：“把所有的鸡蛋都放在一个篮子里是十分危险的，我们鼓励大家善用每个工具的特性，分散特征”。</p><p>比如：<code>NaiveProxy</code>、魔改的 <code>Shadowsocks</code>，<code>MITM</code> 代理 等等。我个人觉得，越少冷门越好。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科学上网 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科学上网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Adobe 软件激活破解工具 2024 Win/Mac | WWZ.iM Adobe GenP几乎可以破解所有Adobe CC 2019-2024的windows版软件</title>
       <link href="/article/Adobe/"/>
       <url>/article/Adobe/</url>
