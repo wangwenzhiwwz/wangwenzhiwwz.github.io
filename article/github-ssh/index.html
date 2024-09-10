@@ -236,7 +236,7 @@ if (true) {
 <h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><p>1、首先需要检查你电脑是否已经有 SSH key<br>运行 git Bash 客户端，输入如下代码：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">$ <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 <p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
-<p>2、创建一个 SSH key<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#95;&#x65;&#109;&#x61;&#105;&#108;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#x79;&#x6f;&#x75;&#x72;&#95;&#x65;&#109;&#x61;&#105;&#108;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;</a>“<br>代码参数含义：</p>
+<p>2、创建一个 SSH key<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#x72;&#95;&#x65;&#x6d;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#109;">&#x79;&#111;&#x75;&#x72;&#95;&#x65;&#x6d;&#97;&#105;&#108;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#109;</a>“<br>代码参数含义：</p>
 <p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
 <p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
 <p>Generating public&#x2F;private rsa key pair.</p>
