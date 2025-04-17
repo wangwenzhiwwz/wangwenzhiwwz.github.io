@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Blender 自带了很多强大的官方插件（Add-ons），默认未必全部启用，但你可以在「编辑 &gt; 偏好设置 &gt; 插件」中勾选启用。下面是一些常用的自带插件（即 Blender 官方自带的）按类别分类简要列出：</title>
+      <link href="/article/Blender-Add-ons/"/>
+      <url>/article/Blender-Add-ons/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://wangwenzhi.eu.org/images/images/Blender-Add-ons.png"></p><blockquote><p>[!NOTE]<br> Blender 自带了很多强大的官方插件（Add-ons），默认未必全部启用，但你可以在「编辑 &gt; 偏好设置 &gt; 插件」中勾选启用。下面是一些常用的自带插件（即 Blender 官方自带的）按类别分类简要列出 </p></blockquote><hr><h2 id="Node-Wrangler着色器节点编辑"><a href="#Node-Wrangler着色器节点编辑" class="headerlink" title="Node Wrangler着色器节点编辑"></a><strong>Node Wrangler着色器节点编辑</strong></h2><p>搜索node直接开启</p><p><img src="https://wangwenzhi.eu.org/images/images/Pasted%20image%2020250417140134.png"></p><p>强大的着色器节点编辑工具，提升节点操作效率。</p><ul><li><p><strong>功能亮点</strong>：</p><ul><li><p><strong>更新贴图</strong>：​<code>Alt + R</code> 可重新加载节点树中使用的所有图像。</p></li><li><p><strong>预览节点</strong>：​<code>Ctrl + Shift + 左键</code> 点击节点可快速预览。</p></li><li><p><strong>自动添加并连接相关节点</strong>：​<code>Ctrl + T</code> 可自动添加与选定着色器节点相关的节点并连接。</p></li><li><p><strong>快速加载多张贴图</strong>：​<code>Ctrl + Shift + T</code> 可打开贴图指定界面，并自动连接相关贴图。</p></li><li><p><strong>快速链接节点</strong>：​<code>Alt + 右键</code> 拖动可快速链接节点。</p></li><li><p><strong>快速混合节点</strong>：​<code>Ctrl + Shift + 右键</code> 拖动可快速混合节点。</p></li><li><p><strong>删除未使用的节点</strong>：​<code>Alt + X</code> 可清理节点树，删除所有对最终结果没有贡献的节点。</p></li><li><p><strong>互换链接</strong>：​<code>Alt + S</code> 可交换节点的输入或输出链接。</p></li><li><p><strong>打组与标签</strong>：​<code>Shift + P</code> 可将选定节点包装到框架中，并设置颜色和标签。</p></li><li><p><strong>转换节点类型</strong>：​<code>Shift + S</code> 可将选定节点的类型更改为其他类型。</p></li><li><p><strong>复制节点设置</strong>：​<code>Shift + C</code> 可将活动节点的设置复制到所有选定的同类型节点。</p></li></ul></li></ul><hr><h3 id="Import-Images-as-Planes"><a href="#Import-Images-as-Planes" class="headerlink" title="Import Images as Planes"></a><strong>Import Images as Planes</strong></h3><p><a href="https://extensions.blender.org/add-ons/import-images-as-planes/versions/">https://extensions.blender.org/add-ons/import-images-as-planes/versions/</a><br><img src="https://wangwenzhi.eu.org/images/images/20250417143231881.png"><br>将图片导入为带有材质的平面，方便贴图和背景设置。</p><ul><li><p><strong>使用方法</strong>：</p><ul><li><p>在「文件 &gt; 导入 &gt; Images as Planes」中选择图片导入。</p></li><li><p>导入的图片将作为平面对象，自动应用相应的材质。​</p></li></ul></li></ul><hr><h2 id="Bool-Tool-布尔工具"><a href="#Bool-Tool-布尔工具" class="headerlink" title="Bool Tool 布尔工具"></a><strong>Bool Tool 布尔工具</strong></h2><p>布尔操作增强工具，提供更灵活的布尔建模方式。</p><ul><li><p><strong>快捷键</strong>：​<code>Ctrl + Shift + B</code>。</p></li><li><p><strong>布尔运算模式</strong>：</p><ul><li><p><strong>Auto Boolean</strong>：​快速布尔运算，但操作后无法修改。</p></li><li><p><strong>Brush Boolean</strong>：​添加布尔修改器，可在不应用修改器的情况下随时调整。</p></li></ul></li><li><p><strong>操作方法</strong>：</p><ul><li><p>选择两个模型，按住 <code>Shift</code> 键加选，最后选中的为活动对象。</p></li><li><p>使用快捷键 <code>Ctrl + 数字键 +</code> 进行相加布尔运算。</p></li><li><p>使用快捷键 <code>Ctrl + 数字键 -</code> 进行相减布尔运算。</p></li><li><p>可在修改器面板中进一步调整布尔修改器。</p></li></ul></li></ul><hr><h3 id="LoopTools"><a href="#LoopTools" class="headerlink" title="LoopTools"></a><strong>LoopTools</strong></h3><p>建模辅助工具，提供多种网格编辑功能。</p><ul><li><p><strong>功能包括</strong>：</p><ul><li><p><strong>桥接（Bridge）</strong>：​连接两个边环。</p></li><li><p><strong>圆形化（Circle）</strong>：​将选定顶点排列成圆形。</p></li><li><p><strong>弯曲（Curve）</strong>：​沿曲线弯曲网格。</p></li><li><p><strong>松弛（Relax）</strong>：​平滑网格。</p></li><li><p><strong>空间（Space）</strong>：​均匀分布顶点。</p></li></ul></li><li><p><strong>使用方法</strong>：</p><ul><li>在编辑模式下，选中网格元素，右键菜单中选择相应功能。​</li></ul></li></ul><hr><h3 id="Copy-Attributes-Menu"><a href="#Copy-Attributes-Menu" class="headerlink" title="Copy Attributes Menu"></a><strong>Copy Attributes Menu</strong></h3><p>快速复制对象属性的工具，提升场景编辑效率。</p><ul><li><p><strong>快捷键</strong>：​<code>Ctrl + C</code>。</p></li><li><p><strong>功能</strong>：</p><ul><li>将活动对象的属性（位置、旋转、缩放等）复制到其他选定对象。</li></ul></li><li><p><strong>操作方法</strong>：</p><ul><li><p>按住 <code>Shift</code> 选择多个对象，最后选中的为活动对象（黄色高亮）。</p></li><li><p>按 <code>Ctrl + C</code>，在弹出的菜单中选择要复制的属性。​<a href="https://www.bilibili.com/read/cv17370849/?utm_source=chatgpt.com">bilibili.com</a><a href="https://blog.csdn.net/u012204304/article/details/102658398?utm_source=chatgpt.com">blog.csdn.net</a></p></li></ul></li></ul><hr><h3 id="Tissue"><a href="#Tissue" class="headerlink" title="Tissue"></a><strong>Tissue</strong></h3><p>高级建模工具，用于将一个模型附着到另一个模型表面，创建复杂的结构。</p><ul><li><p><strong>使用方法</strong>：</p><ul><li><p>创建一个基础模型作为“零件”。</p></li><li><p>选择“零件”，然后选择目标模型。</p></li><li><p>使用 Tissue 插件将“零件”附着到目标模型表面，形成重复的结构。​</p></li></ul></li></ul><hr><p>这篇文章通过实例和快捷键的方式，详细介绍了这些插件的功能和使用方法，对于 Blender 用户提升工作效率具有很大帮助。​如果你对某个插件感兴趣，建议在 Blender 的「编辑 &gt; 偏好设置 &gt; 插件」中搜索并启用它。​<a href="https://www.bilibili.com/read/cv17370849/?utm_source=chatgpt.com">bilibili.com</a></p><p>如需进一步了解这些插件的使用技巧或有其他疑问，欢迎继续提问！</p><p><a href="https://blog.csdn.net/u012204304/article/details/102658398">https://blog.csdn.net/u012204304/article/details/102658398</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 热门文章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BLog </tag>
+            
+            <tag> VPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hysteria 2一键安装 | Hysteria协议大家可能在很多地方都见过，很多人都说是可以拯救吃灰小鸡的脚本。但是由于他使用的udp协议，并且比较暴力。</title>
       <link href="/article/hysteria2/"/>
       <url>/article/hysteria2/</url>
